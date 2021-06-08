@@ -18,16 +18,19 @@ docsify serve docs
 ## Примеры
  
 ### Важный контент
+!> Внимание это важная информация
+
 !> **Важно** просто текст
 
 ### Курсив
 ?> _КУРСИВ_ просто текст
 
 ### Ссылки
-[example.com](https://example.com/ ':crossorgin')
+[example.com](https://example.com/)
 
 ### Изображение
-![logo](https://docsify.js.org/_media/icon.svg ':size=10%')
+![](https://docsify.js.org/_media/icon.svg ':size=10%')
+![](_media/pixlpark_logo.svg ':size=10%')
 
 ### Выпадающий список
 <details>
@@ -40,10 +43,14 @@ docsify serve docs
 
 ### Список
 
-<div style='color: red'>
 
 - listitem
 - listitem
 - listitem
 
-</div>
+### Блок кода
+
+```html
+<p>This is a paragraph</p>
+<a href="//docsify.js.org/">Docsify</a>
+```
