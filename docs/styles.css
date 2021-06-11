@@ -1,0 +1,12 @@
+.header {
+    top:0;
+    padding:40px;
+    background: lightblue;
+    text-align: center;
+}
+main {
+    padding: 0;
+}
+content  {
+    margin-top: 100px;
+}
