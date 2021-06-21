@@ -7,18 +7,43 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class = header>
+        <span><h1>PIXLPARK</h1></span>
+    </div>
     <div id="app"></div>
     <script>
         window.$docsify = {
             loadSidebar: true,
             subMaxLevel: 2,
             repo: '',
-            homepage: 'quickstart.md'
+            homepage: 'quickstart.md',
+            name: 'Pixlpark',
+            search: 'auto',
+            search: {
+                placeholder: 'Поиск'
+            },
+            plugins: [
+                function(hook) {
+                 var footer = [
+                    '<hr/>',
+                    '<footer>',
+                    '<span>Pixlpark &copy;2021.</span>',
+                     '</footer>'
+                 ].join('');
+
+                 hook.afterEach(function(html) {
+                    return html + footer;
+                 });
+                }
+            ]
         }
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
