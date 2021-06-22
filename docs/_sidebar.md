@@ -37,6 +37,7 @@
 	- [Скидки](marketing-discounts.md)
 	- [Сертификаты](marketing-certificates.md)
 	- [Сервисы](marketing-services.md)
+	- [Настройка](marketing-settings.md)
 - Печать
 	- [Продукты](print-products.md)
 	- [Калькуляция](print-calculations.md)
@@ -72,7 +73,7 @@
 	- [Страница раздела](gallery-page.md)
 	- [Настройка](gallery-settings.md)
 - Отзывы
-	- [Гостевая книга ](feedback-gbooks.md)
+	- [Гостевая книга](feedback-gbooks.md)
 	- [Сообщения с формы](feedback-messages.md)
 	- [Страница раздела](feedback-page.md)
 	- [Настройка](feedback-settings.md)
@@ -87,14 +88,14 @@
 	- [Сотрудники](profile-staff.md)
 	- [Финансы](profile-finance.md)
 - Прочее
-	- [Данные для настройки печатного сайта](misc-data-for-print-site.md)
-	- [Данные для настройки сувенирного сайта](misc-data-for-gift-site.md)
-	- [Этапы запуска проекта на Pixlpark](misc-launch-workflow.md)
+	- [Данные для печатного сайта](misc-data-for-print-site.md)
+	- [Данные для сувенирного сайта](misc-data-for-gift-site.md)
+	- [Список систем оплаты и доставки](misc-shippings-and-paymets.md)
 	- [Работа с технической поддержкой](misc-tech-support.md)
 	- [Часто задаваемые вопросы](misc-faq.md)
 - Разработчикам
-	- [Внедрение кода на страницы сайта](dev-front.md)
-	- [Внедрение уникального дизайна](dev-design.md)
-	- [Внедрение калькулятора во внешний сайт](dev-calc.md)
-	- [Внедрение редактора во внешний магазин](dev-editor.md)
+	- [Внедрение собственного кода на сайт](dev-front.md)
+	- [Внедрение на сайт уникального дизайна](dev-design.md)
+	- [Установка калькулятора во внешний сайт](dev-calc.md)
+	- [Установка редактора во внешний магазин](dev-editor.md)
 	- [Обмен данными через API](dev-api.md)
