@@ -1,7 +1,100 @@
 ﻿<!-- docs/_sidebar.md -->
-- Информация
-	- [Руководство](quickstart.md)
-	- [О нас](about.md)
-- Информация
-	- [Руководство](quickstart.md)
-	- [О нас](about.md)
+- Заказы
+	- [Создание заказа](orders-create.md)
+	- [Список заказов](orders-list.md)
+	- [Карточка заказа](orders-edit.md)
+	- [Статистика продаж](orders-report.md)
+	- [Экспорт заказов](orders-export.md)
+	- Настройка
+		- [Офоромление заказ](orders-settings-workflow.md)
+		- [Управление заказами](orders-settings-manage.md)
+		- [Отображение заказов](orders-settings-view.md)
+		- [Шаблоны экспорта](orders-settings-templates.md)
+- Клиенты
+	- [Частые лица](cutomers-b2c.md)
+	- [Организации](cutomers-b2b.md)
+	- [Настройка](cutomers-settings.md)
+- CMS
+	- [Страницы](cms-pages.md)
+	- [Языки](cms-languages.md)
+	- [Локализация](cms-localization.md)
+	- [Дизайн](cms-design.md)
+	- [Файлы](cms-files.md)
+	- [Сервисы](cms-services.md)
+	- [Настройка](cms-settings.md)
+- Сайт
+	- [Регион](site-region.md)
+	- [Домены](site-domains.md)
+	- [Доступ](site-access.md)
+	- [Уведомления](site-notifications.md)
+	- [Доставка](site-shippings.md)
+	- [Оплата](site-payments.md)
+	- [Фискализация](site-fiscalization.md)
+	- [Соц. сети](site-socials.md)
+- Маркетинг
+	- [Корзины](marketing-cars.md)
+	- [Партнеры](marketing-affiliates.md)
+	- [Скидки](marketing-discounts.md)
+	- [Сертификаты](marketing-certificates.md)
+	- [Сервисы](marketing-services.md)
+- Печать
+	- [Продукты](print-products.md)
+	- [Калькуляция](print-calculations.md)
+	- [Шаблоны](print-templates.md)
+	- [Клипарты](print-cliparts.md)
+	- [Теги](print-tags.md)
+	- [Оборудование](print-devices.md)
+	- [Страница раздела](print-page.md)
+	- [Страницы шаблонов](print-tpages.md)
+	- [Настойка](print-settings.md)
+- Сувениры
+	- [Товары](gift-products.md)
+	- [Группы печати](gift-groups.md)
+	- [Виды нанесения](gift-prints.md)
+	- [Настройка](gift-settings.md)
+- Магазин
+	- [Товары](shop-products.md)
+	- [Свойства](shop-properties.md)
+	- [Параметры](shop-parameters.md)
+	- [Производители](shop-vendors.md)
+	- [Страница раздела](shop-page.md)
+	- [Настройка](shop-settings.md)
+- Новости
+	- [Лента новостей](news-list.md)
+	- [Страница раздела](news-page.md)
+	- [Настройка](news-settings.md)
+- База знаний
+	- [Статьи](faq-list.md)
+	- [Страница раздела](faq-page.md)
+	- [Настройка](faq-settings.md)
+- Фотогалерея
+	- [Иллюстрации](gallery-list.md)
+	- [Страница раздела](gallery-page.md)
+	- [Настройка](gallery-settings.md)
+- Отзывы
+	- [Гостевая книга](fedback-gbooks.md)
+	- [Сообщения с формы](fedback-messages.md)
+	- [Страница раздела](fedback-page.md)
+	- [Настройка](fedback-settings.md)
+- Приложение
+	- [Регион](app-region.md)
+	- [Дизайн](app-design.md)
+	- [Сайты](app-sites.md)
+	- [Локализация](app-localization.md)
+	- [Настройка](app-settings.md)
+- Профиль
+	- [Информация](profile-info.md)
+	- [Сотрудники](profile-staff.md)
+	- [Финансы](profile-finance.md)
+- Прочее
+	- [Данные для настройки печатного сайта](misc-data-for-print-site.md)
+	- [Данные для настройки сувенирного сайта](misc-data-for-gift-site.md)
+	- [Этапы запуска проекта на Pixlpark](misc-launch-workflow.md)
+	- [Работа с технической поддержкой](misc-tech-support.md)
+	- [Часто задаваемые вопросы](misc-faq.md)
+- Разработчикам
+	- [Внедрение кода на страницы сайта](dev-front.md)
+	- [Внедрение уникального дизайна](dev-design.md)
+	- [Внедрение калькулятора во внешний сайт](dev-calc.md)
+	- [Внедрение редактора во внешний магазин](dev-editor.md)
+	- [Обмен данными через API](dev-api.md)
