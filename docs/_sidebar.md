@@ -32,7 +32,7 @@
 	- [Фискализация](site-fiscalization.md)
 	- [Соц. сети](site-socials.md)
 - Маркетинг
-	- [Корзины](marketing-cars.md)
+	- [Корзины](marketing-cards.md)
 	- [Партнеры](marketing-affiliates.md)
 	- [Скидки](marketing-discounts.md)
 	- [Сертификаты](marketing-certificates.md)
@@ -72,10 +72,10 @@
 	- [Страница раздела](gallery-page.md)
 	- [Настройка](gallery-settings.md)
 - Отзывы
-	- [Гостевая книга](fedback-gbooks.md)
-	- [Сообщения с формы](fedback-messages.md)
-	- [Страница раздела](fedback-page.md)
-	- [Настройка](fedback-settings.md)
+	- [Гостевая книга ](feedback-gbooks.md)
+	- [Сообщения с формы](feedback-messages.md)
+	- [Страница раздела](feedback-page.md)
+	- [Настройка](feedback-settings.md)
 - Приложение
 	- [Регион](app-region.md)
 	- [Дизайн](app-design.md)
