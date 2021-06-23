@@ -12,8 +12,8 @@
 ![](../_media/misc/favicon-gifts.png)
 
 ## 2. Контактные данные
-- Адрес, эл. почта, телефон и мессенджеры (<a href="https://gifts.pixlpark.ru/contact-us">пример</a>).
-- Название бренда и реквитизы организации (<a href="https://gifts.pixlpark.ru/requisites">пример</a>).
+- Адрес, эл. почта, телефон и мессенджеры (<a href="https://gifts.pixlpark.ru/contact-us" target="_blank">пример</a>).
+- Название бренда и реквитизы организации (<a href="https://gifts.pixlpark.ru/requisites" target="_blank">пример</a>).
 - Подпись и печать организации для счета (формат: .png).
 - Группы и страницы в социальных сетях.
 ![](../_media/misc/contacts-gifts.png)
@@ -32,7 +32,7 @@
 ![](../_media/misc/catalogs.png)
 
 ## 5. Доставка и оплата
-Для страницы <a href="https://gifts.pixlpark.ru/delivery-and-payment">оплаты и доставки</a> необходимо перечислить возможные способы получения и оплаты заказа.<br>
+Для страницы <a href="https://gifts.pixlpark.ru/delivery-and-payment" target="_blank">оплаты и доставки</a> необходимо перечислить возможные способы получения и оплаты заказа.<br>
 Вы можете ознакомиться со списком интегрированных в Pixlpark платежных систем и транспортных компаний на <a target="_blank" href="https://pixlpark.ru/misc/shippings-and-payments">нашем сайте</a>.
 ![](../_media/misc/shippings.png)
 ![](../_media/misc/payments.png)

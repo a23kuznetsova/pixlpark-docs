@@ -30,7 +30,7 @@
 ![](../_media/misc/menu.png)
 
 ## 5. Доставка и оплата
-Для страницы <a href="https://demo.pixlpark.ru/delivery-and-payment">оплаты и доставки</a> необходимо перечислить возможные способы получения и оплаты заказа.<br>
+Для страницы <a href="https://demo.pixlpark.ru/delivery-and-payment" target="_blank">оплаты и доставки</a> необходимо перечислить возможные способы получения и оплаты заказа.<br>
 Вы можете ознакомиться со списком интегрированных в Pixlpark платежных систем и транспортных компаний на <a target="_blank" href="https://pixlpark.ru/misc/shippings-and-payments">нашем сайте</a>.
 ![](../_media/misc/shippings.png)
 ![](../_media/misc/payments.png)
