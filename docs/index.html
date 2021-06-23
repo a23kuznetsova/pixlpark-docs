@@ -17,7 +17,7 @@
     <script>
         window.$docsify = {
             loadSidebar: true,
-            subMaxLevel: 2,
+            subMaxLevel: 1,
             repo: '',
             homepage: 'quickstart.md',
             name: 'Документация Pixlpark',
@@ -25,6 +25,7 @@
             search: {
                 placeholder: 'Поиск'
             },
+            sidebarDisplayLevel: 0,
             plugins: [
                 function(hook) {
                  var footer = [
@@ -45,5 +46,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
 </body>
 </html>

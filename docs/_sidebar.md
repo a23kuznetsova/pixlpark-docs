@@ -88,9 +88,9 @@
 	- [Сотрудники](profile-staff.md)
 	- [Финансы](profile-finance.md)
 - Прочее
-	- [Данные для печатного сайта](misc-data-for-print-site.md)
-	- [Данные для сувенирного сайта](misc-data-for-gift-site.md)
-	- [Список систем оплаты и доставки](misc-shippings-and-paymets.md)
+	- [Данные для печатного сайта](/misc/data-for-print-site.md)
+	- [Данные для сувенирного сайта](/misc/data-for-gift-site.md)
+	- [Работы по запуска сайта](misc-launch-site.md)
 	- [Работа с технической поддержкой](misc-tech-support.md)
 	- [Часто задаваемые вопросы](misc-faq.md)
 - Разработчикам
