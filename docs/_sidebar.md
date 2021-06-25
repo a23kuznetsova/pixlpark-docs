@@ -1,8 +1,8 @@
 ﻿<!-- docs/_sidebar.md -->
 - Заказы
+	- [Карточка заказа](/orders/edit.md)
 	- [Создание заказа](/orders/create.md)
 	- [Список заказов](orders/list.md)
-	- [Карточка заказа](/orders/edit.md)
 	- [Статистика продаж](/orders/report.md)
 	- [Экспорт заказов](/orders/export.md)
 	- Настройка

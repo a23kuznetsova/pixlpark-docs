@@ -16,14 +16,14 @@
 
 6. Администратору приходит уведомление от Pixlpark о поступившем заказе. Уведомление содержит общую информацию, а так же ссылки на архив заказа и страницу заказа в панели управления Pixlpark.
 
-![](../_media/dev/iframe-editor.png)
+![](../_media/dev/iframe-editor.png ':size=70%')
 
 ## Техническая интеграция
 1. Для динамического подключения редактора через iframe (формирования корректной ссылки) к разным продуктам интернет-магазина необходимо программно получать информацию о товарах и категориях, созданных в сервисе Pixlpark. Для этого можно использовать API, работа с которым описана в [соседнем разделе](/dev/api.md).<br>
 Метод API `Products / GetProductCategoriesList` возвращает категории печати, `Products / GetProductsListByCategory` - продукты категории, а `Templates / GetTemplateSets` - доступные шаблоны.
 
 2. Для обмена данными между онлайн-редактором (сервисом Pixlpark) небоходимо:<br>
-    2.1. К магазину подключить библиотеку jquery, а так же плагин <a href="http://benalman.com/projects/jquery-postmessage-plugin/" target="_blank">jQuery postMessage</a>.<br>
+    2.1. К магазину подключить библиотеку jquery, а так же плагин [jQuery postMessage](http://benalman.com/projects/jquery-postmessage-plugin/).<br>
     2.2. В панель управления Pixlpark в раздел `CMS / Сервисы` в поле "Скрипт, размещаемый в нижней части сайта" разместить код:
     ```html	
     <script type ="text/javascript" src="/content/js/jquery.ba-postmessage.min.js"></script>
