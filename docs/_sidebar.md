@@ -11,9 +11,9 @@
 		- [Отображение заказов](/orders/settings-view.md)
 		- [Шаблоны экспорта](/orders/settings-templates.md)
 - Клиенты
-	- [Частые лица](/cutomers/b2c.md)
-	- [Организации](/cutomers/b2b.md)
-	- [Настройка](/cutomers/settings.md)
+	- [Частые лица](/customers/b2c.md)
+	- [Организации](/customers/b2b.md)
+	- [Настройка](/customers/settings.md)
 - CMS
 	- [Страницы](/cms/pages.md)
 	- [Языки](/cms/languages.md)
