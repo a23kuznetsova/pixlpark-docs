@@ -15,10 +15,10 @@
 	- [Организации](/customers/b2b.md)
 	- [Настройка](/customers/settings.md)
 - Маркетинг
-	- [Корзины](/marketing/cards.md)
-	- [Партнеры](/marketing/affiliates.md)
 	- [Скидки](/marketing/discounts.md)
 	- [Сертификаты](/marketing/certificates.md)
+	- [Партнеры](/marketing/affiliates.md)
+	- [Корзины](/marketing/cards.md)
 	- [Сервисы](/marketing/services.md)
 	- [Настройка](/marketing/settings.md)
 - CMS
