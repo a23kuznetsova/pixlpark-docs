@@ -9,7 +9,7 @@
 		- [Офоромление заказов](/orders/settings-workflow.md)
 		- [Управление заказами](/orders/settings-manage.md)
 		- [Отображение заказов](/orders/settings-view.md)
-		- [Шаблоны документов](/orders/settings-templates.md)
+		- [Шаблоны экспорта](/orders/settings-templates.md)
 - Клиенты
 	- [Частые лица](/customers/b2c.md)
 	- [Организации](/customers/b2b.md)
