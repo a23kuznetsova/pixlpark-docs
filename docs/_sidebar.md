@@ -1,19 +1,26 @@
 ﻿<!-- docs/_sidebar.md -->
 - Заказы
 	- [Карточка заказа](/orders/edit.md)
-	- [Создание заказа](/orders/create.md)
 	- [Список заказов](orders/list.md)
+	- [Создание заказа](/orders/create.md)
 	- [Статистика продаж](/orders/report.md)
 	- [Экспорт заказов](/orders/export.md)
 	- Настройка
-		- [Офоромление заказ](/orders/settings-workflow.md)
+		- [Офоромление заказов](/orders/settings-workflow.md)
 		- [Управление заказами](/orders/settings-manage.md)
 		- [Отображение заказов](/orders/settings-view.md)
-		- [Шаблоны экспорта](/orders/settings-templates.md)
+		- [Шаблоны документов](/orders/settings-templates.md)
 - Клиенты
-	- [Частые лица](/cutomers/b2c.md)
-	- [Организации](/cutomers/b2b.md)
-	- [Настройка](/cutomers/settings.md)
+	- [Частые лица](/customers/b2c.md)
+	- [Организации](/customers/b2b.md)
+	- [Настройка](/customers/settings.md)
+- Маркетинг
+	- [Скидки](/marketing/discounts.md)
+	- [Сертификаты](/marketing/certificates.md)
+	- [Партнеры](/marketing/affiliates.md)
+	- [Корзины](/marketing/cards.md)
+	- [Сервисы](/marketing/services.md)
+	- [Настройка](/marketing/settings.md)
 - CMS
 	- [Страницы](/cms/pages.md)
 	- [Языки](/cms/languages.md)
@@ -31,13 +38,6 @@
 	- [Оплата](/site/payments.md)
 	- [Фискализация](/site/fiscalization.md)
 	- [Соц. сети](/site/socials.md)
-- Маркетинг
-	- [Корзины](/marketing/cards.md)
-	- [Партнеры](/marketing/affiliates.md)
-	- [Скидки](/marketing/discounts.md)
-	- [Сертификаты](/marketing/certificates.md)
-	- [Сервисы](/marketing/services.md)
-	- [Настройка](/marketing/settings.md)
 - Печать
 	- [Продукты](/print/products.md)
 	- [Калькуляция](/print/calculations.md)
