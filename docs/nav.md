@@ -6,7 +6,4 @@
 
 <input class="search-clone" placeholder="Поиск по базе" type="text" id="name" name="name"/>
 <button class="search-clone_button" type="button">
-    <svg>
-        
-    </svg>
 </button>
