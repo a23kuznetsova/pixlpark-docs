@@ -1,5 +1,7 @@
 * {
     --main-color: #64bb46;
+    --second-color: #eb6309;
+    --rounded-value: 8px;
 }
 
 body {
@@ -11,16 +13,8 @@ body {
     overflow-y: scroll
 }
 
-.sidebar {
-    padding: 0;
-}
-
-.header {
-    height: 145px;
-    padding: 0 0 0 300px;
-    top: 0;
-    background: var(--main-color);
-    text-align: center;
+aside.sidebar {
+    padding-top: 15px;
 }
 
 main {
@@ -31,52 +25,68 @@ content {
     margin-top: 100px;
 }
 
-.app-name img {
-    width: 150px;
-}
-
-.app-nav.no-badge {
+header {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     position: relative;
     height: 145px;
-    padding: 35px 15px 0 300px;
+    padding: 0 0 0 300px;
     margin: 0;
-    background: var(--main-color);
+    background: #f6f6f6;
     z-index: 0;
 }
 
-.app-nav.no-badge p,
-.app-nav.no-badge a {
-    color: #fff;
+header .logo-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 595px;
+    height: 100%;
+    padding: 0 35px 0 0;
 }
 
-.app-nav.no-badge p {
+header .header-main-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    background: var(--main-color);
+}
+
+header .header-main-container>div {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-main-container .top-row {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header .bottom-row {
     position: relative;
-    margin: 0 0 0 30px;
+    margin: 10px 0 0;
+}
+
+header .header-link {
+    position: relative;
+    margin: 3px 0 0 30px;
     padding: 0 0 0 40px;
-}
-
-.app-nav.no-badge p:first-child {
-    position: relative;
-    top: -3px;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 400;
-    text-decoration: none;
-    border-bottom: none;
-}
-
-.app-nav.no-badge p a {
+    color: #fff;
     font-size: 18px;
     text-decoration: none;
     background-position: 0 0;
 }
 
-.app-nav.no-badge p img {
+.header-link::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 26px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -84,27 +94,53 @@ content {
     transform: translateY(-50%);
 }
 
-.search {
+.header-link.support::before {
+    background: url(_media/chat.svg) no-repeat 0 0;
+}
+
+.header-link.phone::before {
+    background: url(_media/call.svg) no-repeat 0 0;
+}
+
+header h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: none;
+    line-height: 1;
+}
+
+.bottom-row .search-clone {
+    width: 100%;
+    height: 35px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: var(--rounded-value);
+}
+
+.bottom-row .search-clone:focus {
+    outline: none;
+}
+
+header .bottom-row .search-clone_button {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(100%);
-    /* display:none; */
+    height: 100%;
+    padding: 7px 15px;
+    background: var(--second-color);
+    border-radius: var(--rounded-value);
+    border: none;
+    cursor: pointer;
 }
 
-.search input:focus {
-    box-shadow: 0 0 5px var(--main-color);
-    border: 1px solid var(--main-color);
-}
-
-.sidebar>h1.app-name {
-    display: flex;
-    align-content: flex-start;
-    justify-content: flex-end;
-    align-items: center;
-    height: 145px;
-    padding: 0 15px;
-    text-align: right;
+header .bottom-row .search-clone_button svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
 }
 
 .sidebar .sidebar-nav>ul {
@@ -167,4 +203,33 @@ content {
 .sidebar .sidebar-nav li a:hover {
     background: rgb(158 158 158 / 0.1);
     text-decoration: none;
+}
+
+.sidebar .search {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.search .input-wrap {
+    flex-flow: row wrap;
+}
+
+.search .input-wrap input {
+    display: none;
+}
+
+.sidebar .search .clear-button {
+    width: 100%;
+    margin: 0 15px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    background: var(--second-color);
+    border-radius: var(--rounded-value);
+}
+
+.sidebar .search .results-panel {
+    margin: 30px 15px;
+    border-bottom: 1px solid #eee;
 }
