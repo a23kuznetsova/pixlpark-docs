@@ -29,7 +29,7 @@
 	- [Файлы](/cms/files.md)
 	- [Сервисы](/ms/services.md)
 	- [Настройка](/cms/settings.md)
-- Сайт
+- Настройка
 	- [Регион](/site/region.md)
 	- [Домены](/site/domains.md)
 	- [Доступ](/site/access.md)
@@ -64,8 +64,8 @@
 	- [Лента новостей](/news/list.md)
 	- [Страница раздела](/news/page.md)
 	- [Настройка](/news/settings.md)
-- База знаний
-	- [Статьи](/faq/list.md)
+- Статьи
+	- [База знаний](/faq/list.md)
 	- [Страница раздела](/faq/page.md)
 	- [Настройка](/faq/settings.md)
 - Фотогалерея
