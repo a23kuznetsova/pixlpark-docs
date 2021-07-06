@@ -29,7 +29,7 @@
 	- [Файлы](/cms/files.md)
 	- [Сервисы](/ms/services.md)
 	- [Настройка](/cms/settings.md)
-- Сайт
+- Настройка
 	- [Регион](/site/region.md)
 	- [Домены](/site/domains.md)
 	- [Доступ](/site/access.md)
