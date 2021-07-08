@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 * {
     --main-color: #64bb46;
     --second-color: #eb6309;
@@ -6,7 +7,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Fira Sans Condensed', -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 400;
     color: #3e3e3e;
     width: 100%;
@@ -34,13 +35,6 @@ header {
     margin: 0;
     background: #f6f6f6;
     z-index: 0;
-}
-
-header.fixedHeader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 50;
 }
 
 header .logo-container {
@@ -96,6 +90,10 @@ header .header-link {
     background-position: 0 0;
 }
 
+.header-link.support {
+    margin: 3px 20px 0 0;
+}
+
 .header-link::before {
     content: '';
     display: block;
@@ -118,7 +116,7 @@ header .header-link {
 
 header h2 {
     padding: 0;
-    margin: 0;
+    margin: 0 auto 0 0;
     font-size: 24px;
     font-weight: 400;
     color: #fff;
@@ -260,8 +258,37 @@ section.content .search {
 
 .sidebar .search .results-panel,
 .content .search .results-panel {
-    margin: 30px 15px;
+    padding: 0 15px;
+    margin: 30px 0;
     border-bottom: 1px solid #eee;
+}
+
+#main>h2 {
+    display: none;
+}
+
+#main.markdown-section ol,
+#main.markdown-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main.markdown-section>ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -10px;
+}
+
+#main.markdown-section>ul>li {
+    width: calc(25% - 20px);
+    margin: 0 10px 30px;
+    padding: 20px 25px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: var(--rounded-value);
+    box-shadow: 0 0px 8px 0px rgb(0 0 0 / 5%);
 }
 
 @media screen and (max-width:1400px) {
@@ -298,10 +325,6 @@ section.content .search {
     header {
         padding: 0;
     }
-    /* body.sticky .sidebar {
-        top: var(--header-height);
-        border-top: 1px solid rgba(0, 0, 0, .07);
-    } */
 }
 
 @media screen and (max-width:425px) {
