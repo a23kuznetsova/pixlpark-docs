@@ -1,0 +1,58 @@
+body[data-page="_sidebar.md"] #main>h2 {
+    display: none;
+}
+
+body[data-page="_sidebar.md"] #main.markdown-section ol,
+body[data-page="_sidebar.md"] #main.markdown-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body[data-page="_sidebar.md"] #main.markdown-section>ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px -10px 0;
+}
+
+body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
+    position: relative;
+    width: calc(100% / 2 - 20px);
+    margin: 0 10px 30px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 10px 0 0;
+}
+
+body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul a {
+    display: block;
+    margin: 0 5px 10px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    line-height: 1.2;
+    border-radius: var(--rounded-value);
+    box-shadow: 0 0px 8px 0px rgb(0 0 0 / 5%);
+}
+
+body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul a:hover,
+body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul a:focus {
+    color: var(--second-color);
+}
+
+@media screen and (max-width:1250px) {
+    body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
+        width: calc(100% - 20px);
+        font-size: 20px;
+    }
+}

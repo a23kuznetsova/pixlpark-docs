@@ -6,11 +6,11 @@
 	- [Создание заказа](/orders/create.md)
 	- [Статистика продаж](/orders/report.md)
 	- [Экспорт заказов](/orders/export.md)
-	- Настройка
-		- [Офоромление заказов](/orders/settings-workflow.md)
-		- [Управление заказами](/orders/settings-manage.md)
-		- [Отображение заказов](/orders/settings-view.md)
-		- [Шаблоны документов](/orders/settings-templates.md)
+- Настройка
+	- [Офоромление заказов](/orders/settings-workflow.md)
+	- [Управление заказами](/orders/settings-manage.md)
+	- [Отображение заказов](/orders/settings-view.md)
+	- [Шаблоны документов](/orders/settings-templates.md)
 - Клиенты
 	- [Частые лица](/customers/b2c.md)
 	- [Организации](/customers/b2b.md)
@@ -48,7 +48,7 @@
 	- [Оборудование](/print/devices.md)
 	- [Страница раздела](/print/page.md)
 	- [Страницы шаблонов](/print/tpages.md)
-	- [Настойка](/print/settings.md)
+	- [Настройка](/print/settings.md)
 - Сувениры
 	- [Товары](/gift/products.md)
 	- [Группы печати](/gift/groups.md)
