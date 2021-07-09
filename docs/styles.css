@@ -167,8 +167,8 @@ header .bottom-row .search-clone_button {
     top: 0;
     right: 0;
     height: 100%;
-    padding: 7px 15px;
-    background: var(--second-color);
+    padding: 7px 25px;
+    background: url(_media/search-icon.svg) no-repeat 50% var(--second-color);
     border-radius: var(--rounded-value);
     border: none;
     cursor: pointer;
