@@ -1,21 +1,21 @@
-body[data-page="_sidebar.md"] #main>h2 {
+body[data-page*="_sidebar.md"] #main>h2 {
     display: none;
 }
 
-body[data-page="_sidebar.md"] #main.markdown-section ol,
-body[data-page="_sidebar.md"] #main.markdown-section ul {
+body[data-page*="_sidebar.md"] #main.markdown-section ol,
+body[data-page*="_sidebar.md"] #main.markdown-section ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-body[data-page="_sidebar.md"] #main.markdown-section>ul {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul {
     display: flex;
     flex-flow: row wrap;
     margin: 0px -10px 0;
 }
 
-body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
     position: relative;
     width: calc(100% / 5 - 20px);
     margin: 0 10px 30px;
@@ -25,12 +25,12 @@ body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
     color: var(--main-color);
 }
 
-body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul {
     padding: 20px 25px;
     list-style: disc;
 }
 
-body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul a {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul a {
     display: block;
     margin: 0 0 10px;
     font-size: 16px;
@@ -40,38 +40,38 @@ body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul a {
     line-height: 1.2;
 }
 
-body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul a:hover,
-body[data-page="_sidebar.md"] #main.markdown-section>ul>li>ul a:focus {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul a:hover,
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul a:focus {
     text-decoration: underline;
 }
 
 @media screen and (max-width:1250px) {
-    body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
+    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
         width: calc(100% / 3 - 20px);
         font-size: 20px;
     }
-    body[data-page="_sidebar.md"].close #main.markdown-section>ul>li {
+    body[data-page*="_sidebar.md"].close #main.markdown-section>ul>li {
         width: calc(100% / 4 - 20px);
     }
 }
 
 @media screen and (max-width:1100px) {
-    body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
+    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
         width: calc(100% / 2 - 20px);
     }
-    body[data-page="_sidebar.md"].close #main.markdown-section>ul>li {
+    body[data-page*="_sidebar.md"].close #main.markdown-section>ul>li {
         width: calc(100% / 3 - 20px);
     }
 }
 
 @media screen and (max-width:550px) {
-    body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
+    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width:475px) {
-    body[data-page="_sidebar.md"] #main.markdown-section>ul>li {
+    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
         width: calc(100% - 20px);
     }
 }

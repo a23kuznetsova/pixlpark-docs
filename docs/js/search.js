@@ -9,19 +9,20 @@
 
         var targetBlock = document.querySelector('header .bottom-row');
 
-        var replacedSearchBlock = false;
+        var isReplacedSearchBlock = false;
+        var isInFocus = false;
 
         function replaceResultBlock() {
-            switch (replacedSearchBlock) {
+            switch (isReplacedSearchBlock) {
                 case false:
                     sectionContent.insertAdjacentElement('afterbegin', searchResultBlock);
                     searchResultBlock = sectionContent.querySelector('.search');
-                    replacedSearchBlock = true;
+                    isReplacedSearchBlock = true;
                     break;
                 case true:
                     asideBlock.insertAdjacentElement('afterbegin', searchResultBlock);
                     searchResultBlock = asideBlock.querySelector('.search');
-                    replacedSearchBlock = false;
+                    isReplacedSearchBlock = false;
             }
 
         }
@@ -40,16 +41,30 @@
             if (window.innerWidth > 768 && document.body.classList.contains('close')) {
                 document.body.classList.remove('close');
             }
+
+            if (window.innerWidth <= 768) {
+                isInFocus = true;
+                sectionContent.scrollIntoView(true);
+            }
+
+        });
+
+        searchInput.addEventListener('blur', function() {
+            if (window.innerWidth <= 768) isInFocus = false;
+        });
+
+        searchInput.addEventListener('input', function() {
+            if (window.innerWidth <= 768 && isInFocus) sectionContent.scrollIntoView(true);
         });
 
         window.addEventListener('resize', function() {
             var width = window.innerWidth;
 
-            if (width <= 768 && !replacedSearchBlock) {
+            if (width <= 768 && !isReplacedSearchBlock) {
                 replaceResultBlock();
             }
 
-            if (width > 768 && replacedSearchBlock) {
+            if (width > 768 && isReplacedSearchBlock) {
                 replaceResultBlock();
             }
         });

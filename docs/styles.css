@@ -4,12 +4,13 @@
     --second-color: #eb6309;
     --rounded-value: 8px;
     --header-height: 145px;
+    --text-color: #3e3e3e;
 }
 
 body {
     font-family: 'Fira Sans Condensed', -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 400;
-    color: #3e3e3e;
+    color: var(--text-color);
     width: 100%;
     height: auto;
     min-height: 100vh;
@@ -35,11 +36,11 @@ main {
     flex-flow: column nowrap;
     min-height: 100%;
     padding-bottom: 7px;
+    font-size: 16px;
 }
 
 footer {
     display: flex;
-    /* height: 200px; */
     margin-top: auto;
     text-align: right;
 }
@@ -189,7 +190,7 @@ header .bottom-row .search-clone_button svg {
 .sidebar .sidebar-nav h2 span {
     font-size: 18px;
     font-weight: 400;
-    color: #000;
+    color: var(--text-color);
     pointer-events: none;
 }
 
@@ -237,7 +238,7 @@ header .bottom-row .search-clone_button svg {
 .sidebar .sidebar-nav ul li,
 .sidebar .sidebar-nav ul li a {
     font-size: 14px;
-    color: #000;
+    color: var(--text-color);
 }
 
 .sidebar .sidebar-nav ul li.folder.open {
@@ -287,6 +288,104 @@ section.content .search {
     border-bottom: 1px solid #eee;
 }
 
+.content .markdown-section h1,
+.content .markdown-section h2 {
+    margin: 0 0 2rem;
+    text-align: center;
+    line-height: normal;
+}
+
+.content .markdown-section h2 {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.content .markdown-section h1 a,
+.content .markdown-section h2 a {
+    pointer-events: none;
+}
+
+.content .markdown-section h1 a:hover,
+.content .markdown-section h1 a:focus,
+.content .markdown-section h2 a:hover,
+.content .markdown-section h2 a:focus {
+    text-decoration: none;
+}
+
+.content .markdown-section>ul {
+    padding: 0;
+    list-style: none;
+}
+
+.content .markdown-section ol {
+    margin: 0 0 25px;
+    padding: 0 0 0 15px;
+}
+
+.content .markdown-section>ul>li {
+    margin: 0 0 15px;
+}
+
+.content .markdown-section>ul>li>ul {
+    list-style: disc;
+}
+
+.content .markdown-section>ul>li>ul>li ul {
+    list-style: disc;
+}
+
+.content .markdown-section>ul>li>ul>li ul li::marker {
+    color: var(--main-color);
+}
+
+.content .markdown-section p {
+    margin: 0 0 5px;
+}
+
+.content .markdown-section .medium-zoom-image {
+    display: block;
+    margin: 25px auto;
+}
+
+.content .markdown-section code {
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: 0.3px;
+    color: var(--second-color);
+}
+
+.content .markdown-section pre {
+    padding: 0;
+    font-family: inherit;
+}
+
+.content .markdown-section pre>code {
+    margin: 0;
+    padding: 20px 25px;
+    font-size: 0.9rem;
+    letter-spacing: 0.7px;
+}
+
+.content .markdown-section a:hover,
+.content .markdown-section a:focus {
+    color: var(--second-color);
+}
+
+header .header-link:hover,
+header .header-link:focus {
+    color: #2c3e50;
+}
+
+.markdown-section pre code::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+.markdown-section pre code::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: var(--rounded-value);
+}
+
 @media screen and (max-width:1400px) {
     header .logo-container {
         width: auto;
@@ -321,6 +420,21 @@ section.content .search {
     header {
         padding: 0;
     }
+    .content .markdown-section h1 {
+        font-size: 1.5rem;
+    }
+    .content .markdown-section h2 {
+        font-size: 1.25rem;
+    }
+    .content .markdown-section>* {
+        font-size: 0.9rem;
+    }
+    .content .markdown-section .medium-zoom-image {
+        width: 100%;
+    }
+    .content .markdown-section {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -352,5 +466,11 @@ section.content .search {
     }
     .content .markdown-section {
         max-width: 100%;
+    }
+    .content .markdown-section h1 {
+        font-size: 1.25rem;
+    }
+    .content .markdown-section h2 {
+        font-size: 1rem;
     }
 }
