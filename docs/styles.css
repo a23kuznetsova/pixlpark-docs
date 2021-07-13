@@ -373,7 +373,7 @@ section.content .search {
 
 header .header-link:hover,
 header .header-link:focus {
-    color: #2c3e50;
+    color: var(--text-color);
 }
 
 .markdown-section pre code::-webkit-scrollbar {

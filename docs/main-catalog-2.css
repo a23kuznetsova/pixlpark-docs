@@ -35,7 +35,7 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul a {
     margin: 0 0 10px;
     font-size: 16px;
     font-weight: 400;
-    color: #000;
+    color: var(--text-color);
     text-decoration: none;
     line-height: 1.2;
 }

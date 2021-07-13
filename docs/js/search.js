@@ -24,7 +24,6 @@
                     searchResultBlock = asideBlock.querySelector('.search');
                     isReplacedSearchBlock = false;
             }
-
         }
 
         searchInput.classList.add('search-clone');
@@ -34,7 +33,6 @@
         targetBlock.insertAdjacentElement('afterbegin', searchInput);
         if (window.innerWidth <= 768) {
             replaceResultBlock();
-
         }
 
         searchInput.addEventListener('focus', function() {
@@ -46,7 +44,6 @@
                 isInFocus = true;
                 sectionContent.scrollIntoView(true);
             }
-
         });
 
         searchInput.addEventListener('blur', function() {
