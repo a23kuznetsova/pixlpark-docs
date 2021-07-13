@@ -41,6 +41,10 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category {
     overflow: hidden;
 }
 
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li:hover .category {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
+}
+
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.overflow.open .category {
     height: auto;
 }
