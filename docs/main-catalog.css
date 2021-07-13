@@ -1,11 +1,11 @@
-body[data-page*="_sidebar.md"] #main>h2 {
+body[data-page*="_sidebar.md"] #main>p {
     display: none;
 }
 
 body[data-page*="_sidebar.md"] #main.markdown-section ol,
 body[data-page*="_sidebar.md"] #main.markdown-section ul {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
 }
 
@@ -17,82 +17,121 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul {
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
     position: relative;
-    width: calc(100% / 4 - 20px);
-    height: 65px;
-    margin: 0 10px 30px;
+    width: calc(33.3333% - 20px);
+    height: 145px;
+}
+
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open {
+    height: auto;
+}
+
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category {
+    display: block;
+    height: 100%;
+    margin: 0px 10px 10px;
     padding: 20px 25px;
+    position: relative;
     font-size: 22px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     color: var(--main-color);
     border-radius: var(--rounded-value);
-    box-shadow: 0 0px 8px 0px rgb(0 0 0 / 5%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 8px 0px;
+    background: rgb(255, 255, 255);
     overflow: hidden;
+}
+
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li:hover .category {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
+}
+
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open .category {
+    height: auto;
+}
+
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 25px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category .more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    border: none;
+    background: none;
     cursor: pointer;
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 65px 25px 20px;
-    border-radius: var(--rounded-value);
-    box-shadow: 0 0px 8px 0px rgb(0 0 0 / 5%);
-    background: #fff;
-    z-index: -1;
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category .more-button svg {
+    width: 15px;
+    height: 12px;
+    stroke: var(--second-color);
+    transition: all 0.2s ease 0s;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li:hover {
-    border-radius: 0;
-    box-shadow: none;
-    overflow: visible;
-    z-index: 57;
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open .category .more-button svg {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul a {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category-title {
     display: block;
-    margin: 0 0 10px;
+    margin: 0px 0px 25px;
+}
+
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category ul a {
+    display: block;
+    margin: 0px 0px 9px;
     font-size: 16px;
     font-weight: 400;
     color: var(--text-color);
     text-decoration: none;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul a:hover,
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li>ul a:focus {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category ul a:hover,
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category ul a:focus {
     text-decoration: underline;
 }
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width: 1440px) {
     body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
-        width: calc(100% / 3 - 20px);
+        width: calc(50% - 20px);
         font-size: 20px;
     }
     body[data-page*="_sidebar.md"].close #main.markdown-section>ul>li {
-        width: calc(100% / 4 - 20px);
+        width: calc(33.3333% - 20px);
     }
 }
 
-@media screen and (max-width:1100px) {
-    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
-        width: calc(100% / 2 - 20px);
-    }
-    body[data-page*="_sidebar.md"].close #main.markdown-section>ul>li {
-        width: calc(100% / 3 - 20px);
-    }
-}
-
-@media screen and (max-width:550px) {
-    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
+@media screen and (max-width: 550px) {
+    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category-title {
         font-size: 18px;
     }
+    body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category ul a {
+        font-size: 14px;
+    }
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width: 475px) {
     body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
         width: calc(100% - 20px);
+    }
+    body[data-page*="_sidebar.md"].close #main.markdown-section>ul>li {
+        width: calc(50% - 20px);
     }
 }

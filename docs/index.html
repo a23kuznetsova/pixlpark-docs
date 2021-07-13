@@ -9,10 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="main-catalog.css"> -->
-    <!-- <link rel="stylesheet" href="main-catalog-2.css"> -->
-    <!-- <link rel="stylesheet" href="main-catalog-3.css"> -->
-    <link rel="stylesheet" href="main-catalog-4.css">
+    <link rel="stylesheet" href="main-catalog.css">
 </head>
 
 <body>
@@ -58,9 +55,64 @@
                         '</footer>'
                     ].join('');
 
+                    function addCardsHandlers() {
+                        var mainPage = document.body.dataset.page;
+
+                        if (mainPage === window.$docsify.homepage) {
+                            var categories = document.querySelectorAll('#main.markdown-section>ul>li');
+                            categories.forEach(function(category) {
+                                var button = category.querySelector('.more-button');
+                                button.addEventListener('click', function() {
+                                    if (!category.classList.contains('open')) {
+                                        category.classList.add('open');
+                                    } else {
+                                        category.classList.remove('open');
+                                    }
+                                });
+                            });
+                        };
+                    }
+
+                    function changeMainPage(html) {
+                        var mainPage = document.body.dataset.page;
+
+                        if (mainPage === window.$docsify.homepage) {
+                            var t = new DOMParser().parseFromString(html, 'text/html').querySelector('body > ul');
+
+                            const subCatQuantity = 2;
+                            var arrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.52 31.35"><polyline fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3px" fill-rule="evenodd" points="1.5 1.5 16.35 16.24 1.5 29.85"/></svg>';
+                            var els = t.querySelectorAll('li');
+
+                            function addElement(content, parent, wrapper, wrapperClass, position) {
+                                var w = document.createElement(wrapper);
+
+                                w.classList.add(wrapperClass);
+                                w.innerHTML = content;
+                                parent.insertAdjacentElement(position, w);
+                            }
+
+                            els.forEach(item => {
+                                var title = item.childNodes[0].textContent;
+                                item.childNodes[0].textContent = '';
+                                addElement(title, item, 'span', 'category-title', 'afterbegin');
+
+                                var contentCategory = item.innerHTML;
+                                item.innerHTML = '';
+                                addElement(contentCategory, item, 'span', 'category', 'afterbegin');
+                                addElement(arrow, item.querySelector('.category'), 'button', 'more-button', 'beforeend');
+                            });
+                            html = t.outerHTML;
+                        }
+                        return html
+                    }
+
                     hook.afterEach(function(html) {
-                        return html + footer;
+                        return changeMainPage(html) + footer;
                     });
+
+                    hook.doneEach(function() {
+                        addCardsHandlers();
+                    })
                 }
             ]
         }
@@ -71,7 +123,6 @@
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
     <script src="js/search.js"></script>
-    <script src="js/main-4.js"></script>
 </body>
 
 </html>
