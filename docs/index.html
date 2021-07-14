@@ -56,9 +56,10 @@
                     ].join('');
 
                     function addCardsHandlers() {
+                        var reg = /_sidebar.md/; // window.$docsify.homepage
                         var mainPage = document.body.dataset.page;
 
-                        if (mainPage === window.$docsify.homepage) {
+                        if (reg.test(mainPage)) {
                             var categories = document.querySelectorAll('#main.markdown-section>ul>li');
                             categories.forEach(function(category) {
                                 var button = category.querySelector('.more-button');
@@ -74,9 +75,10 @@
                     }
 
                     function changeMainPage(html) {
+                        var reg = /_sidebar.md/; // window.$docsify.homepage
                         var mainPage = document.body.dataset.page;
 
-                        if (mainPage === window.$docsify.homepage) {
+                        if (reg.test(mainPage)) {
                             var t = new DOMParser().parseFromString(html, 'text/html').querySelector('body > ul');
 
                             const subCatQuantity = 2;
@@ -99,7 +101,7 @@
                                 var contentCategory = item.innerHTML;
                                 item.innerHTML = '';
                                 addElement(contentCategory, item, 'span', 'category', 'afterbegin');
-                                addElement(arrow, item.querySelector('.category'), 'button', 'more-button', 'beforeend');
+                                addElement(arrow, item, 'button', 'more-button', 'beforeend');
                             });
                             html = t.outerHTML;
                         }

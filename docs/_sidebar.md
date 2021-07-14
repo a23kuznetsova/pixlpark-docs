@@ -7,7 +7,7 @@
 	- [Статистика продаж](/orders/report.md)
 	- [Экспорт заказов](/orders/export.md)
 - Настройка
-	- [Офоромление заказов](/orders/settings-workflow.md)
+	- [Оформление заказов](/orders/settings-workflow.md)
 	- [Управление заказами](/orders/settings-manage.md)
 	- [Отображение заказов](/orders/settings-view.md)
 	- [Шаблоны документов](/orders/settings-templates.md)

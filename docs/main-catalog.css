@@ -4,7 +4,7 @@ body[data-page*="_sidebar.md"] #main>p {
 
 body[data-page*="_sidebar.md"] #main.markdown-section ol,
 body[data-page*="_sidebar.md"] #main.markdown-section ul {
-    margin: 0px;
+    margin: 0;
     padding: 0px;
     list-style: none;
 }
@@ -19,6 +19,10 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
     position: relative;
     width: calc(33.3333% - 20px);
     height: 145px;
+    margin: 0 10px 20px;
+    border-radius: var(--rounded-value);
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 8px 0px;
+    background: rgb(255, 255, 255);
 }
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open {
@@ -28,20 +32,17 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open {
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category {
     display: block;
     height: 100%;
-    margin: 0px 10px 10px;
+    margin: 0px 10px;
     padding: 20px 25px;
     position: relative;
     font-size: 22px;
     font-weight: 600;
     text-align: left;
     color: var(--main-color);
-    border-radius: var(--rounded-value);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 8px 0px;
-    background: rgb(255, 255, 255);
     overflow: hidden;
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li:hover .category {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
 }
 
@@ -49,18 +50,20 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open .category {
     height: auto;
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category::before {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li::before {
     content: "";
     display: block;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 25px;
     background: rgb(255, 255, 255);
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 10px;
+    bottom: 0;
+    z-index: 1;
+    border-radius: var(--rounded-value);
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category .more-button {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .more-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,13 +71,14 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category .more-butt
     height: 25px;
     position: absolute;
     bottom: 5px;
-    right: 10px;
+    right: 15px;
     border: none;
     background: none;
     cursor: pointer;
+    z-index: 2;
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category .more-button svg {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .more-button svg {
     width: 15px;
     height: 12px;
     stroke: var(--second-color);
@@ -83,14 +87,14 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category .more-butt
     transform: rotate(90deg);
 }
 
-body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open .category .more-button svg {
+body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open .more-button svg {
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg);
 }
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category-title {
     display: block;
-    margin: 0px 0px 25px;
+    padding: 0px 0px 25px;
 }
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category ul a {
