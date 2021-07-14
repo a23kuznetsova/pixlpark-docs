@@ -12,7 +12,7 @@ body[data-page*="_sidebar.md"] #main.markdown-section ul {
 body[data-page*="_sidebar.md"] #main.markdown-section>ul {
     display: flex;
     flex-flow: row wrap;
-    margin: 0px -10px 200px;
+    margin: 0px -45px 200px;
 }
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
@@ -113,6 +113,9 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category ul a:focus
 }
 
 @media screen and (max-width: 1440px) {
+    body[data-page*="_sidebar.md"] #main.markdown-section>ul {
+        margin: 0px -10px 200px;
+    }
     body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
         width: calc(50% - 20px);
         font-size: 20px;
