@@ -12,6 +12,9 @@
         var isReplacedSearchBlock = false;
         var isInFocus = false;
 
+        var header = document.querySelector('header');
+        var heightHeader = header.getBoundingClientRect().height;
+
         function replaceResultBlock() {
             switch (isReplacedSearchBlock) {
                 case false:
@@ -23,6 +26,16 @@
                     asideBlock.insertAdjacentElement('afterbegin', searchResultBlock);
                     searchResultBlock = asideBlock.querySelector('.search');
                     isReplacedSearchBlock = false;
+            }
+        }
+
+        function showFixedHeader() {
+            if (window.pageYOffset > heightHeader) {
+                document.body.setAttribute('style', 'padding-top:' + heightHeader + 'px');
+                header.classList.add('fixedHeader');
+            } else {
+                document.body.removeAttribute('style');
+                header.classList.remove('fixedHeader');
             }
         }
 
@@ -65,5 +78,7 @@
                 replaceResultBlock();
             }
         });
+
+        document.addEventListener('scroll', showFixedHeader);
     });
 })();
