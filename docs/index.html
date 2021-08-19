@@ -49,12 +49,6 @@
             sidebarDisplayLevel: 0,
             plugins: [
                 function(hook) {
-                    var footer = [
-                        '<footer>',
-                        '<span>Pixlpark &copy;2021</span>',
-                        '</footer>'
-                    ].join('');
-
                     function addCardsHandlers() {
                         var reg = /_sidebar.md/; // window.$docsify.homepage
                         var mainPage = document.body.dataset.page;
@@ -109,6 +103,13 @@
                     }
 
                     hook.afterEach(function(html) {
+                        var footer = [
+                            '<footer>',
+                            '<span>Pixlpark &copy;2021</span>',
+                            '<span class="arrow-to-up"></span>',
+                            '</footer>'
+                        ].join('');
+
                         return changeMainPage(html) + footer;
                     });
 

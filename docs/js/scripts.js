@@ -39,6 +39,29 @@
             }
         }
 
+        function showArrowUp() {
+            var arrow = document.querySelector('.arrow-to-up');
+            var isArrowShowed;
+            arrow ? isArrowShowed = arrow.classList.contains('showed') : isArrowShowed = false;
+
+            if (window.pageYOffset > (window.innerHeight / 2) && !isArrowShowed) {
+                isArrowShowed = true;
+                arrow.classList.add('showed');
+
+                arrow.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                    isArrowShowed = false;
+                    arrow.classList.remove('showed');
+                });
+            } else if (window.pageYOffset <= (window.innerHeight / 2) && isArrowShowed) {
+                isArrowShowed = false;
+                arrow.classList.remove('showed');
+            }
+        }
+
         searchInput.classList.add('search-clone');
         searchInput.placeholder = 'Поиск по базе';
         clearButton.innerHTML = 'Очистить форму поиска';
@@ -79,6 +102,9 @@
             }
         });
 
-        document.addEventListener('scroll', showFixedHeader);
+        window.addEventListener('scroll', showFixedHeader);
+        window.addEventListener('scroll', showArrowUp);
+
+        showArrowUp();
     });
 })();

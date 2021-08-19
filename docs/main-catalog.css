@@ -21,7 +21,7 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li {
     height: 145px;
     margin: 0 10px 20px;
     border-radius: var(--rounded-value);
-    box-shadow: rgb(0 0 0 / 5%) 0px 0px 8px 0px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
     background: rgb(255, 255, 255);
 }
 
@@ -43,7 +43,7 @@ body[data-page*="_sidebar.md"] #main.markdown-section>ul>li .category {
 }
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li:hover {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px 0px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 22%);
 }
 
 body[data-page*="_sidebar.md"] #main.markdown-section>ul>li.open .category {

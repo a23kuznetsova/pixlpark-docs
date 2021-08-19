@@ -442,6 +442,35 @@ header .header-link:focus {
     border-radius: var(--rounded-value);
 }
 
+.arrow-to-up {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    background-image: url(_media/up-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 50% 40%;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    -webkit-transform: translate(-75px, -50px);
+    transform: translate(-75px, -50px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow-to-up.showed {
+    display: block;
+}
+
+.arrow-to-up:hover {
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+}
+
 @media screen and (max-width:1400px) {
     header .logo-container,
     header.fixedHeader .logo-container {
