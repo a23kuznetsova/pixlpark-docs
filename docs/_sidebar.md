@@ -6,7 +6,6 @@
 	- [Создание заказа](/orders/create.md)
 	- [Статистика продаж](/orders/report.md)
 	- [Экспорт заказов](/orders/export.md)
-- Настройка
 	- [Оформление заказов](/orders/settings-workflow.md)
 	- [Управление заказами](/orders/settings-manage.md)
 	- [Отображение заказов](/orders/settings-view.md)
@@ -28,7 +27,7 @@
 	- [Локализация](/cms/localization.md)
 	- [Дизайн](/cms/design.md)
 	- [Файлы](/cms/files.md)
-	- [Сервисы](/ms/services.md)
+	- [Сервисы](/cms/services.md)
 	- [Настройка](/cms/settings.md)
 - Настройка
 	- [Регион](/site/region.md)
