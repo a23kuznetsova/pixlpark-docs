@@ -25,11 +25,10 @@
 	- [Сервисы](/marketing/services.md)
 - CMS
 	- [Страницы](/cms/pages.md)
-	- [Языки](/cms/languages.md)
 	- [Локализация](/cms/localization.md)
+	- [Языки](/cms/languages.md)
 	- [Дизайн](/cms/design.md)
 	- [Файлы](/cms/files.md)
-	- [Сервисы](/cms/services.md)
 	- [Настройка](/cms/settings.md)
 - Настройка
 	- [Регион](/site/region.md)
