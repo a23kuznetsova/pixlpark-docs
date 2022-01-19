@@ -34,25 +34,24 @@
 	- [Регион](/site/region.md)
 	- [Домены](/site/domains.md)
 	- [Доступ](/site/access.md)
-	- [Уведомления](/site/notifications.md)
 	- [Доставка](/site/shippings.md)
 	- [Оплата](/site/payments.md)
-	- [Фискализация](/site/fiscalization.md)
-	- [Соц. сети](/site/socials.md)
+	- [Сервисы](/site/socials.md)
 - Печать
 	- [Продукты](/print/products.md)
 	- [Калькуляция](/print/calculations.md)
+	- [Оборудование](/print/devices.md)
 	- [Шаблоны](/print/templates.md)
 	- [Клипарты](/print/cliparts.md)
-	- [Теги](/print/tags.md)
-	- [Оборудование](/print/devices.md)
+	- [Теги дизайнов](/print/tags.md)
 	- [Страница раздела](/print/page.md)
 	- [Страницы шаблонов](/print/tpages.md)
 	- [Настройка](/print/settings.md)
 - Сувениры
-	- [Товары](/gift/products.md)
+	- [Продукты](/gift/products.md)
 	- [Группы печати](/gift/groups.md)
 	- [Виды нанесения](/gift/prints.md)
+	- [Страница раздела](/gift/page.md)
 	- [Настройка](/gift/settings.md)
 - Магазин
 	- [Товары](/shop/products.md)
@@ -61,18 +60,18 @@
 	- [Производители](/shop/vendors.md)
 	- [Страница раздела](/shop/page.md)
 	- [Настройка](/shop/settings.md)
-- Новости
-	- [Лента новостей](/news/list.md)
-	- [Страница раздела](/news/page.md)
-	- [Настройка](/news/settings.md)
-- Статьи
-	- [База знаний](/faq/list.md)
-	- [Страница раздела](/faq/page.md)
-	- [Настройка](/faq/settings.md)
 - Фотогалерея
 	- [Иллюстрации](/gallery/list.md)
 	- [Страница раздела](/gallery/page.md)
 	- [Настройка](/gallery/settings.md)
+- Статьи
+	- [База знаний](/faq/list.md)
+	- [Страница раздела](/faq/page.md)
+	- [Настройка](/faq/settings.md)
+- Новости
+	- [Лента новостей](/news/list.md)
+	- [Страница раздела](/news/page.md)
+	- [Настройка](/news/settings.md)
 - Отзывы
 	- [Гостевая книга](/feedback/gbooks.md)
 	- [Сообщения с формы](/feedback/messages.md)
