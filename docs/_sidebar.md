@@ -9,6 +9,8 @@
 	- [Оформление заказов](/orders/settings-workflow.md)
 	- [Управление заказами](/orders/settings-manage.md)
 	- [Отображение заказов](/orders/settings-view.md)
+	- [Выгрузка заказов](/orders/settings-export.md)
+	- [Локализация статусов](/orders/settings-local.md)
 	- [Шаблоны документов](/orders/settings-templates.md)
 - Клиенты
 	- [Частые лица](/customers/b2c.md)
