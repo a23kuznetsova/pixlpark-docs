@@ -21,8 +21,8 @@
 	- [Сертификаты](/marketing/certificates.md)
 	- [Партнеры](/marketing/affiliates.md)
 	- [Корзины](/marketing/cards.md)
+	- [Уведомления](/marketing/notice.md)
 	- [Сервисы](/marketing/services.md)
-	- [Настройка](/marketing/settings.md)
 - CMS
 	- [Страницы](/cms/pages.md)
 	- [Языки](/cms/languages.md)
