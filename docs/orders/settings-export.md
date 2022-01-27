@@ -2,8 +2,7 @@
 
 ## Облачные хранилища
 * Возможность выгружать архивы заказов в облачное хранилище.
-    <details>
-    <summary>Яндекс.Диск</summary>
+    + <details><summary>Яндекс.Диск</summary>
 
         + App ID
         + App pass
@@ -11,23 +10,20 @@
         + Путь до заказов на Яндекс.Диск
 
     </details>
-    <details>
-    <summary>Облако Mail.ru</summary>
-    
+    + <details><summary>Облако Mail.ru</summary>
+
         + Email
         + Password
         + Путь до заказов на Облако Mail.ru
 
     </details>
-    <details>
-    <summary>Dropbox</summary>
+    + <details><summary>Dropbox</summary>
 
         + App Access Token
         + Путь до заказов на Dropbox
 
     </details>
-    <details>
-    <summary>Google Диск</summary>
+    + <details><summary>Google Диск</summary>
 
         + App ID
         + App Secret
@@ -40,8 +36,7 @@
 
 ## ERP и CRM системы
 * Экспорт заказов в вашу базу данных.
-    + <details>
-    <summary>Битрикс24</summary>
+    + <details><summary>Битрикс24</summary>
     
         + URL портала
         + ID сотрудника, создавшего вебхуки
@@ -55,8 +50,7 @@
             + Использовать телефонию Битрикс24 на странице заказа в панели управления
     
     </details>
-    + <details>
-    <summary>ASystem / PrintEffect</summary>
+    + <details><summary>ASystem / PrintEffect</summary>
 
         + Api host
         + Api key
@@ -64,8 +58,7 @@
         + Идентификатор контрагента
 
     </details>
-    + <details>
-    <summary>HP Site Flow</summary>
+    + <details><summary>HP Site Flow</summary>
 
         + Token
         + Secret
