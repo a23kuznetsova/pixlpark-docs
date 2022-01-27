@@ -13,6 +13,7 @@
 	- [Локализация статусов](/orders/settings-local.md)
 	- [Шаблоны документов](/orders/settings-templates.md)
 - Клиенты
+	- [Список клиентов](/customers/b2list.md)
 	- [Частые лица](/customers/b2c.md)
 	- [Организации](/customers/b2b.md)
 	- [Настройка](/customers/settings.md)
