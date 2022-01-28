@@ -6,12 +6,7 @@
 	- [Создание заказа](/orders/create.md)
 	- [Статистика продаж](/orders/report.md)
 	- [Экспорт заказов](/orders/export.md)
-	- [Оформление заказов](/orders/settings-workflow.md)
-	- [Управление заказами](/orders/settings-manage.md)
-	- [Отображение заказов](/orders/settings-view.md)
-	- [Выгрузка заказов](/orders/settings-export.md)
-	- [Локализация статусов](/orders/settings-local.md)
-	- [Шаблоны документов](/orders/settings-templates.md)
+	- [Настройка](/orders/settings.md)
 - Клиенты
 	- [Список клиентов](/customers/b2list.md)
 	- [Частые лица](/customers/b2c.md)
