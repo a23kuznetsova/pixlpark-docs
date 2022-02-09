@@ -8,9 +8,10 @@
 	- [Экспорт заказов](/orders/export.md)
 	- [Настройка](/orders/settings.md)
 - Клиенты
-	- [Частые лица](/customers/b2c.md)
-	- [Организации](/customers/b2b.md)
-	- [Список клиентов](/customers/b2list.md)
+	- [Карточка частного лица](/customers/b2c.md)
+	- [Карточка организации](/customers/b2b.md)
+	- [Список частных лиц](/customers/b2c-list.md)
+	- [Список организаций](/customers/b2b-list.md)
 	- [Импорт](/customers/import.md)
 	- [Настройка](/customers/settings.md)
 - Маркетинг
