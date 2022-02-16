@@ -33,7 +33,9 @@
 	- [Домены](/site/domains.md)
 	- [Доступ](/site/access.md)
 	- [Доставка](/site/shippings.md)
+	- [Способ доставки](/site/ship-list.md)
 	- [Оплата](/site/payments.md)
+	- [Способ оплаты](/site/pay-list.md)
 	- [Сервисы](/site/socials.md)
 - Печать
 	- [Продукты](/print/products.md)
