@@ -8,3 +8,7 @@
     + Гугл;
     + Яндекс;
     + Твиттер.
+
+![](../_media/site/site61.png ':size=70%')
+![](../_media/site/site62.png ':size=70%')
+![](../_media/site/site63.png ':size=70%')
