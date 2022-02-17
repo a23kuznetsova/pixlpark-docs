@@ -22,11 +22,11 @@
 	- [Уведомления](/marketing/notice.md)
 	- [Сервисы](/marketing/services.md)
 - CMS
-	- [Страницы](/cms/pages.md)
-	- [Локализация](/cms/localization.md)
-	- [Языки](/cms/languages.md)
-	- [Дизайн](/cms/design.md)
-	- [Файлы](/cms/files.md)
+	- [Страницы сайта](/cms/pages.md)
+	- [Локализация сайта](/cms/localization.md)
+	- [Языки сайта](/cms/languages.md)
+	- [Дизайн сайта](/cms/design.md)
+	- [Менеджер файлов](/cms/files.md)
 	- [Настройка](/cms/settings.md)
 - Настройка
 	- [Региональные настройки](/site/region.md)
