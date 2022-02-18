@@ -16,11 +16,13 @@
 	- [Настройка](/customers/settings.md)
 - Маркетинг
 	- [Скидки](/marketing/discounts.md)
-	- [Сертификаты](/marketing/certificates.md)
-	- [Партнеры](/marketing/affiliates.md)
-	- [Корзины](/marketing/cards.md)
-	- [Уведомления](/marketing/notice.md)
-	- [Сервисы](/marketing/services.md)
+	- [Список скидок](/marketing/discounts-list.md)
+	- [Настройка системы скидок](/marketing/settings.md)
+	- [Подарочные сертификаты](/marketing/certificates.md)
+	- [Партнёрская программа](/marketing/affiliates.md)
+	- [Брошенные корзины](/marketing/cards.md)
+	- [Триггерные уведомления](/marketing/notice.md)
+	- [Внешние сервисы](/marketing/services.md)
 - CMS
 	- [Страницы сайта](/cms/pages.md)
 	- [Локализация сайта](/cms/localization.md)
