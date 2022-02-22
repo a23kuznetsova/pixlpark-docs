@@ -403,7 +403,7 @@ section.content .search {
 }
 
 .content .markdown-section .medium-zoom-image {
-    display: block;
+    display: inline-block;
     margin: 25px auto 25px 0;
 }
 
