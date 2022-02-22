@@ -3,8 +3,8 @@
 <details>
 <summary>Нажми на меня</summary>
 
-- Abc
-- Abc
+* Abc
+* Abc
 
 </details>
 
