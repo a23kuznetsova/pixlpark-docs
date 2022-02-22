@@ -2,7 +2,7 @@
 ## Оформление заказов
 ### Основная информация
 * В данном блоке представлены настройки, влияющие на процесс оформления заказа на сайте.
-<table>
+<table border="0">
 <tr>
 <td><img src="../_media/order/order51.png" width="70%"></td>
 <td><img src="../_media/order/order53.png" width="70%"></td>
