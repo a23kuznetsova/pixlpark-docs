@@ -347,13 +347,17 @@ section.content .search {
 
 .content .markdown-section h1,
 .content .markdown-section h2 {
-    margin: 0 0 2rem;
+    margin: 0 0 20px;
     line-height: normal;
 }
 
 .content .markdown-section h2 {
-    margin: 1.5rem 0;
+    margin: 10px 0;
     text-align: left;
+}
+
+.content .markdown-section h3 {
+    margin: 15px 0 0.6rem;
 }
 
 .content .markdown-section h1 a,
