@@ -9,11 +9,7 @@
 </details>
 
 <details>
-<summary>
-
-**Жирный**
-
-</summary>
+<summary > **Жирный** </summary>
 
 - **Abc**
 - Abc
@@ -22,11 +18,7 @@
 
 <details>
 
-<summary>
-
-*Курсив*
-
-</summary>
+<summary > *Курсив* </summary>
 
 - *Abc*
 - Abc
