@@ -11,7 +11,7 @@
 <details>
 <summary>**Жирный**</summary>
 
-- Abc
+- **Abc**
 - Abc
 
 </details>
@@ -19,7 +19,7 @@
 <details>
 <summary>*Курсив*</summary>
 
-- Abc
+- *Abc*
 - Abc
 
 </details>
