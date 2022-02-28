@@ -50,7 +50,9 @@
 	- [Страницы шаблонов](/print/tpages.md)
 	- [Настройка](/print/settings.md)
 - Сувениры
-	- [Продукты](/gift/products.md)
+	- [Карточка продукта](/gift/products.md)
+	- [Карточка категории или подкатегории](/gift/folder.md)
+	- [Список категорий](/gift/list.md)
 	- [Группы печати](/gift/groups.md)
 	- [Виды нанесения](/gift/prints.md)
 	- [Страница раздела](/gift/page.md)
