@@ -67,7 +67,8 @@
 	- [Страница раздела](/shop/page.md)
 	- [Настройка](/shop/settings.md)
 - Фотогалерея
-	- [Иллюстрации](/gallery/list.md)
+	- [Карточка категории](/gallery/products.md)
+	- [Список категорий](/gallery/list.md)
 	- [Страница раздела](/gallery/page.md)
 	- [Настройка](/gallery/settings.md)
 - Статьи
