@@ -51,14 +51,16 @@
 	- [Настройка](/print/settings.md)
 - Сувениры
 	- [Карточка продукта](/gift/products.md)
-	- [Карточка категории или подкатегории](/gift/folder.md)
+	- [Карточка категории или подкатегории](/gift/category.md)
 	- [Список категорий](/gift/list.md)
 	- [Группы печати](/gift/groups.md)
 	- [Виды нанесения](/gift/prints.md)
 	- [Страница раздела](/gift/page.md)
 	- [Настройка](/gift/settings.md)
 - Магазин
-	- [Товары](/shop/products.md)
+	- [Карточка продукта](/shop/products.md)
+	- [Карточка категории](/shop/category.md)
+	- [Список категорий и продуктов](/shop/list.md)
 	- [Свойства](/shop/properties.md)
 	- [Параметры](/shop/parameters.md)
 	- [Производители](/shop/vendors.md)
