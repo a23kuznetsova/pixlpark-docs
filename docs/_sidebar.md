@@ -97,6 +97,11 @@
 	- [Информация](/profile/info.md)
 	- [Сотрудники](/profile/staff.md)
 	- [Финансы](/profile/finance.md)
+	- [Заказы](/profile/orders.md)
+	- [Клиенты](/profile/clients.md)
+	- [Дизайны](/profile/design.md)
+	- [Сайты](/profile/site.md)
+	- [Приложения](/profile/app.md)
 - Прочее
 	- [Данные для печатного сайта](/misc/data-for-print-site.md)
 	- [Данные для сувенирного сайта](/misc/data-for-gift-site.md)
