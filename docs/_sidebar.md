@@ -51,7 +51,7 @@
 	- [Настройка](/print/settings.md)
 - Сувениры
 	- [Карточка продукта](/gift/products.md)
-	- [Карточка категории или подкатегории](/gift/category.md)
+	- [Карточка категории](/gift/category.md)
 	- [Список категорий](/gift/list.md)
 	- [Группы печати](/gift/groups.md)
 	- [Виды нанесения](/gift/prints.md)
@@ -60,7 +60,7 @@
 - Магазин
 	- [Карточка продукта](/shop/products.md)
 	- [Карточка категории](/shop/category.md)
-	- [Список категорий и продуктов](/shop/list.md)
+	- [Список категорий](/shop/list.md)
 	- [Свойства](/shop/properties.md)
 	- [Параметры](/shop/parameters.md)
 	- [Производители](/shop/vendors.md)
