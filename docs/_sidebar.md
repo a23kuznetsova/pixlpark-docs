@@ -72,7 +72,9 @@
 	- [Страница раздела](/gallery/page.md)
 	- [Настройка](/gallery/settings.md)
 - Статьи
-	- [База знаний](/faq/list.md)
+	- [Карточка статьи](/faq/paper.md)
+	- [Карточка категории](/faq/category.md)
+	- [Список статей и категорий](/faq/list.md)
 	- [Страница раздела](/faq/page.md)
 	- [Настройка](/faq/settings.md)
 - Новости
