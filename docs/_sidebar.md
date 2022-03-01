@@ -101,12 +101,12 @@
 	- [Настройка](/feedback/settings.md)
 
 - Приложение
-	- [Регион](/app/region.md)
-	- [Дизайн](/app/design.md)
-	- [Сайты](/app/sites.md)
-	- [Локализация](/app/localization.md)
-	- [Настройка](/app/settings.md)
-
+	- [Порядок работы](/app/sites.md)
+	- [Основные настройки](/app/settings.md)
+	- [Региональные настройки](/app/region.md)
+	- [Дизайн приложения](/app/design.md)
+	- [Локализация приложения](/app/localization.md)
+	- [Настройка магазина](/app/shop.md)
 - Профиль
 	- [Информация](/profile/info.md)
 	- [Сотрудники](/profile/staff.md)
