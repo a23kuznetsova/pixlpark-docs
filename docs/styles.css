@@ -250,6 +250,11 @@ header.fixedHeader .bottom-row .search-clone_button {
     padding: 10px 35px;
     border-bottom: 1px solid #eee;
 }
+.sidebar .sidebar-nav >p>a {
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 16px;
+}
 
 .sidebar .sidebar-nav>ul {
     margin: 0;
