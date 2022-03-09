@@ -138,4 +138,4 @@
 	- [Этапы запуска сайта](/misc/launch-site.md)
 	- [Этапы запуска приложения](/misc/launch-app.md)
 	- [Техническая поддержка](/misc/support.md)
-	- [Регулярные обнолвения](/misc/updates.md)
+	- [Плановые обнолвения](/misc/updates.md)
