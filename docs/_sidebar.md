@@ -101,7 +101,6 @@
 	- [Настройка](/feedback/settings.md)
 
 - Приложение
-	- [Порядок работы](/app/sites.md)
 	- [Основные настройки](/app/settings.md)
 	- [Региональные настройки](/app/region.md)
 	- [Дизайн приложения](/app/design.md)
@@ -130,11 +129,13 @@
 	- [Создание уникального дизайна](/dev/design.md)
 	- [Установка калькулятора на сайт](/dev/calc.md)
 	- [Внедрение редактора в магазин](/dev/editor.md)
-	- [Работа через API и Вебхуки](/dev/api.md)
+	- [Работа c API и Вебхуки](/dev/api.md)
 	- [Язык разметки Scriban](/dev/scriban.md)
 
 - Прочее
-	- [Данные для печатного сайта](/misc/data-for-print-site.md)
-	- [Данные для сувенирного сайта](/misc/data-for-gift-site.md)
+	- [Данные для печатного сайта](/misc/prints-data.md)
+	- [Данные для сувенирного сайта](/misc/gifts-data.md)
 	- [Этапы запуска сайта](/misc/launch-site.md)
-	- [Работа с тех. поддержкой](/misc/tech-support.md)
+	- [Этапы запуска приложения](/misc/launch-app.md)
+	- [Техническая поддержка](/misc/support.md)
+	- [Регулярные обнолвения](/misc/updates.md)
