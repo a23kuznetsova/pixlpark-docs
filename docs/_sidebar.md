@@ -131,6 +131,13 @@
 	- [Внедрение редактора в магазин](/dev/editor.md)
 	- [Работа c API и Вебхуки](/dev/api.md)
 	- [Язык разметки Scriban](/dev/scriban.md)
+	
+- Дизайнерам
+	- [PSD-шаблоны для листовой печати](/design/businesscards.md)
+	- [PSD-шаблоны для фотокниги](/design/photobooks.md)
+	- [PSD-шаблоны для календарей](/design/calendars.md)
+	- [PSD-шаблоны для печатей и штампов](/design/stamps.md)
+	- [Модели для 3D-предпросмотра](/design/3d.md)
 
 - Прочее
 	- [Данные для печатного сайта](/misc/prints-data.md)
