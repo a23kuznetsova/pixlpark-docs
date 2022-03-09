@@ -137,7 +137,7 @@
 	- [PSD-шаблоны для фотокниги](/design/photobooks.md)
 	- [PSD-шаблоны для календарей](/design/calendars.md)
 	- [PSD-шаблоны для печатей и штампов](/design/stamps.md)
-	- [Модели для 3D-предпросмотра](/design/3d.md)
+	- [3D-модели для предпросмотра](/design/3d.md)
 
 - Прочее
 	- [Данные для печатного сайта](/misc/prints-data.md)
