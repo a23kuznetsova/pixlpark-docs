@@ -19,14 +19,14 @@ pxpCalculators[1]
 ### PxpCalc
 #### Модель калькулятора
 * Основные свойства
+
 <details>
 <summary>materialSelector</summary>
 
-* ``` MaterialSelectorController ```
-* **описание**
-* Модуль выбора категорий, товаров и атрибутов
-* **пример вызова**
-* ```pxpCalculators[0].materialSelector```
+| | `MaterialSelectorController` |
+|---|---|
+| **описание** | Модуль выбора категорий, товаров и атрибутов |
+| **пример вызова** | `pxpCalculators[0].materialSelector` |
 
 </details>
 
