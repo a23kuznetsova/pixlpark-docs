@@ -57,19 +57,19 @@
 ## Выгрузка заказов
 ### Облачные хранилища
 * В данном блоке можно настроить автоматическую выгрузку заказов в следующие облачные хранилища:
-    + Яндекс.Диск
-    + Облако Mail.ru
-    + Dropbox
-    + Google Диск
+    + [Яндекс.Диск](https://disk.yandex.ru/)
+    + [Облако Mail.ru](https://cloud.mail.ru/)
+    + [Dropbox](https://www.dropbox.com/ru/)
+    + [Google Диск](https://drive.google.com/)
 
 ### ERP и CRM системы
 * В данном блоке можно настроить автоматический экспорт заказов и обмен данными (включая калькуляцию) со следующими отраслевыми ERP и CRM-системами:
-    + Битрикс24
-    + ASystem/PrintEffect
-    + HP Site Flow
-    + 1С: Полиграфия
-    + Принт-Эксперт
-    + Своё ПО (синхронизация по API).
+    + [Битрикс24](https://www.bitrix24.ru/)
+    + [ASystem](https://monorhythm.ru/)/[PrintEffect](https://printeffect.ru/)
+    + [HP Site Flow](https://hpsiteflow.com/)
+    + [1С: Полиграфия](https://solutions.1c.ru/catalog/polygraphy)
+    + [Принт-Эксперт](https://print-expert.net/)
+    + Своё ПО (синхронизация по [API](/dev/api.md)).
 
 ## Локализация статусов
 В данном разделе можно переименовать для сайта и панели управления статусы оплаты, статусы заказов и группы статусов.
