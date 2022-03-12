@@ -53,8 +53,8 @@
 	- [Шаблоны](/print/templates.md)
 	- [Клипарты](/print/cliparts.md)
 	- [Теги дизайнов](/print/tags.md)
-	- [Страница раздела](/print/page.md)
 	- [Страницы шаблонов](/print/tpages.md)
+	- [Страница раздела](/print/page.md)
 	- [Настройка](/print/settings.md)
 
 - Сувениры
