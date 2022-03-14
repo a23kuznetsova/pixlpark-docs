@@ -19,7 +19,8 @@ pxpCalculators[1]
 ### PxpCalc
 #### Модель калькулятора
 * Основные свойства
-
+<table>
+<tr><td>
 <details>
 <summary>materialSelector</summary>
 
@@ -30,6 +31,33 @@ pxpCalculators[1]
 
 </details>
 
+<details>
+<summary>editorSettingsController</summary>
+
+| | `EditorSettingsController` |
+|---|---|
+| **описание** | Модуль выбора размеров редактора (только для редактора интерьеров) |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController` |
+
+</details>
+</td>
+<td>
+<details>
+<summary>Основные свойства</summary>
+
+| materialSelector | `MaterialSelectorController` |
+|---|---|
+| **описание** | Модуль выбора категорий, товаров и атрибутов |
+| **пример вызова** | `pxpCalculators[0].materialSelector` |
+
+| editorSettingsController | `EditorSettingsController` |
+|---|---|
+| **описание** | Модуль выбора размеров редактора (только для редактора интерьеров) |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController` |
+
+</details>
+</td></tr>
+</table>
 ## Интеграция на сайт
 
 ## Категории и товары
