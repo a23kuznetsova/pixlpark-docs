@@ -68,6 +68,59 @@ pxpCalculators[1]
 
 ## Интеграция на сайт
 
+* Самый банальный пример итогового скрипта для интеграции
+```html
+<div id="container"></div>
+<script src="http://demo.pixlpark.ru/api/calc/externalCalc"></script>
+<script>
+    var container = document.getElementById("container");
+    var params = { materialType: "photos" };
+    var integrated = new PxpCalcManager(container, params);
+</script>
+```
+* Калькулятор можно интегрировать на внешний сайт. Для этого необходимо сделать следующее:
+
+### Шаг 1
+* Cоздать на странице контейнер, в котором позже будет находиться калькулятор.
+```html
+<div id="integratedCalculator"></div>
+```
+* В данном случае это простой контейнер `div` с Id `integratedCalculator`. В будущем в нем будет разметка калькулятора.
+
+### Шаг 2
+* Дальше через тег `<script>` получим необходимый скрипт для иницилизации калькулятора. Для этого нужно от сайта на платформе Pixlpark сделать следующий вид запроса через API:
+```html
+<script src="http://demo.pixlpark.ru/api/calc/externalCalc"></script>
+```
+В `src` скрипта мы имеем:
+    1. Домен на платформе [Pixlpark](http://demo.pixlpark.ru), однако у вас должен быть один из тех, что вы указали в разделе настройки доменов.
+    1. Путь `/api/calc/externalCalc`, который посылает запрос на сервер для получения скрипта для иницилизации калькулятора.
+* У данного API-запроса также могут быть параметры:
+
+<details>
+<summary>cssLink</summary>
+
+| cssLink | |
+|---|---|
+| **описание** | Загружает на страницу css файл по указанной ссылке |
+| **по-умолчанию** | common.css |
+| **необходимость** | Необязательный параметр |
+| **пример использования** | `<script src="http://demo.pixlpark.ru/api/calc/externalCalc?cssLink=/content/css/cssCalc"></script>` |
+
+</details>
+
+<details>
+<summary>photolabId</summary>
+
+| photolabId | |
+|---|---|
+| **описание** | Загружает калькулятор от конкретного сайта по указанному Id |
+| **по-умолчанию** | Берется от указанного домена |
+| **необходимость** | Необязательный параметр |
+| **пример использования** | `<script src="http://demo.pixlpark.ru/api/calc/externalCalc?photolabId=3264"></script>` |
+
+</details>
+
 ## Категории и товары
 
 ## Размеры редактора
