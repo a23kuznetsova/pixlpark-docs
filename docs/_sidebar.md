@@ -119,7 +119,7 @@
 	
 - Интеграции
 	- [Социальные сети](/integration/socials.md)
-	- [Платежные сервисы](/integration/payments.md)
+	- [Платежные системы](/integration/payments.md)
 	- [Транспортные компании](/integration/shippings.md)
 	- [Маркетинговые инструменты](/integration/marketing.md)
 	- [Облачные хранилища](/integration/drives.md)
