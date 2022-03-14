@@ -18,9 +18,9 @@ pxpCalculators[1]
 
 ### PxpCalc
 #### Модель калькулятора
-* Основные свойства
 <table>
 <tr><td>
+Основные свойства
 <details>
 <summary>materialSelector</summary>
 
