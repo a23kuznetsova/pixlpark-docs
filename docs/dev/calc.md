@@ -573,7 +573,7 @@ pxpCalculators[0].materialSelector
 | **Тип переменной** | `void` |
 |---|---|
 | **описание** | При вызове этого метода категория становится выбранной в калькуляторе и происходит общее обновление состояния калькулятора |
-| **пример вызова** | выбор второй категории в массиве категорий `pxpCalculators[0].materialSelector.materialTypes()[1].select()` |
+| **пример вызова** | выбор второй категории в массиве категорий <br>`pxpCalculators[0].materialSelector.materialTypes()[1].select()` |
 
 </details>
 
@@ -651,7 +651,7 @@ pxpCalculators[0].materialSelector
 | **Тип переменной** | `void` |
 |---|---|
 | **описание** | При вызове этого метода товар становится выбранным в калькуляторе и происходит обновление состояния калькулятора |
-| **пример вызова** | выбор второго товара в массиве товаров `pxpCalculators[0].materialSelector.materials()[1].select()` |
+| **пример вызова** | выбор второго товара в массиве товаров <br>`pxpCalculators[0].materialSelector.materials()[1].select()` |
 
 </details>
 
@@ -1147,7 +1147,7 @@ var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverIn
 | **Тип переменной** | `number` или `string` |
 |---|---|
 | **описание** | Свойство для указания ширины редактора |
-| **пример вызова** | устанавливаем ширину 150 `eSizeInfo.inputEditorWidth(150)` |
+| **пример вызова** | устанавливаем ширину 150 <br>`eSizeInfo.inputEditorWidth(150)` |
 | **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorWidth` не обновится! |
 
 </details>
@@ -1198,7 +1198,7 @@ var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverIn
 | **Тип переменной** | `number` или `string` |
 |---|---|
 | **описание** | Свойство для указания высоты редактора |
-| **пример вызова** | устанавливаем высоту 150 `eSizeInfo.inputEditorHeight(150)` |
+| **пример вызова** | устанавливаем высоту 150 <br>`eSizeInfo.inputEditorHeight(150)` |
 | **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorHeight` не обновится! |
 </details>
 
@@ -1258,7 +1258,7 @@ var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverIn
 | **Тип переменной** | `number или string` |
 |---|---|
 | **описание** | Свойство для указания количества страниц |
-| **пример вызова** | устанавливаем количество страниц 30 `eSizeInfo.inputPagesCount(30)` |
+| **пример вызова** | устанавливаем количество страниц 30 <br>`eSizeInfo.inputPagesCount(30)` |
 | **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validatePagesInputData`, иначе `selectedPagesCount` не обновится! |
 </details>
 
