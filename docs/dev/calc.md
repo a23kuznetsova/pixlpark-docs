@@ -1071,6 +1071,228 @@ var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverIn
 * **Основные свойства**
 
 <details>
+<summary>editorSizes</summary>
+
+| **Тип переменной** | массив `ISizeModel` |
+|---|---|
+| **описание** | Итоговый массив размеров. Размер массива напрямую зависит от количества страниц |
+| **пример вызова** | `eSizeInfo.editorSizes` |
+| **пример результата** | `[ { Width: 297, Height: 100 } ]` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название |
+| **пример вызова** | `eSizeInfo.title` |
+
+</details>
+
+<details>
+<summary>isVisible</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает отображаются ли данные настройки в калькуляторе |
+| **пример вызова** | `eSizeInfo.isVisible` |
+
+</details>
+
+<details>
+<summary>isArbitrarySizeAvailable</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает доступны ли произвольные размеры для данных настроек |
+| **пример вызова** | `eSizeInfo.isArbitrarySizeAvailable` |
+
+</details>
+
+<details>
+<summary>minEditorWidth</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Минимальная ширина редактора |
+| **пример вызова** | `eSizeInfo.minEditorWidth` |
+
+</details>
+
+<details>
+<summary>maxEditorWidth</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Максимальная ширина редактора |
+| **пример вызова** | `eSizeInfo.maxEditorWidth` |
+
+</details>
+
+<details>
+<summary>defaultEditorWidth</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Ширина редактора по умолчанию |
+| **пример вызова** | `eSizeInfo.defaultEditorWidth()` |
+
+</details>
+
+<details>
+<summary>inputEditorWidth</summary>
+
+| **Тип переменной** | `number` или `string` |
+|---|---|
+| **описание** | Свойство для указания ширины редактора |
+| **пример вызова** | устанавливаем ширину 150 `eSizeInfo.inputEditorWidth(150)` |
+| **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorWidth` не обновится! |
+
+</details>
+
+<details>
+<summary>selectedEditorWidth</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Итоговая выбранная ширина редактора |
+| **пример вызова** | `eSizeInfo.selectedEditorWidth()` |
+
+</details>
+
+<details>
+<summary>minEditorHeight</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Минимальная высота редактора |
+| **пример вызова** | `eSizeInfo.minEditorHeight` |
+
+</details>
+
+<details>
+<summary>maxEditorHeight</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Максимальная высота редактора |
+| **пример вызова** | `eSizeInfo.maxEditorWidth` |
+
+</details>
+
+<details>
+<summary>defaultEditorHeight</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Высота редактора по умолчанию |
+| **пример вызова** | `eSizeInfo.defaultEditorHeight()` |
+
+</details>
+
+<details>
+<summary>inputEditorHeight</summary>
+
+| **Тип переменной** | `number` или `string` |
+|---|---|
+| **описание** | Свойство для указания высоты редактора |
+| **пример вызова** | устанавливаем высоту 150 `eSizeInfo.inputEditorHeight(150)` |
+| **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorHeight` не обновится! |
+</details>
+
+<details>
+<summary>selectedEditorHeight</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Выбранная высота редактора |
+| **пример вызова** | `eSizeInfo.selectedEditorHeight()` |
+
+</details>
+
+<details>
+<summary>measureTitle</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Название размерности |
+| **пример вызова** | `eSizeInfo.measureTitle()` |
+
+</details>
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
 <summary></summary>
 
 | **Тип переменной** | `` |
