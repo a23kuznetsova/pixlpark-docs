@@ -321,7 +321,7 @@ pxpCalculators[1]
 <details>
 <summary>additionalQueryParams</summary>
 
-| **Тип переменной** | `Словарь { string: string }` |
+| **Тип переменной** | Словарь `{ string: string }` |
 |---|---|
 | **описание** | Собственные параметры, которые уйдут в строку запроса при переходе из калькулятора |
 | **по-умолчанию** | null |
@@ -469,6 +469,8 @@ pxpCalculators[0].materialSelector
 
 </details>
 
+---
+
 ##### MaterialType
 * Модель категории. Содержит в себе данные по атрибутам, входящих в нее
 * **Основные свойства**
@@ -575,9 +577,508 @@ pxpCalculators[0].materialSelector
 
 </details>
 
+---
 
+##### Material
+* Модель товара
+* **Основные свойства**
+
+<details>
+<summary>id</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Id товара |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].id` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название товара |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].title` |
+
+</details>
+
+<details>
+<summary>description</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Описание товара для калькулятора |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].description` |
+
+</details>
+
+<details>
+<summary>urlName</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Имя товара для ссылки |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].urlName` |
+
+</details>
+
+<details>
+<summary>attributes</summary>
+
+| **Тип переменной** | Словарь `{ string: string }` |
+|---|---|
+| **описание** | Словарь, где ключ - уникальный Id атрибута, а значение - название атрибута |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].attributes` |
+
+</details>
+
+<details>
+<summary>isSelected</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает выбран товар или нет |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].isSelected()` |
+
+</details>
+
+* **Основные методы**
+
+<details>
+<summary>select</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | При вызове этого метода товар становится выбранным в калькуляторе и происходит обновление состояния калькулятора |
+| **пример вызова** | выбор второго товара в массиве товаров `pxpCalculators[0].materialSelector.materials()[1].select()` |
+
+</details>
+
+---
+
+!> Любое некорректное общение с атрибутами может повлечь неправильную работу калькулятора. Будьте очень осторожны, внося скриптами какие-либо изменения в работу данных моделей.
+* Стоит отметить, что для большинства задач вам будет достаточно использования дерева атрибутов `MaterialTypeAttributesTree`.
+
+##### MaterialTypeAttributesTree
+* Модель дерева атрибутов. Отвечает за всю логику выбора атрибутов, хранит в себе данные о текущих выбранных вершинах дерева и позволяет менять их выбор.
+* **Основные свойства**
+
+<details>
+<summary>selectedAttributesValues</summary>
+
+| **Тип переменной** | массив `MaterialTypeAttributeValue` |
+|---|---|
+| **описание** | Выбранные значения атрибутов |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()` |
+| **подсказка** | Так же стоит помнить, что `selectedAttributesValues` - наблюдаемое свойство, и на него можно сделать `subscribe` для учета изменения значений атрибутов. Подробнее тут: [Explicitly subscribing to observables](https://knockoutjs.com/documentation/observables) |
+
+</details>
+
+* **Основные методы**
+
+<details>
+<summary>getRoot</summary>
+
+| **Тип переменной** | `MaterialTypeAttributesTreeLeaf` или `null` |
+|---|---|
+| **описание** | Получить корень дерева атрибутов |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().getRoot()` |
+
+</details>
+
+##### MaterialTypeAttributesTreeLeaf
+* Модель вершины дерева атрибутов. Содержит в себе прямую ссылку на предыдущую вершину дерева, товар, который привязан к этой вершине и методы для получения более подробных данных о вершине.
+* **Основные свойства**
+
+<details>
+<summary>index</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Номер вершины на вершине-родителе (порядковый номер отображения) |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].index` |
+
+</details>
+
+<details>
+<summary>leafName</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Отображаемое имя веришны (имя значения атрибута) |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].leafName` |
+
+</details>
+
+<details>
+<summary>attributeValue</summary>
+
+| **Тип переменной** | `MaterialTypeAttributeValue` |
+|---|---|
+| **описание** | Значение атрибута, которое прикреплено к данной вершине |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].attributeValue` |
+
+</details>
+
+<details>
+<summary>material</summary>
+
+| **Тип переменной** | `Material` или `null` |
+|---|---|
+| **описание** | Товар, который прикрелен к данной вершине |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].material` |
+
+</details>
+
+<details>
+<summary>branches</summary>
+
+| **Тип переменной** | Словарь `{ string: MaterialTypeAttributesTreeLeaf }` или `null` |
+|---|---|
+| **описание** | Словарь, где ключ - имя вершины, а ключ - вершина |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].branches` |
+
+</details>
+
+<details>
+<summary>selectedLeaf</summary>
+
+| **Тип переменной** | `MaterialTypeAttributesTreeLeaf` или `null` |
+|---|---|
+| **описание** | Выбранная вершина на текущем уровне дерева |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectedLeaf()` |
+
+</details>
+
+<details>
+<summary>selectedLeafIndex</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Индекс выбранной вершины на текущем уровне дерева |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectedLeafIndex()` |
+
+</details>
+
+* **Основные методы**
+
+<details>
+<summary>getBranchesLeafs</summary>
+
+| **Тип переменной** | массив `MaterialTypeAttributesTreeLeaf` |
+|---|---|
+| **описание** | Возвращает все вершины, которые можно выбрать от этой вершины |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].getBranchesLeafs()` |
+
+</details>
+
+<details>
+<summary>select</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Выбрать эту вершину. При выборе вершине автоматически выбирается товар, который к ней привязан и вершины, которые идут далее по дереву от выбранной |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].select()` |
+
+</details>
+
+<details>
+<summary>selectLeaf</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Выбрать вершину на текущем уровне дерева по имени |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectLeaf("leaf2")` |
+
+</details>
+
+##### MaterialTypeAttribute
+* Модель атрибута категории. Содержит в себе список значений атрибута.
+* **Основные свойства**
+
+<details>
+<summary>id</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Id атрибута |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].id` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название атрибута |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].title` |
+
+</details>
+
+<details>
+<summary>cssClass</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Класс для атрибута |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].cssClass` |
+
+</details>
+
+<details>
+<summary>isHidden</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает скрыт ли атрибут |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].isHidden` |
+
+</details>
+
+<details>
+<summary>values</summary>
+
+| **Тип переменной** | массив `MaterialTypeAttributeValue` |
+|---|---|
+| **описание** | Все значения атрибута |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values` |
+
+</details>
+
+<details>
+<summary>jsFunction</summary>
+
+| **Тип переменной** | `string` или `null` |
+|---|---|
+| **описание** | Название функции или ее текст. При выборе атрибута - исполняется |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].jsFunction()` |
+
+</details>
+
+##### MaterialTypeAttributeValue
+* Модель значения атрибута категории.
+* **Основные свойства**
+
+<details>
+<summary>attribute</summary>
+
+| **Тип переменной** | `MaterialTypeAttribute` |
+|---|---|
+| **описание** | Атрибут, в котором находится данное значение (проще говоря атрибут-родитель) |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].attribute` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название значения атрибута |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].title` |
+
+</details>
+
+<details>
+<summary>description</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Описание значения атрибута |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].description` |
+
+</details>
+
+<details>
+<summary>calcHelper</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Описания значения атрибута для калькулятора |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].calcHelper` |
+
+</details>
+
+<details>
+<summary>jsFunction</summary>
+
+| **Тип переменной** | `string` или `null` |
+|---|---|
+| **описание** | Название функции или ее текст. При выборе значения атрибута - исполняется |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].jsFunction()` |
+
+</details>
 
 ## Размеры редактора
+* Получить данный модуль можно через вызов в калькуляторе `editorSettingsController`.
+```html
+pxpCalculators[0].editorSettingsController
+```
+
+##### EditorSettingsController
+* Модель модуля редакторов товара. Он хранит в себе данные о редакторе для выбранного товара, его параметры и выбранные размеры. На данный момент модуль поддерживает только редакторы интерьера, дизайна и проверки макетов.
+* **Основные свойства**
+
+<details>
+<summary>isAvailable</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает доступен ли модуль |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.isAvailable()` |
+
+</details>
+
+<details>
+<summary>editorState</summary>
+
+| **Тип переменной** | `CalcEditorState` или `null` |
+|---|---|
+| **описание** | Текущее состояние настроек для редактора |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState()` |
+
+</details>
+
+<details>
+<summary>isEditEditorSizesAvailable</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает доступен ли выбор произвольных размеров настроек для редактора |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.isEditEditorSizesAvailable()` |
+
+</details>
+
+---
+
+* Для каждого редактора есть своя модель настроек. Соответственно, когда вы через модуль получаете `editorState`, сделайте проверку на то, какой редактор настроек у этого товара. Сделать это можно через проверку свойства `editorType` в `editorState`.
+```html
+// Например, вам нужно получить состояние настроек для редактора только если это редактор проверки макетов
+var editorState = pxpCalculators[0].editorSettingsController.editorState();
+ 
+// проверим, что editorState не null и что оно подходит под наши требования
+if (editorState != null && editorState.editorType === 7) {
+    // ваш код
+}
+```
+
+##### CalcCanvasEditorState
+* Модель настроек для редактора интерьеров.
+* **Основные свойства**
+
+<details>
+<summary>editorType</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Индекс редактора |
+| **значение** | 9 |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
+
+</details>
+
+<details>
+<summary>canvasEditorInfo</summary>
+
+| **Тип переменной** | `EditorSizeInfo` или `null` |
+|---|---|
+| **описание** | Текущее состояние настроек размеров для редактора интерьеров |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().canvasEditorInfo` |
+
+</details>
+
+##### CalcGiftEditorState
+* Модель настроек для редактора сувениров.
+* **Основные свойства**
+
+<details>
+<summary>editorType</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Индекс редактора |
+| **значение** | 8 |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
+
+</details>
+
+<details>
+<summary>giftEditorInfo</summary>
+
+| **Тип переменной** | `EditorSizeInfo` или `null` |
+|---|---|
+| **описание** | Текущее состояние настроек размеров для редактора сувениров |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().giftEditorInfo` |
+
+</details>
+
+##### CalcMockupEditorState
+* Модель настроек для редактора проверки макетов.
+* **Основные свойства**
+
+<details>
+<summary>editorType</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Индекс редактора |
+| **значение** | 7 |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
+
+</details>
+
+<details>
+<summary>coverInfo</summary>
+
+| **Тип переменной** | `EditorSizeInfo` или `null` |
+|---|---|
+| **описание** | Текущее состояние настроек размеров обложек для редактора проверки макетов |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().coverInfo` |
+
+</details>
+
+<details>
+<summary>pageInfo</summary>
+
+| **Тип переменной** | `EditorSizeInfo` или `null` |
+|---|---|
+| **описание** | Текущее состояние настроек размеров разворотов для редактора проверки макетов |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().pageInfo` |
+
+</details>
+
+<details>
+<summary>flyleafInfo</summary>
+
+| **Тип переменной** | `EditorSizeInfo` или `null` |
+|---|---|
+| **описание** | Текущее состояние настроек размеров форзацев для редактора проверки макетов |
+| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().flyleafInfo` |
+
+</details>
+
+---
+
+* В примерах получения данных для `EditorSizeInfo` я буду использовать укороченную запись, но для понятности предположим, что переменная `eSizeInfo`, откуда достаются данные, это свойство `coverInfo` для настроек редактора проверки макетов:
+```html
+var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverInfo;
+```
+
+##### EditorSizeInfo
+* Модель настроек размеров. Содержит в себе размеры для редакторов, которые могут быть использованы в дальнейшем оформлении заказов. Так же тут могут быть установлены собственные размеры, если у товара настроены произвольные размеры.
+* **Основные свойства**
+
+<details>
+<summary></summary>
+
+| **Тип переменной** | `` |
+|---|---|
+| **описание** |  |
+| **пример вызова** | `` |
+
+</details>
 
 ## Опции и позиции
 
