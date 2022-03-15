@@ -40,6 +40,98 @@ pxpCalculators[1]
 
 </details>
 
+<details>
+<summary>customWorkSelector</summary>
+
+| | `CalcCustomWorkSelectorController` |
+|---|---|
+| **описание** | Модуль выбора опций и их позиций |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector` |
+
+</details>
+
+<details>
+<summary>circulationSelector</summary>
+
+| | `CirculationSelectorController` |
+|---|---|
+| **описание** | Модуль выбора количества товара и страниц |
+| **пример вызова** | `pxpCalculators[0].circulationSelector` |
+
+</details>
+
+<details>
+<summary>totalPriceCalculator</summary>
+
+| | `CalcTotalPriceViewController` |
+|---|---|
+| **описание** | Модуль отображения финальной цены, а так же продолжения заказа |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator` |
+
+</details>
+
+<details>
+<summary>isMaterialTypeUpdate</summary>
+
+| | `boolean` |
+|---|---|
+| **описание** | Возвращает информацию об обновлении категорий и товарах |
+| **пример вызова** | |
+| получить текущее состояние | `pxpCalculators[0].isMaterialTypeUpdate()` |
+| присвоить состояние true | `pxpCalculators[0].isMaterialTypeUpdate(true)` |
+
+</details>
+
+<details>
+<summary>isMaterialUpdate</summary>
+
+| | `boolean` |
+|---|---|
+| **описание** | Возвращает информацию об обновлении товаров категории |
+| **пример вызова** |  |
+| получить текущее состояние | `pxpCalculators[0].isMaterialUpdate()` |
+| присвоить состояние true | `pxpCalculators[0].isMaterialUpdate(true)` |
+
+</details>
+
+<details>
+<summary>inUpdate</summary>
+
+| | `boolean` |
+|---|---|
+| **описание** | Возвращает информацию об общем обновлении состояния калькулятора. Имеет значение true, если isMaterialTypeUpdate имеет значение true или isMaterialUpdate имеет значение true |
+| **пример вызова** | получить текущее состояние `pxpCalculators[0].inUpdate()` |
+
+</details>
+
+##### Основные методы
+
+<details>
+<summary>info</summary>
+
+| | `void` |
+|---|---|
+| **описание** | Расписывает текущее состояние калькулятора в консоли. Содержит в себе: |
+| 1 | Id калькулятора, например `pxpProducCalc_pr2gifts_ad6e6921cb544c059becf00ec4939601` |
+| 2 | Id выбранной категории |
+| 3 | Id выбранного товара категории |
+| 4 | Выбранные опции товара и их кратное состояние (название опции, Id опции, выбранные позиции опции, все позиции опции) |
+| **пример вызова** | `pxpCalculators[0].info()` |
+| примечание | Метод очень полезен для быстрого поиска необходимых данных по категориям, товарам и опциям, вам достаточно взять нужный Id и искать по нему в админке |
+
+</details>
+
+<details>
+<summary>update</summary>
+
+| | `void` |
+|---|---|
+| **описание** | Обновляет текущее состояние калькулятора |
+| условие выполения | Поле `inUpdate` является false |
+| **пример вызова** | `pxpCalculators[0].update()` |
+
+</details>
+
 ### О первом запуске
 * После того как калькулятор загрузился и первый раз получил данные о категории и товаре, происходит следующее:
     1. Калькулятор ищет на странице метод `onCompleteLoadPxpCalc`.
@@ -153,13 +245,129 @@ pxpCalculators[1]
 <details>
 <summary>materialType</summary>
 
-| | string или number |
+| | `string` или `number` |
 |---|---|
 | **описание** | Id или UrlName категории (можно найти в настройках категории) |
 | **Необходимость** | Обязательный параметр |
 
 </details>
 
+<details>
+<summary>origin</summary>
+
+| | `string` |
+|---|---|
+| **описание** | Оригинальный домен, на который будет переходить пользователь для оформления заказа |
+| **по-умолчанию** | Домен от которого загружается скрипт для иницилизации (если брать пример выше - то http://demo.pixlpark.ru) |
+| **Необходимость** | Необязательный параметр |
+
+</details>
+
+<details>
+<summary>apiUrl</summary>
+
+| | `string` |
+|---|---|
+| **описание** | Домен для API запросов (загрузка данных по категориям, товарам, расчет цен и т.п.) |
+| **по-умолчанию** | Параметр origin |
+| **Необходимость** | Необязательный параметр |
+
+</details>
+
+<details>
+<summary>material</summary>
+
+| | `string` или `number` |
+|---|---|
+| **описание** | Id или UrlName товара (можно найти в настройках товара) |
+| **по-умолчанию** | null |
+| **Необходимость** | Необязательный параметр |
+
+</details>
+
+<details>
+<summary>config</summary>
+
+| | `string` |
+|---|---|
+| **описание** | Имя конфигурации, задается в настройках калькулятора |
+| **по-умолчанию** | default |
+| **Необходимость** | Необязательный параметр |
+
+</details>
+
+<details>
+<summary>languageId</summary>
+
+| | `number` |
+|---|---|
+| **описание** | Id языка сайта |
+| **по-умолчанию** | Id главного языка сайта из параметра origin |
+| **Необходимость** | Необязательный параметр |
+
+</details>
+
+<details>
+<summary>isMobile</summary>
+
+| | `boolean` |
+|---|---|
+| **описание** | Возвращает мобильная версия калькулятора или нет |
+| **по-умолчанию** | false |
+| **Необходимость** | Необязательный параметр |
+
+</details>
+
+<details>
+<summary>additionalQueryParams</summary>
+
+| | `Словарь { string: string }` |
+|---|---|
+| **описание** | Собственные параметры, которые уйдут в строку запроса при переходе из калькулятора |
+| **по-умолчанию** | null |
+| **Необходимость** | Необязательный параметр |
+| **примечание** | Данный параметр нужен для того, чтобы если вы нажимаете на кнопку заказать на внешнем калькуляторе, ссылка, ведущая на следующую страницу, содержала эти параметры как часть запроса |
+
+</details>
+
+* Пример иницилизации калькулятора, у которого:
+    1. `materialType` имеет UrlName 'photos'
+    1. выбран товар с Id 123456
+    1. выбран язык с Id 789456
+    1. `additionalQueryParams` содержит два параметра
+```html
+<script>
+   // контейнер для калькулятора
+   var container = document.getElementById("integratedCalculator"); 
+ 
+   // параметры для иницилизации
+   var params = { 
+       materialType: 'photos',
+       material: 123456,
+       languageId: 789456,
+       additionalQueryParams: {
+          'id_calc_tmp': '45',
+          'isExternal': 'true'
+       }
+   };
+ 
+   // иницилизация
+   var integratedCalc = new PxpCalcManager(container, params);                                    
+</script>
+```
+
+### Шаг 4
+* Код интеграции отдельно для 1С
+```html
+<div id="integratedCalculator"></div>
+<script src="http://demo.pixlpark.ru/api/poly1c/calculator/external"></script>
+<script>
+    var integrated = {
+	    materialTypeId: 982756, 
+    };
+    Poly1CCalcManager("integratedCalculator", integrated);
+</script>
+```
 
 ## Категории и товары
 
