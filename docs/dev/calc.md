@@ -245,7 +245,7 @@ pxpCalculators[1]
 <details>
 <summary>materialType</summary>
 
-| | `string` или `number` |
+| **Тип переменной** | `string` или `number` |
 |---|---|
 | **описание** | Id или UrlName категории (можно найти в настройках категории) |
 | **Необходимость** | Обязательный параметр |
@@ -255,7 +255,7 @@ pxpCalculators[1]
 <details>
 <summary>origin</summary>
 
-| | `string` |
+| **Тип переменной** | `string` |
 |---|---|
 | **описание** | Оригинальный домен, на который будет переходить пользователь для оформления заказа |
 | **по-умолчанию** | Домен от которого загружается скрипт для иницилизации (если брать пример выше - то http://demo.pixlpark.ru) |
@@ -266,7 +266,7 @@ pxpCalculators[1]
 <details>
 <summary>apiUrl</summary>
 
-| | `string` |
+| **Тип переменной** | `string` |
 |---|---|
 | **описание** | Домен для API запросов (загрузка данных по категориям, товарам, расчет цен и т.п.) |
 | **по-умолчанию** | Параметр origin |
@@ -277,7 +277,7 @@ pxpCalculators[1]
 <details>
 <summary>material</summary>
 
-| | `string` или `number` |
+| **Тип переменной** | `string` или `number` |
 |---|---|
 | **описание** | Id или UrlName товара (можно найти в настройках товара) |
 | **по-умолчанию** | null |
@@ -288,7 +288,7 @@ pxpCalculators[1]
 <details>
 <summary>config</summary>
 
-| | `string` |
+| **Тип переменной** | `string` |
 |---|---|
 | **описание** | Имя конфигурации, задается в настройках калькулятора |
 | **по-умолчанию** | default |
@@ -299,7 +299,7 @@ pxpCalculators[1]
 <details>
 <summary>languageId</summary>
 
-| | `number` |
+| **Тип переменной** | `number` |
 |---|---|
 | **описание** | Id языка сайта |
 | **по-умолчанию** | Id главного языка сайта из параметра origin |
@@ -310,7 +310,7 @@ pxpCalculators[1]
 <details>
 <summary>isMobile</summary>
 
-| | `boolean` |
+| **Тип переменной** | `boolean` |
 |---|---|
 | **описание** | Возвращает мобильная версия калькулятора или нет |
 | **по-умолчанию** | false |
@@ -321,7 +321,7 @@ pxpCalculators[1]
 <details>
 <summary>additionalQueryParams</summary>
 
-| | `Словарь { string: string }` |
+| **Тип переменной** | `Словарь { string: string }` |
 |---|---|
 | **описание** | Собственные параметры, которые уйдут в строку запроса при переходе из калькулятора |
 | **по-умолчанию** | null |
@@ -370,6 +370,212 @@ pxpCalculators[1]
 ```
 
 ## Категории и товары
+
+* Получить данный модуль можно через вызов в калькуляторе materialSelector
+```html
+pxpCalculators[0].materialSelector
+```
+##### MaterialSelectorController
+* Модель модуля по работе с категориями, товарами и атрибутами
+* **Основные свойства**
+
+<details>
+<summary>materialTypes</summary>
+
+| **Тип переменной** | массив `MaterialType` |
+|---|---|
+| **описание** | Все доступные категории для вызова из калькулятора |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()` |
+
+</details>
+
+<details>
+<summary>materialType</summary>
+
+| **Тип переменной** | `MaterialType` или `null` |
+|---|---|
+| **описание** | Выбранная категория |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialType()` |
+
+</details>
+
+<details>
+<summary>materialTypeId</summary>
+
+| **Тип переменной** | `number` или `null` |
+|---|---|
+| **описание** | Id выбранной категории |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypeId()` |
+
+</details>
+
+<details>
+<summary>materials</summary>
+
+| **Тип переменной** | массив `Material` |
+|---|---|
+| **описание** | Все доступные товары категории для вызова из калькулятора |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materials()` |
+
+</details>
+
+<details>
+<summary>material</summary>
+
+| **Тип переменной** | `Material` или `null` |
+|---|---|
+| **описание** | Модель выбранного в калькуляторе товара категории |
+| **пример вызова** | `` |
+
+</details>
+
+<details>
+<summary>materialId</summary>
+
+| **Тип переменной** | `number` или `null` |
+|---|---|
+| **описание** | Id выбранного в калькуляторе товара категории |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialId()` |
+
+</details>
+
+<details>
+<summary>haveAttrs</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает есть ли доступные атрибуты |
+| **пример вызова** | `pxpCalculators[0].materialSelector.haveAttrs()` |
+
+</details>
+
+<details>
+<summary>attributesTree</summary>
+
+| **Тип переменной** | `MaterialTypeAttributesTree` или `null` |
+|---|---|
+| **описание** | Возвращает дерево атрибутов |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree()` |
+
+</details>
+
+<details>
+<summary>attributes</summary>
+
+| **Тип переменной** | массив `MaterialTypeAttribute` |
+|---|---|
+| **описание** | Возвращает все доступные атрибуты для вызова из калькулятора |
+| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()` |
+
+</details>
+
+##### MaterialType
+* Модель категории. Содержит в себе данные по атрибутам, входящих в нее
+* **Основные свойства**
+
+<details>
+<summary>id</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Id категории |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].id` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название категории |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].title` |
+
+</details>
+
+<details>
+<summary>name</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Возвращает название из категории для калькулятора, однако если оно пустое, то берется название из редактора |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].name` |
+
+</details>
+
+<details>
+<summary>description</summary>
+
+| **Тип переменной** | `string` или `null` |
+|---|---|
+| **описание** | Если у категории есть описание, то это оно. Если у категории пустое описание и она доступна для выбора в модальном окне, то берется шаблон текста из ресурсного файла по типу редактора |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].description` |
+
+</details>
+
+<details>
+<summary>calcHelper</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Подсказка для калькулятора (задается в настройках категории) |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].calcHelper` |
+
+</details>
+
+<details>
+<summary>urlName</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Имя категории для ссылки |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].urlName` |
+
+</details>
+
+<details>
+<summary>attributes</summary>
+
+| **Тип переменной** | массив `MaterialTypeAttribute` |
+|---|---|
+| **описание** | Возвращает все атрибуты категории |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].attributes` |
+
+</details>
+
+<details>
+<summary>hiddenAttributes</summary>
+
+| **Тип переменной** | массив `string` |
+|---|---|
+| **описание** | Возвращает Id скрытых атрибутов категории (список можно менять на странице настройки калькулятора) |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].hiddenAttributes` |
+
+</details>
+
+<details>
+<summary>isSelected</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает выбрана категория или нет |
+| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].isSelected()` |
+
+</details>
+
+* **Основные методы**
+
+<details>
+<summary>select</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | При вызове этого метода категория становится выбранной в калькуляторе и происходит общее обновление состояния калькулятора |
+| **пример вызова** | выбор второй категории в массиве категорий `pxpCalculators[0].materialSelector.materialTypes()[1].select()` |
+
+</details>
+
+
 
 ## Размеры редактора
 
