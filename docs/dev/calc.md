@@ -1223,82 +1223,84 @@ var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverIn
 </details>
 
 <details>
-<summary></summary>
+<summary>isPagesCountVisible</summary>
 
-| **Тип переменной** | `` |
+| **Тип переменной** | `string` |
 |---|---|
-| **описание** |  |
-| **пример вызова** | `` |
+| **описание** | Возвращает доступен ли выбор количества страниц для данных настроек |
+| **пример вызова** | `eSizeInfo.title` |
 
 </details>
 
 <details>
-<summary></summary>
+<summary>minPagesCount</summary>
 
-| **Тип переменной** | `` |
+| **Тип переменной** | `number` или `null` |
 |---|---|
-| **описание** |  |
-| **пример вызова** | `` |
+| **описание** | Минимальное количество страниц |
+| **пример вызова** | `eSizeInfo.minPagesCount` |
 
 </details>
 
 <details>
-<summary></summary>
+<summary>maxPagesCount</summary>
 
-| **Тип переменной** | `` |
+| **Тип переменной** | `number` или `null` |
 |---|---|
-| **описание** |  |
-| **пример вызова** | `` |
+| **описание** | Максимальное количество страниц |
+| **пример вызова** | `eSizeInfo.maxPagesCount` |
 
 </details>
 
 <details>
-<summary></summary>
+<summary>inputPagesCount</summary>
 
-| **Тип переменной** | `` |
+| **Тип переменной** | `number или string` |
 |---|---|
-| **описание** |  |
-| **пример вызова** | `` |
+| **описание** | Свойство для указания количества страниц |
+| **пример вызова** | устанавливаем количество страниц 30 `eSizeInfo.inputPagesCount(30)` |
+| **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validatePagesInputData`, иначе `selectedPagesCount` не обновится! |
+</details>
+
+<details>
+<summary>selectedPagesCount</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Выбранное количество страниц |
+| **пример вызова** | `eSizeInfo.selectedPagesCount()` |
 
 </details>
 
 <details>
-<summary></summary>
+<summary>pagesMeasureTitle</summary>
 
-| **Тип переменной** | `` |
+| **Тип переменной** | `number` |
 |---|---|
-| **описание** |  |
-| **пример вызова** | `` |
+| **описание** | Название количества страниц |
+| **пример вызова** | `eSizeInfo.pagesMeasureTitle()` |
+
+</details>
+
+* **Основные методы**
+
+<details>
+<summary>validateInputData</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Обновление и валидирование данных из `inputEditorWidth` и `inputEditorHeight` |
+| **пример вызова** | `eSizeInfo.validateInputData()` |
 
 </details>
 
 <details>
-<summary></summary>
+<summary>validatePagesInputData</summary>
 
-| **Тип переменной** | `` |
+| **Тип переменной** | `void` |
 |---|---|
-| **описание** |  |
-| **пример вызова** | `` |
-
-</details>
-
-<details>
-<summary></summary>
-
-| **Тип переменной** | `` |
-|---|---|
-| **описание** |  |
-| **пример вызова** | `` |
-
-</details>
-
-<details>
-<summary></summary>
-
-| **Тип переменной** | `` |
-|---|---|
-| **описание** |  |
-| **пример вызова** | `` |
+| **описание** | Обновление и валидирование данных из `inputPagesCount` |
+| **пример вызова** | `eSizeInfo.validatePagesInputData()` |
 
 </details>
 
