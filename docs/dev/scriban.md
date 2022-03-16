@@ -138,7 +138,7 @@ This is the loop step [2]
 ![](../_media/dev/dev11.png ':size=37%')
 * Для коммерческого предложения в Pixlpark используется специальный объект "КП", доступные свойства которого можно увидеть в "Подсказке по параметрам". Ниже для примера представлена его структура в нотации JSON.
 
-```
+```json
 {
     "sales_tax_formatted": "   53,85 руб.", 
     "cart_price_formatted": "   353,00 руб.", 
@@ -204,7 +204,7 @@ This is the loop step [2]
 
 * Пример использования Scriban в разметке коммерческого предложения:
 
-```
+```json
 {{ for item in items }} 
     ‹div class="prod-container"›                
         ‹p class="h1">{{item.title}}‹/p›                

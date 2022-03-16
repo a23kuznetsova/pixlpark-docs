@@ -7,7 +7,7 @@
 
 ### О хранении и доступе
 * Все калькуляторы на странице хранятся в массиве pxpCalculators. Так, например, если на странице 2 калькулятора, то доступ ко второму будет по индексу 1 (считаем от нуля)
-```
+```js
 // получить массив калькуляторов
 pxpCalculators
 // получить второй калькулятор в массиве
@@ -137,7 +137,7 @@ pxpCalculators[1]
     1. Калькулятор ищет на странице метод `onCompleteLoadPxpCalc`.
     1. Если он его находит, то исполняет, передавая первым параметром калькулятор.
 * Таким образом, если вам необходимо проделать какие-то операции с калькулятором, то лучше всего это делать именно через этот метод.
-```html
+```js
 // какой-то калькулятор
 [$calculator(category:product)$]
  
@@ -161,7 +161,7 @@ pxpCalculators[1]
 ## Интеграция на сайт
 
 * Самый банальный пример итогового скрипта для интеграции
-```html
+```js
 <div id="container"></div>
 <script src="http://demo.pixlpark.ru/api/calc/externalCalc"></script>
 <script>
@@ -174,14 +174,14 @@ pxpCalculators[1]
 
 ### Шаг 1
 * Cоздать на странице контейнер, в котором позже будет находиться калькулятор.
-```html
+```js
 <div id="integratedCalculator"></div>
 ```
 * В данном случае это простой контейнер `div` с Id `integratedCalculator`. В будущем в нем будет разметка калькулятора.
 
 ### Шаг 2
 * Дальше через тег `<script>` получим необходимый скрипт для иницилизации калькулятора. Для этого нужно от сайта на платформе Pixlpark сделать следующий вид запроса через API:
-```html
+```js
 <script src="http://demo.pixlpark.ru/api/calc/externalCalc"></script>
 ```
 В `src` скрипта мы имеем:
@@ -335,7 +335,7 @@ pxpCalculators[1]
     1. выбран товар с Id 123456
     1. выбран язык с Id 789456
     1. `additionalQueryParams` содержит два параметра
-```html
+```js
 <script>
    // контейнер для калькулятора
    var container = document.getElementById("integratedCalculator"); 
@@ -358,7 +358,7 @@ pxpCalculators[1]
 
 ### Шаг 4
 * Код интеграции отдельно для 1С
-```html
+```js
 <div id="integratedCalculator"></div>
 <script src="http://demo.pixlpark.ru/api/poly1c/calculator/external"></script>
 <script>
@@ -372,7 +372,7 @@ pxpCalculators[1]
 ## Категории и товары
 
 * Получить данный модуль можно через вызов в калькуляторе materialSelector
-```html
+```js
 pxpCalculators[0].materialSelector
 ```
 ##### MaterialSelectorController
@@ -913,7 +913,7 @@ pxpCalculators[0].materialSelector
 
 ## Размеры редактора
 * Получить данный модуль можно через вызов в калькуляторе `editorSettingsController`.
-```html
+```js
 pxpCalculators[0].editorSettingsController
 ```
 
@@ -954,7 +954,7 @@ pxpCalculators[0].editorSettingsController
 ---
 
 * Для каждого редактора есть своя модель настроек. Соответственно, когда вы через модуль получаете `editorState`, сделайте проверку на то, какой редактор настроек у этого товара. Сделать это можно через проверку свойства `editorType` в `editorState`.
-```html
+```js
 // Например, вам нужно получить состояние настроек для редактора только если это редактор проверки макетов
 var editorState = pxpCalculators[0].editorSettingsController.editorState();
  
@@ -1062,7 +1062,7 @@ if (editorState != null && editorState.editorType === 7) {
 ---
 
 * В примерах получения данных для `EditorSizeInfo` я буду использовать укороченную запись, но для понятности предположим, что переменная `eSizeInfo`, откуда достаются данные, это свойство `coverInfo` для настроек редактора проверки макетов:
-```html
+```js
 var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverInfo;
 ```
 
