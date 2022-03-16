@@ -1,15 +1,29 @@
 # Видео-презентации Pixlpark
 
 ## Сайт Web-to-Print
-<video>https://www.youtube.com/watch?v=jhX9BlKypJg</video>
-<embed>https://www.youtube.com/embed/jhX9BlKypJg</embed>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jhX9BlKypJg" frameborder="0" allowfullscreen></iframe>
+<table>
+<tr>
+<td width="800"><iframe width="800" height="400" src="https://www.youtube.com/embed/jhX9BlKypJg" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
 
 ## Сайт бизнес-сувениров
-<video>https://www.youtube.com/watch?v=uWlQy3epnhI&t=428s</video>
+<table>
+<tr>
+<td width="800"><iframe width="800" height="400" src="https://www.youtube.com/embed/uWlQy3epnhI?start=428" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
 
 ## Мобильное приложение
-<video>https://www.youtube.com/watch?v=ATxwrEUzkyk&t=4s</video>
+<table>
+<tr>
+<td width="800"><iframe width="800" height="400" src="https://www.youtube.com/embed/ATxwrEUzkyk?start=4" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
 
 ## Панель управления
-<video>https://www.youtube.com/watch?v=oalWAqcdh30&t=2s</video>
+<table>
+<tr>
+<td width="800"><iframe width="800" height="400" src="https://www.youtube.com/embed/oalWAqcdh30?start=2" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
