@@ -142,6 +142,7 @@
 	- [3D-модели для предпросмотра](/design/3d-models.md)
 
 - Прочее
+	- [Видео-презентации Pixlpark](/misc/presentations.md)
 	- [Данные для печатного сайта](/misc/prints-data.md)
 	- [Данные для сувенирного сайта](/misc/gifts-data.md)
 	- [Этапы запуска сайта](/misc/launch-site.md)
