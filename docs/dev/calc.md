@@ -425,7 +425,7 @@ pxpCalculators[0].materialSelector
 | **Тип переменной** | `Material` или `null` |
 |---|---|
 | **описание** | Модель выбранного в калькуляторе товара категории |
-| **пример вызова** | `` |
+
 
 </details>
 
@@ -1306,7 +1306,675 @@ var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverIn
 
 ## Опции и позиции
 
+* Получить данный модуль можно через вызов в калькуляторе `customWorkSelector`.
+```js
+pxpCalculators[0].customWorkSelector
+```
+##### CalcCustomWorkSelectorController
+* Модель модуля опций. Хранит в себе всю информацю о состоянии опций, переменных опций, позиций опций, выбранных в позициях произвольных размеров и файлов  
+__Основные свойства__
+
+<details>
+<summary>works</summary>
+
+| **Тип переменной** | массив `CalcCustomWorkState` |
+|---|---|
+| **описание** | Массив всех опций |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()` |
+
+</details>
+
+<details>
+<summary>availableWorks</summary>
+
+| **Тип переменной** | массив `CalcCustomWorkState` |
+|---|---|
+| **описание** | Массив всех доступных для выбора опций |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.availableWorks()` |
+
+</details>
+
+<details>
+<summary>worksDictionary</summary>
+
+| **Тип переменной** | Словарь `{ number: CalcCustomWorkState }` |
+|---|---|
+| **описание** | Словарь опций, где ключ - Id опции, а значение - опция |
+| **пример вызова** | получаем словарь опций `var wDict = pxpCalculators[0].customWorkSelector.worksDictionary();`<br>получаем опцию с Id 123456 `var work = wDict[123456];` |
+
+</details>
+
+<details>
+<summary>itemsDictionary</summary>
+
+| **Тип переменной** | `{ number: CalcCustomWorkItemState }` |
+|---|---|
+| **описание** | Словарь позиции опции, где ключ - Id позиции опции, а значение - позиции |
+| **пример вызова** | получаем словарь всех позиций `var iDict = pxpCalculators[0].customWorkSelector.itemsDictionary();`<br>получаем позицию с Id 123456 `var item = iDict[123456];` |
+
+</details>
+
+<details>
+<summary>finalState</summary>
+
+| **Тип переменной** | массив `ICustomWorkOutputState` |
+|---|---|
+| **описание** | Текущее финальное состояние опций в калькуляторе |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.finalState()` |
+
+* пример итогового состояния
+```js
+[
+    {
+        WorkId: 729251,
+        Items: [
+            {
+                ItemId: 2789540,
+                Quantity: 1
+            }
+        ]
+    },
+    {
+        WorkId: 527204,
+        Items: [
+            {
+                ItemId: 1937970,
+                Quantity: 10
+            }
+        ]
+    }
+]
+```
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>loadState</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Загрузка предзаданного состояния выбора опций |
+| **параметры функции** | массив `ICustomWorkOutputState` |
+| **пример вызова** |  |
+| получаем состояние для загрузки из первого калькулятора | `var stateToLoad = pxpCalculators[0].customWorkSelector.finalState();` |
+| загружаем его во второй калькулятор | `pxpCalculators[1].customWorkSelector.loadState(stateToLoad);` |
+
+> Состояние можно предварительно сохранить на странице и через скрипт загружать его в нужный калькулятор, если вам требуется настройка на нужные данные при загрузке старницы.
+
+</details>
+
+##### CalcCustomWorkState
+* Модель опции. Хранит в себе информацию про опцию, переменные и ее позиции.  
+__Основные свойства__
+
+<details>
+<summary>variablesController</summary>
+
+| **Тип переменной** | `CalcVariablesController` или `null` |
+|---|---|
+| **описание** | Контроллер переменных (подробнее в разделе "Переменные") |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].variablesController` |
+
+</details>
+
+<details>
+<summary>workId</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Id опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].workId` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].title` |
+
+</details>
+
+<details>
+<summary>description</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Описание опции для калькулятора |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].description` |
+
+</details>
+
+<details>
+<summary>isAvailable</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает доступна опция для выбора в калькуляторе или нет |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isAvailable()` |
+
+</details>
+
+<details>
+<summary>isRequired</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает опция обязательна или нет |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isRequired` |
+
+</details>
+
+<details>
+<summary>isCheckbox</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает множественный ли выбор позиций в опции или нет |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isCheckbox` |
+
+</details>
+
+<details>
+<summary>isHidden</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает опция скрыта или нет |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isHidden()` |
+
+</details>
+
+<details>
+<summary>items</summary>
+
+| **Тип переменной** | массив `CalcCustomWorkItemState` |
+|---|---|
+| **описание** | Все включенные позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()` |
+
+</details>
+
+<details>
+<summary>itemsAvailable</summary>
+
+| **Тип переменной** | массив `CalcCustomWorkItemState` |
+|---|---|
+| **описание** | Все доступные для выбора в калькуляторе позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].itemsAvailable()` |
+
+</details>
+
+<details>
+<summary>selectedItems</summary>
+
+| **Тип переменной** | массив `CalcCustomWorkItemState` |
+|---|---|
+| **описание** | Выбранные позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].selectedItems()` |
+
+</details>
+
+<details>
+<summary>selectedItemIds</summary>
+
+| **Тип переменной** | массив `number` |
+|---|---|
+| **описание** | Выбранные Id позиций опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].selectedItemIds()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>validate</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает валидны данные в опции или нет |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].validate()` |
+
+</details>
+
+<details>
+<summary>price</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Возвращает текущую цену опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].price()` |
+
+</details>
+
+##### CalcCustomWorkItemState
+* Модель позиции опции  
+__Основные свойства__
+
+<details>
+<summary>itemId</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Id позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].itemId()` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].title` |
+
+</details>
+
+<details>
+<summary>description</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Описание позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].description` |
+
+</details>
+
+<details>
+<summary>work</summary>
+
+| **Тип переменной** | `CalcCustomWorkState` |
+|---|---|
+| **описание** | Опция родитель |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].work` |
+
+</details>
+
+<details>
+<summary>asInfo</summary>
+
+| **Тип переменной** | `CalcCustomWorkItemArbitrarySizeState` или `null` |
+|---|---|
+| **описание** | Модель с информацией о произвольных размерах позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].asInfo` |
+
+</details>
+
+<details>
+<summary>totalPrice</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Итоговая цена позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].totalPrice()` |
+
+</details>
+
+<details>
+<summary>price</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Цена позиции опции без дополнительных стоимостей и процентов |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].price()` |
+
+</details>
+
+<details>
+<summary>additionalPrice</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Дополнительная цена позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].additionalPrice()` |
+
+</details>
+
+<details>
+<summary>isAvailable</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает доступна позиция опции для выбора или нет |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].isAvailable()` |
+
+</details>
+
+<details>
+<summary>isSelected</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает выбрана позиция опции или нет |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].isSelected()` |
+
+</details>
+
+<details>
+<summary>quantity</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Количество позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].quantity()` |
+
+</details>
+
+<details>
+<summary>totalPriceString</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Форматированая итоговая цена позиции опции (отдается в HTML) |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].quantity()` |
+| **пример результата** | `0,00 <span class="postfix currency rub"><span>руб.</span></span>` |
+
+</details>
+
+##### CalcCustomWorkItemArbitrarySizeState
+* Модель произвольных размеров позиции опции. Содержит в себе данные по фиксированным размерам, диапазону размеров, расчету по формуле, расчету по тексту и страничному расчету  
+__Основные свойства__
+
+<details>
+<summary>finalState</summary>
+
+| **Тип переменной** | `IArbitrarySizeOutputData` |
+|---|---|
+| **описание** | Итоговое состояние произвольных размеров позиции опции |
+| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].asInfo.finalState()` |
+
+* Пример результата
+```js
+{
+    Width: 2,
+    Height: 2
+}
+```
+
+</details>
+
+---
+### О финальных состояниях
+* Финальные состояния опций и позиций используются для расчетных данных, продолжения заказа и для метода `loadState` в модуле опций. Ниже указаны модели финальных состояний со всеми возможными полями. Как уже было описано выше, получить финальное состояние опций можно через команду ниже:
+```js
+var finalCustomWorksState = pxpCalculators[0].customWorkSelector.finalState()
+```
+
+##### ICustomWorkOutputState
+* Модель финального состояния опции  
+__Поля__
+
+<details>
+<summary>WorkId</summary>
+
+| **Тип переменной** | `number` или `null` |
+|---|---|
+| **описание** | Id опции |
+
+</details>
+
+<details>
+<summary>Items</summary>
+
+| **Тип переменной** | массив `ICustomWorkItemOutputState` или `null` |
+|---|---|
+| **описание** | Массив финальных состояний всех выбранных позиций в опции |
+
+</details>
+
+##### ICustomWorkItemOutputState
+* Модель финального состояния позиции опции  
+__Поля__
+
+<details>
+<summary>ItemId</summary>
+
+| **Тип переменной** | `number` или `null` |
+|---|---|
+| **описание** | Id позиции опции |
+
+</details>
+
+<details>
+<summary>Quantity</summary>
+
+| **Тип переменной** | `number` или `null` |
+|---|---|
+| **описание** | Количество позиции опции |
+
+</details>
+
+<details>
+<summary>UserTemplateId</summary>
+
+| **Тип переменной** | `number` или `null` или `undefined` |
+|---|---|
+| **описание** | Id пользовательского шаблона |
+
+</details>
+
+<details>
+<summary>Size</summary>
+
+| **Тип переменной** | `IArbitrarySizeOutputData` или `null` или `undefined` |
+|---|---|
+| **описание** | Модель финального состояния произвольных размеров позиции опции |
+
+</details>
+
+<details>
+<summary>Variables</summary>
+
+| **Тип переменной** | массив `IVariableDTO` или `null` или `undefined` |
+|---|---|
+| **описание** | Массив финальных состояний переменных (подробнее в разделе "Переменные") |
+
+</details>
+
+<details>
+<summary>Files</summary>
+
+| **Тип переменной** | массив `number` или `null` или `undefined` |
+|---|---|
+| **описание** | Массив Id выбранных файлов |
+
+</details>
+
+##### IArbitrarySizeOutputData
+* Модель финального состояния произвольных размеров позиции опции  
+__Основные свойства__
+
+<details>
+<summary>Width</summary>
+
+| **Тип переменной** | `number` или `undefined` |
+|---|---|
+| **описание** | Итоговая ширина |
+
+</details>
+
+<details>
+<summary>Height</summary>
+
+| **Тип переменной** | `number` или `undefined` |
+|---|---|
+| **описание** | Итоговая высота |
+
+</details>
+
+<details>
+<summary>Text</summary>
+
+| **Тип переменной** | `string` или `undefined` |
+|---|---|
+| **описание** | Итоговый текст |
+
+</details>
+
 ## Переменные
+
+* Принцип работы модуля переменных в том, что он существует отдельно для каждой опции, поскольку в каждой опции может быть свой набор переменных. Получить данный модуль можно через обращение к `variablesController` в нужной для вас опции.
+```js
+var variablesCtrl = pxpCalculators[0].customWorkSelector.works()[0].variablesController
+```
+* В примерах далее будет использоваться обращение к модулю через переменную `variablesCtrl` для укорочения записи:
+
+##### CalcVariablesController
+* Модель модуля переменных. Хранит в себе информацию о доступных переменных для опции и методы их поиска  
+__Основные свойства__
+
+<details>
+<summary>availableVariables</summary>
+
+| **Тип переменной** | массив `CalcVariableState` |
+|---|---|
+| **описание** | Массив всех доступных переменных для опции |
+| **пример вызова** | `variablesCtrl.availableVariables()` |
+
+</details>
+
+<details>
+<summary>variablesExists</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает есть ли переменные или нет для данной опции |
+| **пример вызова** | `variablesCtrl.variablesExists()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>getVariableByUniqueName</summary>
+
+| **Тип переменной** | `CalcVariableState` или `null` |
+|---|---|
+| **описание** | Возвращает переменную по ее имени |
+| **параметры функции** | Уникальное имя переменной в виде строки |
+| **пример вызова** | получить переменную с именем _mass_ `variablesCtrl.getVariableByUniqueName('mass')` |
+
+</details>
+
+---
+
+##### CalcVariableState
+* Модель переменной  
+__Основные свойства__
+
+<details>
+<summary>uniqueName</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Уникальное имя переменной |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].uniqueName` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название переменной |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].title` |
+
+</details>
+
+<details>
+<summary>measurement</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Размерность переменой |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].measurement` |
+
+</details>
+
+<details>
+<summary>inputValue</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Свойство для указания значения в переменную |
+| **пример вызова** | присвоение переменной значения 150 `variablesCtrl.availableVariables()[0].inputValue(150)` |
+
+> Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedValue` не обновится!
+
+</details>
+
+<details>
+<summary>selectedValue</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Выбранное значение в переменной |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].selectedValue()` |
+
+</details>
+
+<details>
+<summary>isVisible</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает отображается переменная или нет |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].isVisible()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>validateInputData</summary>
+
+| **Тип переменной** | `coid` |
+|---|---|
+| **описание** | Обновление и валидирование данных из `inputValue` |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].validateInputData()` |
+
+</details>
+
+---
+
+### О финальных состояниях
+* Финальное состояния переменной используется в модели `ICustomWorkItemOutputState` (подробнее о ней написано в разделе «Опции и позиции»). Ниже расписаны все возможные поля в модели финального состояния переменной.
+
+##### IVariableDTO
+* Модель финального состояния переменной:  
+__Поля__
+
+<details>
+<summary>UniqueName</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Уникальное имя переменной |
+
+</details>
+
+<details>
+<summary>Value</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Выбранное значение в переменной |
+
+</details>
+
+* Пример финального состояния переменной
+```js
+{
+    UniqueName: 'mass',
+    Value: 10                                
+}
+```
 
 ## Тиражи
 
