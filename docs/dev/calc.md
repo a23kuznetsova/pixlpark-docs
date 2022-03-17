@@ -1934,7 +1934,7 @@ __Основные свойства__
 <details>
 <summary>validateInputData</summary>
 
-| **Тип переменной** | `coid` |
+| **Тип переменной** | `void` |
 |---|---|
 | **описание** | Обновление и валидирование данных из `inputValue` |
 | **пример вызова** | `variablesCtrl.availableVariables()[0].validateInputData()` |
@@ -1979,3 +1979,156 @@ __Поля__
 ## Тиражи
 
 ## Ценовая панель
+
+* Получить данный модуль можно через вызов в калькуляторе `totalPriceCalculator`
+```js
+pxpCalculators[0].totalPriceCalculator
+```
+
+##### CalcTotalPriceViewController
+* Модель ценовой панели. На ней отображаются итоговые цены, кнопки для заказа товара и предупреждения в случае невалидных данных  
+__Основные свойства__
+
+<details>
+<summary>totalPrice</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Итоговая цена |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalPrice()` |
+
+</details>
+
+<details>
+<summary>totalPriceWithoutDiscounts</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Итоговая цена без скидки |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalPriceWithoutDiscounts()` |
+
+</details>
+
+<details>
+<summary>totalProductPriceWithoutCustomWorks</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Итоговая цена товара без скидки и опций |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalProductPriceWithoutCustomWorks()` |
+
+</details>
+
+<details>
+<summary>totalProductCustomWorksPrice</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Итоговая стоимость опций без скидки |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalProductCustomWorksPrice()` |
+
+</details>
+
+<details>
+<summary>totalPriceFormatted</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Текстовый вид итоговой цены (отдается в HTML) |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalPriceFormatted()` |
+| **пример результата** | `Итого: <span class="price-total" id="">10,00 <span class="postfix currency rub"><span>руб.</span></span></span>` |
+
+</details>
+
+<details>
+<summary>visible</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает отображается ценовая панель или нет |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.visible()` |
+
+</details>
+
+<details>
+<summary>isTotalPriceLoading</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает цена обновляется или нет |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.isTotalPriceLoading()` |
+
+</details>
+
+<details>
+<summary>continueOrderClickIsEnabled</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает кнопка "Продолжить заказ" доступна или нет |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.continueOrderClickIsEnabled()` |
+
+</details>
+
+<details>
+<summary>addToCartEnabled</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает кнопка "Добавить в корзину" доступна или нет |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.addToCartEnabled()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>show</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Показать модуль ценовой панели |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.show()` |
+
+</details>
+
+<details>
+<summary>hide</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Скрыть модуль ценовой панели |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.hide()` |
+
+</details>
+
+<details>
+<summary>refreshPrice</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Метод для обновления цены |
+| **условие выполнения** | Обновление калькулятора в данный момент не происходит, и не было ошибок с загрузкой состояния |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.refreshPrice()` |
+
+</details>
+
+<details>
+<summary>continueOrderClick</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Метод для активации события "Продолжение заказа" |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.continueOrderClick()` |
+
+</details>
+
+<details>
+<summary>addToCartClick</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Метод для активации события "Добавить в корзину" |
+| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.addToCartClick()` |
+
+</details>
