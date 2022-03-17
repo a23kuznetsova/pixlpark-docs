@@ -1818,6 +1818,164 @@ __Основные свойства__
 
 ## Переменные
 
+* Принцип работы модуля переменных в том, что он существует отдельно для каждой опции, поскольку в каждой опции может быть свой набор переменных. Получить данный модуль можно через обращение к `variablesController` в нужной для вас опции.
+```js
+var variablesCtrl = pxpCalculators[0].customWorkSelector.works()[0].variablesController
+```
+* В примерах далее будет использоваться обращение к модулю через переменную `variablesCtrl` для укорочения записи:
+
+##### CalcVariablesController
+* Модель модуля переменных. Хранит в себе информацию о доступных переменных для опции и методы их поиска  
+__Основные свойства__
+
+<details>
+<summary>availableVariables</summary>
+
+| **Тип переменной** | массив `CalcVariableState` |
+|---|---|
+| **описание** | Массив всех доступных переменных для опции |
+| **пример вызова** | `variablesCtrl.availableVariables()` |
+
+</details>
+
+<details>
+<summary>variablesExists</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает есть ли переменные или нет для данной опции |
+| **пример вызова** | `variablesCtrl.variablesExists()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>getVariableByUniqueName</summary>
+
+| **Тип переменной** | `CalcVariableState` или `null` |
+|---|---|
+| **описание** | Возвращает переменную по ее имени |
+| **параметры функции** | Уникальное имя переменной в виде строки |
+| **пример вызова** | получить переменную с именем _mass_ `variablesCtrl.getVariableByUniqueName('mass')` |
+
+</details>
+
+---
+
+##### CalcVariableState
+* Модель переменной  
+__Основные свойства__
+
+<details>
+<summary>uniqueName</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Уникальное имя переменной |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].uniqueName` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название переменной |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].title` |
+
+</details>
+
+<details>
+<summary>measurement</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Размерность переменой |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].measurement` |
+
+</details>
+
+<details>
+<summary>inputValue</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Свойство для указания значения в переменную |
+| **пример вызова** | присвоение переменной значения 150 `variablesCtrl.availableVariables()[0].inputValue(150)` |
+
+> Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedValue` не обновится!
+
+</details>
+
+<details>
+<summary>selectedValue</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Выбранное значение в переменной |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].selectedValue()` |
+
+</details>
+
+<details>
+<summary>isVisible</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает отображается переменная или нет |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].isVisible()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>validateInputData</summary>
+
+| **Тип переменной** | `coid` |
+|---|---|
+| **описание** | Обновление и валидирование данных из `inputValue` |
+| **пример вызова** | `variablesCtrl.availableVariables()[0].validateInputData()` |
+
+</details>
+
+---
+
+### О финальных состояниях
+* Финальное состояния переменной используется в модели `ICustomWorkItemOutputState` (подробнее о ней написано в разделе «Опции и позиции»). Ниже расписаны все возможные поля в модели финального состояния переменной.
+
+##### IVariableDTO
+* Модель финального состояния переменной:  
+__Поля__
+
+<details>
+<summary>UniqueName</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Уникальное имя переменной |
+
+</details>
+
+<details>
+<summary>Value</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Выбранное значение в переменной |
+
+</details>
+
+* Пример финального состояния переменной
+```js
+{
+    UniqueName: 'mass',
+    Value: 10                                
+}
+```
+
 ## Тиражи
 
 ## Ценовая панель
