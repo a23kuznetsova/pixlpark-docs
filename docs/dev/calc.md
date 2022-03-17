@@ -1978,6 +1978,467 @@ __Поля__
 
 ## Тиражи
 
+* Получить данный модуль можно через вызов в калькуляторе `circulationSelector`.
+```js
+pxpCalculators[0].circulationSelector
+```
+
+##### CirculationSelectorController
+* Модель модуля по работе с тиражами, многостраничным расчетом, поверхностями и учетом фотографий  
+__Основные свойства__
+
+<details>
+<summary>options</summary>
+
+| **Тип переменной** | массив `CirculationOption` |
+|---|---|
+| **описание** | Массив моделей тиражности |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.options()` |
+
+</details>
+
+<details>
+<summary>option</summary>
+
+| **Тип переменной** | `CirculationOption` или `null` |
+|---|---|
+| **описание** | Выбранная модель тиражности |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.option()` |
+
+</details>
+
+<details>
+<summary>isFixedOption</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает являются ли текущие модели тиражности с выбором количества через предварительно заданные тиражи |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.isFixedOption()` |
+
+</details>
+
+<details>
+<summary>isFloatOption</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает являются ли текущие модели тиражности с выбором количества через ввод тиража вручную |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.isFloatOption()` |
+
+</details>
+
+<details>
+<summary>floatQuantity</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Текущее выбранное количество товара |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.floatQuantity()` |
+
+</details>
+
+<details>
+<summary>complexOption</summary>
+
+| **Тип переменной** | `CirculationComplex` или `null` |
+|---|---|
+| **описание** | Модуль для выбора количества страниц |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption()` |
+
+</details>
+
+<details>
+<summary>isComplexProduct</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает есть ли возможность выбора количества страниц |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.isComplexProduct()` |
+
+</details>
+
+<details>
+<summary>surfacesSettings</summary>
+
+| **Тип переменной** | `CirculationSurfacesSettings` или `null` |
+|---|---|
+| **описание** | Блок работы с поверхностями товара |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings()` |
+
+</details>
+
+<details>
+<summary>isSurfacesSettingsAvailable</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** |Возвращает есть ли возможность работы с поверхностями товара  |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.isSurfacesSettingsAvailable()` |
+
+</details>
+
+<details>
+<summary>photosSettings</summary>
+
+| **Тип переменной** | `CirculationPhotosSettings` или `null` |
+|---|---|
+| **описание** | Блок работы с учетом фотографий |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings()` |
+
+</details>
+
+<details>
+<summary>isPhotosSettingsAvailable</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает есть ли возможность работы с учетом фотографий |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.isPhotosSettingsAvailable()` |
+
+</details>
+
+---
+
+##### CirculationOptionFixed
+* Модель тиражности с выбором количества через предварительно заданный тираж  
+__Основные свойства__
+
+<details>
+<summary>quantity</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Предзаданное количество |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.option().quantity()` |
+
+</details>
+
+<details>
+<summary>isSelected</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает выбран тираж или нет |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.option().isSelected()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>select</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Метод выбора тиража |
+| **пример вызова** | выбор 4-го тиража из массива тиражей `pxpCalculators[0].circulationSelector.options()[3].select()` |
+
+</details>
+
+##### CirculationOptionFloat
+* Модель тиражности с выбором количества через ввод тиража вручную  
+__Основные свойства__
+
+<details>
+<summary>min</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Минимальное возможное количество |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.option().min` |
+
+</details>
+
+<details>
+<summary>max</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Максимальное возможное количество |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.option().max` |
+
+</details>
+
+<details>
+<summary>quantity</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Выбранное количество |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.option().quantity()` |
+
+</details>
+
+<details>
+<summary>isSelected</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает выбран тираж или нет |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.option().isSelected()` |
+
+</details>
+
+* Если вам требуется выбрать тираж через ввод значения, тогда это требуется сделать следующим образом:
+```js
+// устанавливаем количество 15
+pxpCalculators[0].circulationSelector.floatQuantity(15);
+ 
+// калькулятор сам проведет все проверки и положит в итоговый option() необходимый тираж
+// данный способ работает только для выбора тиражности через ввод числа
+```
+
+---
+
+##### CirculationComplex
+* Модель блока многостраничности  
+__Основные свойства__
+
+<details>
+<summary>partsQuantity</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Итоговое количество страниц |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().partsQuantity()` |
+
+</details>
+
+<details>
+<summary>itemPartsMinimum</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Минимальное количество страниц |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().itemPartsMinimum` |
+
+</details>
+
+<details>
+<summary>itemPartsMaximum</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Максимально количество страниц |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().itemPartsMaximum` |
+
+</details>
+
+<details>
+<summary>itemPartsGrowStep</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Шаг страниц |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().itemPartsGrowStep` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>setDisplayPartsQuantity</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Ввод количества страниц. Если указанное число не будет удолетворять ограничениям, то оно будет заменено на валидное |
+| **параметры функции** | Число |
+| **пример вызова** | устанавливаем количество страниц 15 `pxpCalculators[0].circulationSelector.complexOption().displayPartsQuantity(15)` |
+
+</details>
+
+---
+
+##### CirculationSurfacesSettings
+* Модель блока поверхностей товара  
+__Основные свойства__
+
+<details>
+<summary>surfaces</summary>
+
+| **Тип переменной** | массив `CirculationSurfacesSettingsSurface` |
+|---|---|
+| **описание** | Все поверхности товара |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()` |
+
+</details>
+
+<details>
+<summary>selectedSurfacesZonesPrices</summary>
+
+| **Тип переменной** | массив `number` или `null` |
+|---|---|
+| **описание** | Итоговые цены выбранных зон поверхностей |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().selectedSurfacesZonesPrices()` |
+
+</details>
+
+##### CirculationSurfacesSettingsSurface
+* Модель поверхности товара  
+__Основные свойства__
+
+<details>
+<summary>index</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Индекс поверхности (в порядке как в настройках товара) |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].index` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название поверхности |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].title` |
+
+</details>
+
+<details>
+<summary>zones</summary>
+
+| **Тип переменной** | массив `CirculationSurfacesSettingsSurfaceZone` |
+|---|---|
+| **описание** | Зоны поверхности товара |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].zones()` |
+
+</details>
+
+<details>
+<summary>selectedZone</summary>
+
+| **Тип переменной** | `CirculationSurfacesSettingsSurfaceZone` или `null` |
+|---|---|
+| **описание** | Выбранная зона поверхности товара |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone()` |
+
+</details>
+
+##### CirculationSurfacesSettingsSurfaceZone
+* Модель зоны поверхности товара  
+__Основные свойства__
+
+<details>
+<summary>index</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Индекс зоны поверхности (в порядке как в настройках товара) |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().index` |
+
+</details>
+
+<details>
+<summary>title</summary>
+
+| **Тип переменной** | `string` |
+|---|---|
+| **описание** | Название зоны поверхности |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().title` |
+
+</details>
+
+<details>
+<summary>price</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Стоимость зоны поверхности |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().price` |
+
+</details>
+
+<details>
+<summary>surface</summary>
+
+| **Тип переменной** | `CirculationSurfacesSettingsSurface` |
+|---|---|
+| **описание** | Поверхность, к которой относится зона |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().surface` |
+
+</details>
+
+<details>
+<summary>isSelected</summary>
+
+| **Тип переменной** | `boolean` |
+|---|---|
+| **описание** | Возвращает выбрана ли эта зона поверхности |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().isSelected()` |
+
+</details>
+
+* __Основные методы__
+
+<details>
+<summary>select</summary>
+
+| **Тип переменной** | `void` |
+|---|---|
+| **описание** | Задание этой зоны поверхности как выбранной |
+| **пример вызова** | выбираем третью зону из массива зон поверхности `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].zones()[2].select()` |
+
+</details>
+
+---
+
+##### CirculationPhotosSettings
+* Модель блока учета фотографий  
+__Основные свойства__
+
+<details>
+<summary>minimumPhotosCount</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Минимальное число фотографий |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().minimumPhotosCount` |
+
+</details>
+
+<details>
+<summary>additionalPhotosCountToMinimum</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Добавочное количество фотографий за каждую дополнительную страницу |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().additionalPhotosCountToMinimum` |
+
+</details>
+
+<details>
+<summary>pricePerPhoto</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Цена за фотографию |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().pricePerPhoto` |
+
+</details>
+
+<details>
+<summary>totalMinimumPhotosCount</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Общее число минимального количества фотографий |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().totalMinimumPhotosCount()` |
+
+</details>
+
+<details>
+<summary>photosQuantity</summary>
+
+| **Тип переменной** | `number` |
+|---|---|
+| **описание** | Текущее количество фотографий |
+| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().photosQuantity()` |
+
+</details>
+
 ## Ценовая панель
 
 * Получить данный модуль можно через вызов в калькуляторе `totalPriceCalculator`
