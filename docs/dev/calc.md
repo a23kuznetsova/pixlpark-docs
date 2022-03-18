@@ -25,8 +25,8 @@ pxpCalculators[1]
 
 | | `MaterialSelectorController` |
 |---|---|
-| **описание** | Модуль выбора категорий, товаров и атрибутов |
-| **пример вызова** | `pxpCalculators[0].materialSelector` |
+| __описание__ | Модуль выбора категорий, товаров и атрибутов |
+| __пример вызова__ | `pxpCalculators[0].materialSelector` |
 
 </details>
 
@@ -35,8 +35,8 @@ pxpCalculators[1]
 
 | | `EditorSettingsController` |
 |---|---|
-| **описание** | Модуль выбора размеров редактора (только для редактора интерьеров) |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController` |
+| __описание__ | Модуль выбора размеров редактора (только для редактора интерьеров) |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController` |
 
 </details>
 
@@ -45,8 +45,8 @@ pxpCalculators[1]
 
 | | `CalcCustomWorkSelectorController` |
 |---|---|
-| **описание** | Модуль выбора опций и их позиций |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector` |
+| __описание__ | Модуль выбора опций и их позиций |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector` |
 
 </details>
 
@@ -55,8 +55,8 @@ pxpCalculators[1]
 
 | | `CirculationSelectorController` |
 |---|---|
-| **описание** | Модуль выбора количества товара и страниц |
-| **пример вызова** | `pxpCalculators[0].circulationSelector` |
+| __описание__ | Модуль выбора количества товара и страниц |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector` |
 
 </details>
 
@@ -65,8 +65,8 @@ pxpCalculators[1]
 
 | | `CalcTotalPriceViewController` |
 |---|---|
-| **описание** | Модуль отображения финальной цены, а так же продолжения заказа |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator` |
+| __описание__ | Модуль отображения финальной цены, а так же продолжения заказа |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator` |
 
 </details>
 
@@ -75,8 +75,8 @@ pxpCalculators[1]
 
 | | `boolean` |
 |---|---|
-| **описание** | Возвращает информацию об обновлении категорий и товарах |
-| **пример вызова** | |
+| __описание__ | Возвращает информацию об обновлении категорий и товарах |
+| __пример вызова__ | |
 | получить текущее состояние | `pxpCalculators[0].isMaterialTypeUpdate()` |
 | присвоить состояние true | `pxpCalculators[0].isMaterialTypeUpdate(true)` |
 
@@ -87,8 +87,8 @@ pxpCalculators[1]
 
 | | `boolean` |
 |---|---|
-| **описание** | Возвращает информацию об обновлении товаров категории |
-| **пример вызова** |  |
+| __описание__ | Возвращает информацию об обновлении товаров категории |
+| __пример вызова__ |  |
 | получить текущее состояние | `pxpCalculators[0].isMaterialUpdate()` |
 | присвоить состояние true | `pxpCalculators[0].isMaterialUpdate(true)` |
 
@@ -99,8 +99,8 @@ pxpCalculators[1]
 
 | | `boolean` |
 |---|---|
-| **описание** | Возвращает информацию об общем обновлении состояния калькулятора. Имеет значение true, если isMaterialTypeUpdate имеет значение true или isMaterialUpdate имеет значение true |
-| **пример вызова** | получить текущее состояние `pxpCalculators[0].inUpdate()` |
+| __описание__ | Возвращает информацию об общем обновлении состояния калькулятора. Имеет значение true, если isMaterialTypeUpdate имеет значение true или isMaterialUpdate имеет значение true |
+| __пример вызова__ | получить текущее состояние `pxpCalculators[0].inUpdate()` |
 
 </details>
 
@@ -111,12 +111,12 @@ pxpCalculators[1]
 
 | | `void` |
 |---|---|
-| **описание** | Расписывает текущее состояние калькулятора в консоли. Содержит в себе: |
+| __описание__ | Расписывает текущее состояние калькулятора в консоли. Содержит в себе: |
 | 1 | Id калькулятора, например `pxpProducCalc_pr2gifts_ad6e6921cb544c059becf00ec4939601` |
 | 2 | Id выбранной категории |
 | 3 | Id выбранного товара категории |
 | 4 | Выбранные опции товара и их кратное состояние (название опции, Id опции, выбранные позиции опции, все позиции опции) |
-| **пример вызова** | `pxpCalculators[0].info()` |
+| __пример вызова__ | `pxpCalculators[0].info()` |
 | примечание | Метод очень полезен для быстрого поиска необходимых данных по категориям, товарам и опциям, вам достаточно взять нужный Id и искать по нему в админке |
 
 </details>
@@ -126,9 +126,9 @@ pxpCalculators[1]
 
 | | `void` |
 |---|---|
-| **описание** | Обновляет текущее состояние калькулятора |
+| __описание__ | Обновляет текущее состояние калькулятора |
 | условие выполения | Поле `inUpdate` является false |
-| **пример вызова** | `pxpCalculators[0].update()` |
+| __пример вызова__ | `pxpCalculators[0].update()` |
 
 </details>
 
@@ -194,10 +194,10 @@ pxpCalculators[1]
 
 | cssLink | |
 |---|---|
-| **описание** | Загружает на страницу css файл по указанной ссылке |
-| **по-умолчанию** | common.css |
-| **необходимость** | Необязательный параметр |
-| **пример использования** | `<script src="http://demo.pixlpark.ru/api/calc/externalCalc?cssLink=/content/css/cssCalc"></script>` |
+| __описание__ | Загружает на страницу css файл по указанной ссылке |
+| __по-умолчанию__ | common.css |
+| __необходимость__ | Необязательный параметр |
+| __пример использования__ | `<script src="http://demo.pixlpark.ru/api/calc/externalCalc?cssLink=/content/css/cssCalc"></script>` |
 
 </details>
 
@@ -206,26 +206,26 @@ pxpCalculators[1]
 
 | photolabId | |
 |---|---|
-| **описание** | Загружает калькулятор от конкретного сайта по указанному Id |
-| **по-умолчанию** | Берется от указанного домена |
-| **необходимость** | Необязательный параметр |
-| **пример использования** | `<script src="http://demo.pixlpark.ru/api/calc/externalCalc?photolabId=3264"></script>` |
+| __описание__ | Загружает калькулятор от конкретного сайта по указанному Id |
+| __по-умолчанию__ | Берется от указанного домена |
+| __необходимость__ | Необязательный параметр |
+| __пример использования__ | `<script src="http://demo.pixlpark.ru/api/calc/externalCalc?photolabId=3264"></script>` |
 
 </details>
 
 ### Шаг 3
-* После того как скрипт загружен, необходимо иницилизировать калькулятор. Чтобы это сделать, необходимо вызвать функцию **PxpCalcManager**. Рассмотрим параметры, которые входят в эту функцию:
+* После того как скрипт загружен, необходимо иницилизировать калькулятор. Чтобы это сделать, необходимо вызвать функцию __PxpCalcManager__. Рассмотрим параметры, которые входят в эту функцию:
 
-* **PxpCalcManager**  
+* __PxpCalcManager__  
 Модель, содержащая в себе методы для иницилизации калькулятора на странице  
-**Параметры конструктора*
+__Параметры конструктора*
 
 <details>
 <summary>element</summary>
 
 | | HTMLElement |
 |---|---|
-| **описание** | Контейнер, в который будет заружен калькулятор |
+| __описание__ | Контейнер, в который будет заружен калькулятор |
 
 </details>
 
@@ -234,99 +234,99 @@ pxpCalculators[1]
 
 | | ParamsModel |
 |---|---|
-| **описание** | Набор параметров для настройки иницилизации калькулятора |
+| __описание__ | Набор параметров для настройки иницилизации калькулятора |
 
 </details>
 
-* **ParamsModel**  
+* __ParamsModel__  
 Набор параметров для настройки иницилизации калькулятора  
-**Поля*
+__Поля*
 
 <details>
 <summary>materialType</summary>
 
-| **Тип переменной** | `string` или `number` |
+| __Тип переменной__ | `string` или `number` |
 |---|---|
-| **описание** | Id или UrlName категории (можно найти в настройках категории) |
-| **Необходимость** | Обязательный параметр |
+| __описание__ | Id или UrlName категории (можно найти в настройках категории) |
+| __Необходимость__ | Обязательный параметр |
 
 </details>
 
 <details>
 <summary>origin</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Оригинальный домен, на который будет переходить пользователь для оформления заказа |
-| **по-умолчанию** | Домен от которого загружается скрипт для иницилизации (если брать пример выше - то http://demo.pixlpark.ru) |
-| **Необходимость** | Необязательный параметр |
+| __описание__ | Оригинальный домен, на который будет переходить пользователь для оформления заказа |
+| __по-умолчанию__ | Домен от которого загружается скрипт для иницилизации (если брать пример выше - то http://demo.pixlpark.ru) |
+| __Необходимость__ | Необязательный параметр |
 
 </details>
 
 <details>
 <summary>apiUrl</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Домен для API запросов (загрузка данных по категориям, товарам, расчет цен и т.п.) |
-| **по-умолчанию** | Параметр origin |
-| **Необходимость** | Необязательный параметр |
+| __описание__ | Домен для API запросов (загрузка данных по категориям, товарам, расчет цен и т.п.) |
+| __по-умолчанию__ | Параметр origin |
+| __Необходимость__ | Необязательный параметр |
 
 </details>
 
 <details>
 <summary>material</summary>
 
-| **Тип переменной** | `string` или `number` |
+| __Тип переменной__ | `string` или `number` |
 |---|---|
-| **описание** | Id или UrlName товара (можно найти в настройках товара) |
-| **по-умолчанию** | null |
-| **Необходимость** | Необязательный параметр |
+| __описание__ | Id или UrlName товара (можно найти в настройках товара) |
+| __по-умолчанию__ | null |
+| __Необходимость__ | Необязательный параметр |
 
 </details>
 
 <details>
 <summary>config</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Имя конфигурации, задается в настройках калькулятора |
-| **по-умолчанию** | default |
-| **Необходимость** | Необязательный параметр |
+| __описание__ | Имя конфигурации, задается в настройках калькулятора |
+| __по-умолчанию__ | default |
+| __Необходимость__ | Необязательный параметр |
 
 </details>
 
 <details>
 <summary>languageId</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Id языка сайта |
-| **по-умолчанию** | Id главного языка сайта из параметра origin |
-| **Необходимость** | Необязательный параметр |
+| __описание__ | Id языка сайта |
+| __по-умолчанию__ | Id главного языка сайта из параметра origin |
+| __Необходимость__ | Необязательный параметр |
 
 </details>
 
 <details>
 <summary>isMobile</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает мобильная версия калькулятора или нет |
-| **по-умолчанию** | false |
-| **Необходимость** | Необязательный параметр |
+| __описание__ | Возвращает мобильная версия калькулятора или нет |
+| __по-умолчанию__ | false |
+| __Необходимость__ | Необязательный параметр |
 
 </details>
 
 <details>
 <summary>additionalQueryParams</summary>
 
-| **Тип переменной** | Словарь `{ string: string }` |
+| __Тип переменной__ | Словарь `{ string: string }` |
 |---|---|
-| **описание** | Собственные параметры, которые уйдут в строку запроса при переходе из калькулятора |
-| **по-умолчанию** | null |
-| **Необходимость** | Необязательный параметр |
-| **примечание** | Данный параметр нужен для того, чтобы если вы нажимаете на кнопку заказать на внешнем калькуляторе, ссылка, ведущая на следующую страницу, содержала эти параметры как часть запроса |
+| __описание__ | Собственные параметры, которые уйдут в строку запроса при переходе из калькулятора |
+| __по-умолчанию__ | null |
+| __Необходимость__ | Необязательный параметр |
+| __примечание__ | Данный параметр нужен для того, чтобы если вы нажимаете на кнопку заказать на внешнем калькуляторе, ссылка, ведущая на следующую страницу, содержала эти параметры как часть запроса |
 
 </details>
 
@@ -377,54 +377,54 @@ pxpCalculators[0].materialSelector
 ```
 ##### MaterialSelectorController
 * Модель модуля по работе с категориями, товарами и атрибутами
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>materialTypes</summary>
 
-| **Тип переменной** | массив `MaterialType` |
+| __Тип переменной__ | массив `MaterialType` |
 |---|---|
-| **описание** | Все доступные категории для вызова из калькулятора |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()` |
+| __описание__ | Все доступные категории для вызова из калькулятора |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()` |
 
 </details>
 
 <details>
 <summary>materialType</summary>
 
-| **Тип переменной** | `MaterialType` или `null` |
+| __Тип переменной__ | `MaterialType` или `null` |
 |---|---|
-| **описание** | Выбранная категория |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialType()` |
+| __описание__ | Выбранная категория |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialType()` |
 
 </details>
 
 <details>
 <summary>materialTypeId</summary>
 
-| **Тип переменной** | `number` или `null` |
+| __Тип переменной__ | `number` или `null` |
 |---|---|
-| **описание** | Id выбранной категории |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypeId()` |
+| __описание__ | Id выбранной категории |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypeId()` |
 
 </details>
 
 <details>
 <summary>materials</summary>
 
-| **Тип переменной** | массив `Material` |
+| __Тип переменной__ | массив `Material` |
 |---|---|
-| **описание** | Все доступные товары категории для вызова из калькулятора |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materials()` |
+| __описание__ | Все доступные товары категории для вызова из калькулятора |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materials()` |
 
 </details>
 
 <details>
 <summary>material</summary>
 
-| **Тип переменной** | `Material` или `null` |
+| __Тип переменной__ | `Material` или `null` |
 |---|---|
-| **описание** | Модель выбранного в калькуляторе товара категории |
+| __описание__ | Модель выбранного в калькуляторе товара категории |
 
 
 </details>
@@ -432,40 +432,40 @@ pxpCalculators[0].materialSelector
 <details>
 <summary>materialId</summary>
 
-| **Тип переменной** | `number` или `null` |
+| __Тип переменной__ | `number` или `null` |
 |---|---|
-| **описание** | Id выбранного в калькуляторе товара категории |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialId()` |
+| __описание__ | Id выбранного в калькуляторе товара категории |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialId()` |
 
 </details>
 
 <details>
 <summary>haveAttrs</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает есть ли доступные атрибуты |
-| **пример вызова** | `pxpCalculators[0].materialSelector.haveAttrs()` |
+| __описание__ | Возвращает есть ли доступные атрибуты |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.haveAttrs()` |
 
 </details>
 
 <details>
 <summary>attributesTree</summary>
 
-| **Тип переменной** | `MaterialTypeAttributesTree` или `null` |
+| __Тип переменной__ | `MaterialTypeAttributesTree` или `null` |
 |---|---|
-| **описание** | Возвращает дерево атрибутов |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree()` |
+| __описание__ | Возвращает дерево атрибутов |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree()` |
 
 </details>
 
 <details>
 <summary>attributes</summary>
 
-| **Тип переменной** | массив `MaterialTypeAttribute` |
+| __Тип переменной__ | массив `MaterialTypeAttribute` |
 |---|---|
-| **описание** | Возвращает все доступные атрибуты для вызова из калькулятора |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()` |
+| __описание__ | Возвращает все доступные атрибуты для вызова из калькулятора |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()` |
 
 </details>
 
@@ -473,107 +473,107 @@ pxpCalculators[0].materialSelector
 
 ##### MaterialType
 * Модель категории. Содержит в себе данные по атрибутам, входящих в нее
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>id</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Id категории |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].id` |
+| __описание__ | Id категории |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].id` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название категории |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].title` |
+| __описание__ | Название категории |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].title` |
 
 </details>
 
 <details>
 <summary>name</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Возвращает название из категории для калькулятора, однако если оно пустое, то берется название из редактора |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].name` |
+| __описание__ | Возвращает название из категории для калькулятора, однако если оно пустое, то берется название из редактора |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].name` |
 
 </details>
 
 <details>
 <summary>description</summary>
 
-| **Тип переменной** | `string` или `null` |
+| __Тип переменной__ | `string` или `null` |
 |---|---|
-| **описание** | Если у категории есть описание, то это оно. Если у категории пустое описание и она доступна для выбора в модальном окне, то берется шаблон текста из ресурсного файла по типу редактора |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].description` |
+| __описание__ | Если у категории есть описание, то это оно. Если у категории пустое описание и она доступна для выбора в модальном окне, то берется шаблон текста из ресурсного файла по типу редактора |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].description` |
 
 </details>
 
 <details>
 <summary>calcHelper</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Подсказка для калькулятора (задается в настройках категории) |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].calcHelper` |
+| __описание__ | Подсказка для калькулятора (задается в настройках категории) |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].calcHelper` |
 
 </details>
 
 <details>
 <summary>urlName</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Имя категории для ссылки |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].urlName` |
+| __описание__ | Имя категории для ссылки |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].urlName` |
 
 </details>
 
 <details>
 <summary>attributes</summary>
 
-| **Тип переменной** | массив `MaterialTypeAttribute` |
+| __Тип переменной__ | массив `MaterialTypeAttribute` |
 |---|---|
-| **описание** | Возвращает все атрибуты категории |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].attributes` |
+| __описание__ | Возвращает все атрибуты категории |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].attributes` |
 
 </details>
 
 <details>
 <summary>hiddenAttributes</summary>
 
-| **Тип переменной** | массив `string` |
+| __Тип переменной__ | массив `string` |
 |---|---|
-| **описание** | Возвращает Id скрытых атрибутов категории (список можно менять на странице настройки калькулятора) |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].hiddenAttributes` |
+| __описание__ | Возвращает Id скрытых атрибутов категории (список можно менять на странице настройки калькулятора) |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].hiddenAttributes` |
 
 </details>
 
 <details>
 <summary>isSelected</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает выбрана категория или нет |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materialTypes()[0].isSelected()` |
+| __описание__ | Возвращает выбрана категория или нет |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materialTypes()[0].isSelected()` |
 
 </details>
 
-* **Основные методы**
+* __Основные методы__
 
 <details>
 <summary>select</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | При вызове этого метода категория становится выбранной в калькуляторе и происходит общее обновление состояния калькулятора |
-| **пример вызова** | выбор второй категории в массиве категорий <br>`pxpCalculators[0].materialSelector.materialTypes()[1].select()` |
+| __описание__ | При вызове этого метода категория становится выбранной в калькуляторе и происходит общее обновление состояния калькулятора |
+| __пример вызова__ | выбор второй категории в массиве категорий <br>`pxpCalculators[0].materialSelector.materialTypes()[1].select()` |
 
 </details>
 
@@ -581,77 +581,77 @@ pxpCalculators[0].materialSelector
 
 ##### Material
 * Модель товара
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>id</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Id товара |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].id` |
+| __описание__ | Id товара |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materials()[0].id` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название товара |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].title` |
+| __описание__ | Название товара |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materials()[0].title` |
 
 </details>
 
 <details>
 <summary>description</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Описание товара для калькулятора |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].description` |
+| __описание__ | Описание товара для калькулятора |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materials()[0].description` |
 
 </details>
 
 <details>
 <summary>urlName</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Имя товара для ссылки |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].urlName` |
+| __описание__ | Имя товара для ссылки |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materials()[0].urlName` |
 
 </details>
 
 <details>
 <summary>attributes</summary>
 
-| **Тип переменной** | Словарь `{ string: string }` |
+| __Тип переменной__ | Словарь `{ string: string }` |
 |---|---|
-| **описание** | Словарь, где ключ - уникальный Id атрибута, а значение - название атрибута |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].attributes` |
+| __описание__ | Словарь, где ключ - уникальный Id атрибута, а значение - название атрибута |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materials()[0].attributes` |
 
 </details>
 
 <details>
 <summary>isSelected</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает выбран товар или нет |
-| **пример вызова** | `pxpCalculators[0].materialSelector.materials()[0].isSelected()` |
+| __описание__ | Возвращает выбран товар или нет |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.materials()[0].isSelected()` |
 
 </details>
 
-* **Основные методы**
+* __Основные методы__
 
 <details>
 <summary>select</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | При вызове этого метода товар становится выбранным в калькуляторе и происходит обновление состояния калькулятора |
-| **пример вызова** | выбор второго товара в массиве товаров <br>`pxpCalculators[0].materialSelector.materials()[1].select()` |
+| __описание__ | При вызове этого метода товар становится выбранным в калькуляторе и происходит обновление состояния калькулятора |
+| __пример вызова__ | выбор второго товара в массиве товаров <br>`pxpCalculators[0].materialSelector.materials()[1].select()` |
 
 </details>
 
@@ -662,252 +662,252 @@ pxpCalculators[0].materialSelector
 
 ##### MaterialTypeAttributesTree
 * Модель дерева атрибутов. Отвечает за всю логику выбора атрибутов, хранит в себе данные о текущих выбранных вершинах дерева и позволяет менять их выбор.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>selectedAttributesValues</summary>
 
-| **Тип переменной** | массив `MaterialTypeAttributeValue` |
+| __Тип переменной__ | массив `MaterialTypeAttributeValue` |
 |---|---|
-| **описание** | Выбранные значения атрибутов |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()` |
-| **подсказка** | Так же стоит помнить, что `selectedAttributesValues` - наблюдаемое свойство, и на него можно сделать `subscribe` для учета изменения значений атрибутов. Подробнее тут: [Explicitly subscribing to observables](https://knockoutjs.com/documentation/observables) |
+| __описание__ | Выбранные значения атрибутов |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()` |
+| __подсказка__ | Так же стоит помнить, что `selectedAttributesValues` - наблюдаемое свойство, и на него можно сделать `subscribe` для учета изменения значений атрибутов. Подробнее тут: [Explicitly subscribing to observables](https://knockoutjs.com/documentation/observables) |
 
 </details>
 
-* **Основные методы**
+* __Основные методы__
 
 <details>
 <summary>getRoot</summary>
 
-| **Тип переменной** | `MaterialTypeAttributesTreeLeaf` или `null` |
+| __Тип переменной__ | `MaterialTypeAttributesTreeLeaf` или `null` |
 |---|---|
-| **описание** | Получить корень дерева атрибутов |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().getRoot()` |
+| __описание__ | Получить корень дерева атрибутов |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().getRoot()` |
 
 </details>
 
 ##### MaterialTypeAttributesTreeLeaf
 * Модель вершины дерева атрибутов. Содержит в себе прямую ссылку на предыдущую вершину дерева, товар, который привязан к этой вершине и методы для получения более подробных данных о вершине.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>index</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Номер вершины на вершине-родителе (порядковый номер отображения) |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].index` |
+| __описание__ | Номер вершины на вершине-родителе (порядковый номер отображения) |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].index` |
 
 </details>
 
 <details>
 <summary>leafName</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Отображаемое имя веришны (имя значения атрибута) |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].leafName` |
+| __описание__ | Отображаемое имя веришны (имя значения атрибута) |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].leafName` |
 
 </details>
 
 <details>
 <summary>attributeValue</summary>
 
-| **Тип переменной** | `MaterialTypeAttributeValue` |
+| __Тип переменной__ | `MaterialTypeAttributeValue` |
 |---|---|
-| **описание** | Значение атрибута, которое прикреплено к данной вершине |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].attributeValue` |
+| __описание__ | Значение атрибута, которое прикреплено к данной вершине |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].attributeValue` |
 
 </details>
 
 <details>
 <summary>material</summary>
 
-| **Тип переменной** | `Material` или `null` |
+| __Тип переменной__ | `Material` или `null` |
 |---|---|
-| **описание** | Товар, который прикрелен к данной вершине |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].material` |
+| __описание__ | Товар, который прикрелен к данной вершине |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].material` |
 
 </details>
 
 <details>
 <summary>branches</summary>
 
-| **Тип переменной** | Словарь `{ string: MaterialTypeAttributesTreeLeaf }` или `null` |
+| __Тип переменной__ | Словарь `{ string: MaterialTypeAttributesTreeLeaf }` или `null` |
 |---|---|
-| **описание** | Словарь, где ключ - имя вершины, а ключ - вершина |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].branches` |
+| __описание__ | Словарь, где ключ - имя вершины, а ключ - вершина |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].branches` |
 
 </details>
 
 <details>
 <summary>selectedLeaf</summary>
 
-| **Тип переменной** | `MaterialTypeAttributesTreeLeaf` или `null` |
+| __Тип переменной__ | `MaterialTypeAttributesTreeLeaf` или `null` |
 |---|---|
-| **описание** | Выбранная вершина на текущем уровне дерева |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectedLeaf()` |
+| __описание__ | Выбранная вершина на текущем уровне дерева |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectedLeaf()` |
 
 </details>
 
 <details>
 <summary>selectedLeafIndex</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Индекс выбранной вершины на текущем уровне дерева |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectedLeafIndex()` |
+| __описание__ | Индекс выбранной вершины на текущем уровне дерева |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectedLeafIndex()` |
 
 </details>
 
-* **Основные методы**
+* __Основные методы__
 
 <details>
 <summary>getBranchesLeafs</summary>
 
-| **Тип переменной** | массив `MaterialTypeAttributesTreeLeaf` |
+| __Тип переменной__ | массив `MaterialTypeAttributesTreeLeaf` |
 |---|---|
-| **описание** | Возвращает все вершины, которые можно выбрать от этой вершины |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].getBranchesLeafs()` |
+| __описание__ | Возвращает все вершины, которые можно выбрать от этой вершины |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].getBranchesLeafs()` |
 
 </details>
 
 <details>
 <summary>select</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Выбрать эту вершину. При выборе вершине автоматически выбирается товар, который к ней привязан и вершины, которые идут далее по дереву от выбранной |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].select()` |
+| __описание__ | Выбрать эту вершину. При выборе вершине автоматически выбирается товар, который к ней привязан и вершины, которые идут далее по дереву от выбранной |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].select()` |
 
 </details>
 
 <details>
 <summary>selectLeaf</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Выбрать вершину на текущем уровне дерева по имени |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectLeaf("leaf2")` |
+| __описание__ | Выбрать вершину на текущем уровне дерева по имени |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributesTree().selectedAttributesValues()[0].selectLeaf("leaf2")` |
 
 </details>
 
 ##### MaterialTypeAttribute
 * Модель атрибута категории. Содержит в себе список значений атрибута.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>id</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Id атрибута |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].id` |
+| __описание__ | Id атрибута |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].id` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название атрибута |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].title` |
+| __описание__ | Название атрибута |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].title` |
 
 </details>
 
 <details>
 <summary>cssClass</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Класс для атрибута |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].cssClass` |
+| __описание__ | Класс для атрибута |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].cssClass` |
 
 </details>
 
 <details>
 <summary>isHidden</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает скрыт ли атрибут |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].isHidden` |
+| __описание__ | Возвращает скрыт ли атрибут |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].isHidden` |
 
 </details>
 
 <details>
 <summary>values</summary>
 
-| **Тип переменной** | массив `MaterialTypeAttributeValue` |
+| __Тип переменной__ | массив `MaterialTypeAttributeValue` |
 |---|---|
-| **описание** | Все значения атрибута |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values` |
+| __описание__ | Все значения атрибута |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].values` |
 
 </details>
 
 <details>
 <summary>jsFunction</summary>
 
-| **Тип переменной** | `string` или `null` |
+| __Тип переменной__ | `string` или `null` |
 |---|---|
-| **описание** | Название функции или ее текст. При выборе атрибута - исполняется |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].jsFunction()` |
+| __описание__ | Название функции или ее текст. При выборе атрибута - исполняется |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].jsFunction()` |
 
 </details>
 
 ##### MaterialTypeAttributeValue
 * Модель значения атрибута категории.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>attribute</summary>
 
-| **Тип переменной** | `MaterialTypeAttribute` |
+| __Тип переменной__ | `MaterialTypeAttribute` |
 |---|---|
-| **описание** | Атрибут, в котором находится данное значение (проще говоря атрибут-родитель) |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].attribute` |
+| __описание__ | Атрибут, в котором находится данное значение (проще говоря атрибут-родитель) |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].values[0].attribute` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название значения атрибута |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].title` |
+| __описание__ | Название значения атрибута |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].values[0].title` |
 
 </details>
 
 <details>
 <summary>description</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Описание значения атрибута |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].description` |
+| __описание__ | Описание значения атрибута |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].values[0].description` |
 
 </details>
 
 <details>
 <summary>calcHelper</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Описания значения атрибута для калькулятора |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].calcHelper` |
+| __описание__ | Описания значения атрибута для калькулятора |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].values[0].calcHelper` |
 
 </details>
 
 <details>
 <summary>jsFunction</summary>
 
-| **Тип переменной** | `string` или `null` |
+| __Тип переменной__ | `string` или `null` |
 |---|---|
-| **описание** | Название функции или ее текст. При выборе значения атрибута - исполняется |
-| **пример вызова** | `pxpCalculators[0].materialSelector.attributes()[0].values[0].jsFunction()` |
+| __описание__ | Название функции или ее текст. При выборе значения атрибута - исполняется |
+| __пример вызова__ | `pxpCalculators[0].materialSelector.attributes()[0].values[0].jsFunction()` |
 
 </details>
 
@@ -919,35 +919,35 @@ pxpCalculators[0].editorSettingsController
 
 ##### EditorSettingsController
 * Модель модуля редакторов товара. Он хранит в себе данные о редакторе для выбранного товара, его параметры и выбранные размеры. На данный момент модуль поддерживает только редакторы интерьера, дизайна и проверки макетов.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>isAvailable</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает доступен ли модуль |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.isAvailable()` |
+| __описание__ | Возвращает доступен ли модуль |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.isAvailable()` |
 
 </details>
 
 <details>
 <summary>editorState</summary>
 
-| **Тип переменной** | `CalcEditorState` или `null` |
+| __Тип переменной__ | `CalcEditorState` или `null` |
 |---|---|
-| **описание** | Текущее состояние настроек для редактора |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState()` |
+| __описание__ | Текущее состояние настроек для редактора |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState()` |
 
 </details>
 
 <details>
 <summary>isEditEditorSizesAvailable</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает доступен ли выбор произвольных размеров настроек для редактора |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.isEditEditorSizesAvailable()` |
+| __описание__ | Возвращает доступен ли выбор произвольных размеров настроек для редактора |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.isEditEditorSizesAvailable()` |
 
 </details>
 
@@ -966,96 +966,96 @@ if (editorState != null && editorState.editorType === 7) {
 
 ##### CalcCanvasEditorState
 * Модель настроек для редактора интерьеров.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>editorType</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Индекс редактора |
-| **значение** | 9 |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
+| __описание__ | Индекс редактора |
+| __значение__ | 9 |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
 
 </details>
 
 <details>
 <summary>canvasEditorInfo</summary>
 
-| **Тип переменной** | `EditorSizeInfo` или `null` |
+| __Тип переменной__ | `EditorSizeInfo` или `null` |
 |---|---|
-| **описание** | Текущее состояние настроек размеров для редактора интерьеров |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().canvasEditorInfo` |
+| __описание__ | Текущее состояние настроек размеров для редактора интерьеров |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().canvasEditorInfo` |
 
 </details>
 
 ##### CalcGiftEditorState
 * Модель настроек для редактора сувениров.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>editorType</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Индекс редактора |
-| **значение** | 8 |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
+| __описание__ | Индекс редактора |
+| __значение__ | 8 |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
 
 </details>
 
 <details>
 <summary>giftEditorInfo</summary>
 
-| **Тип переменной** | `EditorSizeInfo` или `null` |
+| __Тип переменной__ | `EditorSizeInfo` или `null` |
 |---|---|
-| **описание** | Текущее состояние настроек размеров для редактора сувениров |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().giftEditorInfo` |
+| __описание__ | Текущее состояние настроек размеров для редактора сувениров |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().giftEditorInfo` |
 
 </details>
 
 ##### CalcMockupEditorState
 * Модель настроек для редактора проверки макетов.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>editorType</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Индекс редактора |
-| **значение** | 7 |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
+| __описание__ | Индекс редактора |
+| __значение__ | 7 |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().editorType` |
 
 </details>
 
 <details>
 <summary>coverInfo</summary>
 
-| **Тип переменной** | `EditorSizeInfo` или `null` |
+| __Тип переменной__ | `EditorSizeInfo` или `null` |
 |---|---|
-| **описание** | Текущее состояние настроек размеров обложек для редактора проверки макетов |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().coverInfo` |
+| __описание__ | Текущее состояние настроек размеров обложек для редактора проверки макетов |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().coverInfo` |
 
 </details>
 
 <details>
 <summary>pageInfo</summary>
 
-| **Тип переменной** | `EditorSizeInfo` или `null` |
+| __Тип переменной__ | `EditorSizeInfo` или `null` |
 |---|---|
-| **описание** | Текущее состояние настроек размеров разворотов для редактора проверки макетов |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().pageInfo` |
+| __описание__ | Текущее состояние настроек размеров разворотов для редактора проверки макетов |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().pageInfo` |
 
 </details>
 
 <details>
 <summary>flyleafInfo</summary>
 
-| **Тип переменной** | `EditorSizeInfo` или `null` |
+| __Тип переменной__ | `EditorSizeInfo` или `null` |
 |---|---|
-| **описание** | Текущее состояние настроек размеров форзацев для редактора проверки макетов |
-| **пример вызова** | `pxpCalculators[0].editorSettingsController.editorState().flyleafInfo` |
+| __описание__ | Текущее состояние настроек размеров форзацев для редактора проверки макетов |
+| __пример вызова__ | `pxpCalculators[0].editorSettingsController.editorState().flyleafInfo` |
 
 </details>
 
@@ -1068,239 +1068,239 @@ var eSizeInfo = pxpCalculators[0].editorSettingsController.editorState().coverIn
 
 ##### EditorSizeInfo
 * Модель настроек размеров. Содержит в себе размеры для редакторов, которые могут быть использованы в дальнейшем оформлении заказов. Так же тут могут быть установлены собственные размеры, если у товара настроены произвольные размеры.
-* **Основные свойства**
+* __Основные свойства__
 
 <details>
 <summary>editorSizes</summary>
 
-| **Тип переменной** | массив `ISizeModel` |
+| __Тип переменной__ | массив `ISizeModel` |
 |---|---|
-| **описание** | Итоговый массив размеров. Размер массива напрямую зависит от количества страниц |
-| **пример вызова** | `eSizeInfo.editorSizes` |
-| **пример результата** | `[ { Width: 297, Height: 100 } ]` |
+| __описание__ | Итоговый массив размеров. Размер массива напрямую зависит от количества страниц |
+| __пример вызова__ | `eSizeInfo.editorSizes` |
+| __пример результата__ | `[ { Width: 297, Height: 100 } ]` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название |
-| **пример вызова** | `eSizeInfo.title` |
+| __описание__ | Название |
+| __пример вызова__ | `eSizeInfo.title` |
 
 </details>
 
 <details>
 <summary>isVisible</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает отображаются ли данные настройки в калькуляторе |
-| **пример вызова** | `eSizeInfo.isVisible` |
+| __описание__ | Возвращает отображаются ли данные настройки в калькуляторе |
+| __пример вызова__ | `eSizeInfo.isVisible` |
 
 </details>
 
 <details>
 <summary>isArbitrarySizeAvailable</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает доступны ли произвольные размеры для данных настроек |
-| **пример вызова** | `eSizeInfo.isArbitrarySizeAvailable` |
+| __описание__ | Возвращает доступны ли произвольные размеры для данных настроек |
+| __пример вызова__ | `eSizeInfo.isArbitrarySizeAvailable` |
 
 </details>
 
 <details>
 <summary>minEditorWidth</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Минимальная ширина редактора |
-| **пример вызова** | `eSizeInfo.minEditorWidth` |
+| __описание__ | Минимальная ширина редактора |
+| __пример вызова__ | `eSizeInfo.minEditorWidth` |
 
 </details>
 
 <details>
 <summary>maxEditorWidth</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Максимальная ширина редактора |
-| **пример вызова** | `eSizeInfo.maxEditorWidth` |
+| __описание__ | Максимальная ширина редактора |
+| __пример вызова__ | `eSizeInfo.maxEditorWidth` |
 
 </details>
 
 <details>
 <summary>defaultEditorWidth</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Ширина редактора по умолчанию |
-| **пример вызова** | `eSizeInfo.defaultEditorWidth()` |
+| __описание__ | Ширина редактора по умолчанию |
+| __пример вызова__ | `eSizeInfo.defaultEditorWidth()` |
 
 </details>
 
 <details>
 <summary>inputEditorWidth</summary>
 
-| **Тип переменной** | `number` или `string` |
+| __Тип переменной__ | `number` или `string` |
 |---|---|
-| **описание** | Свойство для указания ширины редактора |
-| **пример вызова** | устанавливаем ширину 150 <br>`eSizeInfo.inputEditorWidth(150)` |
-| **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorWidth` не обновится! |
+| __описание__ | Свойство для указания ширины редактора |
+| __пример вызова__ | устанавливаем ширину 150 <br>`eSizeInfo.inputEditorWidth(150)` |
+| __примечание__ | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorWidth` не обновится! |
 
 </details>
 
 <details>
 <summary>selectedEditorWidth</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Итоговая выбранная ширина редактора |
-| **пример вызова** | `eSizeInfo.selectedEditorWidth()` |
+| __описание__ | Итоговая выбранная ширина редактора |
+| __пример вызова__ | `eSizeInfo.selectedEditorWidth()` |
 
 </details>
 
 <details>
 <summary>minEditorHeight</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Минимальная высота редактора |
-| **пример вызова** | `eSizeInfo.minEditorHeight` |
+| __описание__ | Минимальная высота редактора |
+| __пример вызова__ | `eSizeInfo.minEditorHeight` |
 
 </details>
 
 <details>
 <summary>maxEditorHeight</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Максимальная высота редактора |
-| **пример вызова** | `eSizeInfo.maxEditorWidth` |
+| __описание__ | Максимальная высота редактора |
+| __пример вызова__ | `eSizeInfo.maxEditorWidth` |
 
 </details>
 
 <details>
 <summary>defaultEditorHeight</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Высота редактора по умолчанию |
-| **пример вызова** | `eSizeInfo.defaultEditorHeight()` |
+| __описание__ | Высота редактора по умолчанию |
+| __пример вызова__ | `eSizeInfo.defaultEditorHeight()` |
 
 </details>
 
 <details>
 <summary>inputEditorHeight</summary>
 
-| **Тип переменной** | `number` или `string` |
+| __Тип переменной__ | `number` или `string` |
 |---|---|
-| **описание** | Свойство для указания высоты редактора |
-| **пример вызова** | устанавливаем высоту 150 <br>`eSizeInfo.inputEditorHeight(150)` |
-| **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorHeight` не обновится! |
+| __описание__ | Свойство для указания высоты редактора |
+| __пример вызова__ | устанавливаем высоту 150 <br>`eSizeInfo.inputEditorHeight(150)` |
+| __примечание__ | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedEditorHeight` не обновится! |
 </details>
 
 <details>
 <summary>selectedEditorHeight</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Выбранная высота редактора |
-| **пример вызова** | `eSizeInfo.selectedEditorHeight()` |
+| __описание__ | Выбранная высота редактора |
+| __пример вызова__ | `eSizeInfo.selectedEditorHeight()` |
 
 </details>
 
 <details>
 <summary>measureTitle</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Название размерности |
-| **пример вызова** | `eSizeInfo.measureTitle()` |
+| __описание__ | Название размерности |
+| __пример вызова__ | `eSizeInfo.measureTitle()` |
 
 </details>
 
 <details>
 <summary>isPagesCountVisible</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Возвращает доступен ли выбор количества страниц для данных настроек |
-| **пример вызова** | `eSizeInfo.title` |
+| __описание__ | Возвращает доступен ли выбор количества страниц для данных настроек |
+| __пример вызова__ | `eSizeInfo.title` |
 
 </details>
 
 <details>
 <summary>minPagesCount</summary>
 
-| **Тип переменной** | `number` или `null` |
+| __Тип переменной__ | `number` или `null` |
 |---|---|
-| **описание** | Минимальное количество страниц |
-| **пример вызова** | `eSizeInfo.minPagesCount` |
+| __описание__ | Минимальное количество страниц |
+| __пример вызова__ | `eSizeInfo.minPagesCount` |
 
 </details>
 
 <details>
 <summary>maxPagesCount</summary>
 
-| **Тип переменной** | `number` или `null` |
+| __Тип переменной__ | `number` или `null` |
 |---|---|
-| **описание** | Максимальное количество страниц |
-| **пример вызова** | `eSizeInfo.maxPagesCount` |
+| __описание__ | Максимальное количество страниц |
+| __пример вызова__ | `eSizeInfo.maxPagesCount` |
 
 </details>
 
 <details>
 <summary>inputPagesCount</summary>
 
-| **Тип переменной** | `number или string` |
+| __Тип переменной__ | `number или string` |
 |---|---|
-| **описание** | Свойство для указания количества страниц |
-| **пример вызова** | устанавливаем количество страниц 30 <br>`eSizeInfo.inputPagesCount(30)` |
-| **примечание** | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validatePagesInputData`, иначе `selectedPagesCount` не обновится! |
+| __описание__ | Свойство для указания количества страниц |
+| __пример вызова__ | устанавливаем количество страниц 30 <br>`eSizeInfo.inputPagesCount(30)` |
+| __примечание__ | Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validatePagesInputData`, иначе `selectedPagesCount` не обновится! |
 </details>
 
 <details>
 <summary>selectedPagesCount</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Выбранное количество страниц |
-| **пример вызова** | `eSizeInfo.selectedPagesCount()` |
+| __описание__ | Выбранное количество страниц |
+| __пример вызова__ | `eSizeInfo.selectedPagesCount()` |
 
 </details>
 
 <details>
 <summary>pagesMeasureTitle</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Название количества страниц |
-| **пример вызова** | `eSizeInfo.pagesMeasureTitle()` |
+| __описание__ | Название количества страниц |
+| __пример вызова__ | `eSizeInfo.pagesMeasureTitle()` |
 
 </details>
 
-* **Основные методы**
+* __Основные методы__
 
 <details>
 <summary>validateInputData</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Обновление и валидирование данных из `inputEditorWidth` и `inputEditorHeight` |
-| **пример вызова** | `eSizeInfo.validateInputData()` |
+| __описание__ | Обновление и валидирование данных из `inputEditorWidth` и `inputEditorHeight` |
+| __пример вызова__ | `eSizeInfo.validateInputData()` |
 
 </details>
 
 <details>
 <summary>validatePagesInputData</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Обновление и валидирование данных из `inputPagesCount` |
-| **пример вызова** | `eSizeInfo.validatePagesInputData()` |
+| __описание__ | Обновление и валидирование данных из `inputPagesCount` |
+| __пример вызова__ | `eSizeInfo.validatePagesInputData()` |
 
 </details>
 
@@ -1317,50 +1317,50 @@ __Основные свойства__
 <details>
 <summary>works</summary>
 
-| **Тип переменной** | массив `CalcCustomWorkState` |
+| __Тип переменной__ | массив `CalcCustomWorkState` |
 |---|---|
-| **описание** | Массив всех опций |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()` |
+| __описание__ | Массив всех опций |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()` |
 
 </details>
 
 <details>
 <summary>availableWorks</summary>
 
-| **Тип переменной** | массив `CalcCustomWorkState` |
+| __Тип переменной__ | массив `CalcCustomWorkState` |
 |---|---|
-| **описание** | Массив всех доступных для выбора опций |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.availableWorks()` |
+| __описание__ | Массив всех доступных для выбора опций |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.availableWorks()` |
 
 </details>
 
 <details>
 <summary>worksDictionary</summary>
 
-| **Тип переменной** | Словарь `{ number: CalcCustomWorkState }` |
+| __Тип переменной__ | Словарь `{ number: CalcCustomWorkState }` |
 |---|---|
-| **описание** | Словарь опций, где ключ - Id опции, а значение - опция |
-| **пример вызова** | получаем словарь опций `var wDict = pxpCalculators[0].customWorkSelector.worksDictionary();`<br>получаем опцию с Id 123456 `var work = wDict[123456];` |
+| __описание__ | Словарь опций, где ключ - Id опции, а значение - опция |
+| __пример вызова__ | получаем словарь опций `var wDict = pxpCalculators[0].customWorkSelector.worksDictionary();`<br>получаем опцию с Id 123456 `var work = wDict[123456];` |
 
 </details>
 
 <details>
 <summary>itemsDictionary</summary>
 
-| **Тип переменной** | `{ number: CalcCustomWorkItemState }` |
+| __Тип переменной__ | `{ number: CalcCustomWorkItemState }` |
 |---|---|
-| **описание** | Словарь позиции опции, где ключ - Id позиции опции, а значение - позиции |
-| **пример вызова** | получаем словарь всех позиций `var iDict = pxpCalculators[0].customWorkSelector.itemsDictionary();`<br>получаем позицию с Id 123456 `var item = iDict[123456];` |
+| __описание__ | Словарь позиции опции, где ключ - Id позиции опции, а значение - позиции |
+| __пример вызова__ | получаем словарь всех позиций `var iDict = pxpCalculators[0].customWorkSelector.itemsDictionary();`<br>получаем позицию с Id 123456 `var item = iDict[123456];` |
 
 </details>
 
 <details>
 <summary>finalState</summary>
 
-| **Тип переменной** | массив `ICustomWorkOutputState` |
+| __Тип переменной__ | массив `ICustomWorkOutputState` |
 |---|---|
-| **описание** | Текущее финальное состояние опций в калькуляторе |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.finalState()` |
+| __описание__ | Текущее финальное состояние опций в калькуляторе |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.finalState()` |
 
 * пример итогового состояния
 ```js
@@ -1393,11 +1393,11 @@ __Основные свойства__
 <details>
 <summary>loadState</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Загрузка предзаданного состояния выбора опций |
-| **параметры функции** | массив `ICustomWorkOutputState` |
-| **пример вызова** |  |
+| __описание__ | Загрузка предзаданного состояния выбора опций |
+| __параметры функции__ | массив `ICustomWorkOutputState` |
+| __пример вызова__ |  |
 | получаем состояние для загрузки из первого калькулятора | `var stateToLoad = pxpCalculators[0].customWorkSelector.finalState();` |
 | загружаем его во второй калькулятор | `pxpCalculators[1].customWorkSelector.loadState(stateToLoad);` |
 
@@ -1412,120 +1412,120 @@ __Основные свойства__
 <details>
 <summary>variablesController</summary>
 
-| **Тип переменной** | `CalcVariablesController` или `null` |
+| __Тип переменной__ | `CalcVariablesController` или `null` |
 |---|---|
-| **описание** | Контроллер переменных (подробнее в разделе "Переменные") |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].variablesController` |
+| __описание__ | Контроллер переменных (подробнее в разделе "Переменные") |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].variablesController` |
 
 </details>
 
 <details>
 <summary>workId</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Id опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].workId` |
+| __описание__ | Id опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].workId` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].title` |
+| __описание__ | Название опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].title` |
 
 </details>
 
 <details>
 <summary>description</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Описание опции для калькулятора |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].description` |
+| __описание__ | Описание опции для калькулятора |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].description` |
 
 </details>
 
 <details>
 <summary>isAvailable</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает доступна опция для выбора в калькуляторе или нет |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isAvailable()` |
+| __описание__ | Возвращает доступна опция для выбора в калькуляторе или нет |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].isAvailable()` |
 
 </details>
 
 <details>
 <summary>isRequired</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает опция обязательна или нет |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isRequired` |
+| __описание__ | Возвращает опция обязательна или нет |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].isRequired` |
 
 </details>
 
 <details>
 <summary>isCheckbox</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает множественный ли выбор позиций в опции или нет |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isCheckbox` |
+| __описание__ | Возвращает множественный ли выбор позиций в опции или нет |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].isCheckbox` |
 
 </details>
 
 <details>
 <summary>isHidden</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает опция скрыта или нет |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].isHidden()` |
+| __описание__ | Возвращает опция скрыта или нет |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].isHidden()` |
 
 </details>
 
 <details>
 <summary>items</summary>
 
-| **Тип переменной** | массив `CalcCustomWorkItemState` |
+| __Тип переменной__ | массив `CalcCustomWorkItemState` |
 |---|---|
-| **описание** | Все включенные позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()` |
+| __описание__ | Все включенные позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()` |
 
 </details>
 
 <details>
 <summary>itemsAvailable</summary>
 
-| **Тип переменной** | массив `CalcCustomWorkItemState` |
+| __Тип переменной__ | массив `CalcCustomWorkItemState` |
 |---|---|
-| **описание** | Все доступные для выбора в калькуляторе позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].itemsAvailable()` |
+| __описание__ | Все доступные для выбора в калькуляторе позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].itemsAvailable()` |
 
 </details>
 
 <details>
 <summary>selectedItems</summary>
 
-| **Тип переменной** | массив `CalcCustomWorkItemState` |
+| __Тип переменной__ | массив `CalcCustomWorkItemState` |
 |---|---|
-| **описание** | Выбранные позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].selectedItems()` |
+| __описание__ | Выбранные позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].selectedItems()` |
 
 </details>
 
 <details>
 <summary>selectedItemIds</summary>
 
-| **Тип переменной** | массив `number` |
+| __Тип переменной__ | массив `number` |
 |---|---|
-| **описание** | Выбранные Id позиций опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].selectedItemIds()` |
+| __описание__ | Выбранные Id позиций опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].selectedItemIds()` |
 
 </details>
 
@@ -1534,20 +1534,20 @@ __Основные свойства__
 <details>
 <summary>validate</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает валидны данные в опции или нет |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].validate()` |
+| __описание__ | Возвращает валидны данные в опции или нет |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].validate()` |
 
 </details>
 
 <details>
 <summary>price</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Возвращает текущую цену опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].price()` |
+| __описание__ | Возвращает текущую цену опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].price()` |
 
 </details>
 
@@ -1558,121 +1558,121 @@ __Основные свойства__
 <details>
 <summary>itemId</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Id позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].itemId()` |
+| __описание__ | Id позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].itemId()` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].title` |
+| __описание__ | Название позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].title` |
 
 </details>
 
 <details>
 <summary>description</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Описание позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].description` |
+| __описание__ | Описание позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].description` |
 
 </details>
 
 <details>
 <summary>work</summary>
 
-| **Тип переменной** | `CalcCustomWorkState` |
+| __Тип переменной__ | `CalcCustomWorkState` |
 |---|---|
-| **описание** | Опция родитель |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].work` |
+| __описание__ | Опция родитель |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].work` |
 
 </details>
 
 <details>
 <summary>asInfo</summary>
 
-| **Тип переменной** | `CalcCustomWorkItemArbitrarySizeState` или `null` |
+| __Тип переменной__ | `CalcCustomWorkItemArbitrarySizeState` или `null` |
 |---|---|
-| **описание** | Модель с информацией о произвольных размерах позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].asInfo` |
+| __описание__ | Модель с информацией о произвольных размерах позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].asInfo` |
 
 </details>
 
 <details>
 <summary>totalPrice</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Итоговая цена позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].totalPrice()` |
+| __описание__ | Итоговая цена позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].totalPrice()` |
 
 </details>
 
 <details>
 <summary>price</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Цена позиции опции без дополнительных стоимостей и процентов |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].price()` |
+| __описание__ | Цена позиции опции без дополнительных стоимостей и процентов |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].price()` |
 
 </details>
 
 <details>
 <summary>additionalPrice</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Дополнительная цена позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].additionalPrice()` |
+| __описание__ | Дополнительная цена позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].additionalPrice()` |
 
 </details>
 
 <details>
 <summary>isAvailable</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает доступна позиция опции для выбора или нет |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].isAvailable()` |
+| __описание__ | Возвращает доступна позиция опции для выбора или нет |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].isAvailable()` |
 
 </details>
 
 <details>
 <summary>isSelected</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает выбрана позиция опции или нет |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].isSelected()` |
+| __описание__ | Возвращает выбрана позиция опции или нет |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].isSelected()` |
 
 </details>
 
 <details>
 <summary>quantity</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Количество позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].quantity()` |
+| __описание__ | Количество позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].quantity()` |
 
 </details>
 
 <details>
 <summary>totalPriceString</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Форматированая итоговая цена позиции опции (отдается в HTML) |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].quantity()` |
-| **пример результата** | `0,00 <span class="postfix currency rub"><span>руб.</span></span>` |
+| __описание__ | Форматированая итоговая цена позиции опции (отдается в HTML) |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].quantity()` |
+| __пример результата__ | `0,00 <span class="postfix currency rub"><span>руб.</span></span>` |
 
 </details>
 
@@ -1683,10 +1683,10 @@ __Основные свойства__
 <details>
 <summary>finalState</summary>
 
-| **Тип переменной** | `IArbitrarySizeOutputData` |
+| __Тип переменной__ | `IArbitrarySizeOutputData` |
 |---|---|
-| **описание** | Итоговое состояние произвольных размеров позиции опции |
-| **пример вызова** | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].asInfo.finalState()` |
+| __описание__ | Итоговое состояние произвольных размеров позиции опции |
+| __пример вызова__ | `pxpCalculators[0].customWorkSelector.works()[0].items()[0].asInfo.finalState()` |
 
 * Пример результата
 ```js
@@ -1712,18 +1712,18 @@ __Поля__
 <details>
 <summary>WorkId</summary>
 
-| **Тип переменной** | `number` или `null` |
+| __Тип переменной__ | `number` или `null` |
 |---|---|
-| **описание** | Id опции |
+| __описание__ | Id опции |
 
 </details>
 
 <details>
 <summary>Items</summary>
 
-| **Тип переменной** | массив `ICustomWorkItemOutputState` или `null` |
+| __Тип переменной__ | массив `ICustomWorkItemOutputState` или `null` |
 |---|---|
-| **описание** | Массив финальных состояний всех выбранных позиций в опции |
+| __описание__ | Массив финальных состояний всех выбранных позиций в опции |
 
 </details>
 
@@ -1734,54 +1734,54 @@ __Поля__
 <details>
 <summary>ItemId</summary>
 
-| **Тип переменной** | `number` или `null` |
+| __Тип переменной__ | `number` или `null` |
 |---|---|
-| **описание** | Id позиции опции |
+| __описание__ | Id позиции опции |
 
 </details>
 
 <details>
 <summary>Quantity</summary>
 
-| **Тип переменной** | `number` или `null` |
+| __Тип переменной__ | `number` или `null` |
 |---|---|
-| **описание** | Количество позиции опции |
+| __описание__ | Количество позиции опции |
 
 </details>
 
 <details>
 <summary>UserTemplateId</summary>
 
-| **Тип переменной** | `number` или `null` или `undefined` |
+| __Тип переменной__ | `number` или `null` или `undefined` |
 |---|---|
-| **описание** | Id пользовательского шаблона |
+| __описание__ | Id пользовательского шаблона |
 
 </details>
 
 <details>
 <summary>Size</summary>
 
-| **Тип переменной** | `IArbitrarySizeOutputData` или `null` или `undefined` |
+| __Тип переменной__ | `IArbitrarySizeOutputData` или `null` или `undefined` |
 |---|---|
-| **описание** | Модель финального состояния произвольных размеров позиции опции |
+| __описание__ | Модель финального состояния произвольных размеров позиции опции |
 
 </details>
 
 <details>
 <summary>Variables</summary>
 
-| **Тип переменной** | массив `IVariableDTO` или `null` или `undefined` |
+| __Тип переменной__ | массив `IVariableDTO` или `null` или `undefined` |
 |---|---|
-| **описание** | Массив финальных состояний переменных (подробнее в разделе "Переменные") |
+| __описание__ | Массив финальных состояний переменных (подробнее в разделе "Переменные") |
 
 </details>
 
 <details>
 <summary>Files</summary>
 
-| **Тип переменной** | массив `number` или `null` или `undefined` |
+| __Тип переменной__ | массив `number` или `null` или `undefined` |
 |---|---|
-| **описание** | Массив Id выбранных файлов |
+| __описание__ | Массив Id выбранных файлов |
 
 </details>
 
@@ -1792,27 +1792,27 @@ __Основные свойства__
 <details>
 <summary>Width</summary>
 
-| **Тип переменной** | `number` или `undefined` |
+| __Тип переменной__ | `number` или `undefined` |
 |---|---|
-| **описание** | Итоговая ширина |
+| __описание__ | Итоговая ширина |
 
 </details>
 
 <details>
 <summary>Height</summary>
 
-| **Тип переменной** | `number` или `undefined` |
+| __Тип переменной__ | `number` или `undefined` |
 |---|---|
-| **описание** | Итоговая высота |
+| __описание__ | Итоговая высота |
 
 </details>
 
 <details>
 <summary>Text</summary>
 
-| **Тип переменной** | `string` или `undefined` |
+| __Тип переменной__ | `string` или `undefined` |
 |---|---|
-| **описание** | Итоговый текст |
+| __описание__ | Итоговый текст |
 
 </details>
 
@@ -1831,20 +1831,20 @@ __Основные свойства__
 <details>
 <summary>availableVariables</summary>
 
-| **Тип переменной** | массив `CalcVariableState` |
+| __Тип переменной__ | массив `CalcVariableState` |
 |---|---|
-| **описание** | Массив всех доступных переменных для опции |
-| **пример вызова** | `variablesCtrl.availableVariables()` |
+| __описание__ | Массив всех доступных переменных для опции |
+| __пример вызова__ | `variablesCtrl.availableVariables()` |
 
 </details>
 
 <details>
 <summary>variablesExists</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает есть ли переменные или нет для данной опции |
-| **пример вызова** | `variablesCtrl.variablesExists()` |
+| __описание__ | Возвращает есть ли переменные или нет для данной опции |
+| __пример вызова__ | `variablesCtrl.variablesExists()` |
 
 </details>
 
@@ -1853,11 +1853,11 @@ __Основные свойства__
 <details>
 <summary>getVariableByUniqueName</summary>
 
-| **Тип переменной** | `CalcVariableState` или `null` |
+| __Тип переменной__ | `CalcVariableState` или `null` |
 |---|---|
-| **описание** | Возвращает переменную по ее имени |
-| **параметры функции** | Уникальное имя переменной в виде строки |
-| **пример вызова** | получить переменную с именем _mass_ `variablesCtrl.getVariableByUniqueName('mass')` |
+| __описание__ | Возвращает переменную по ее имени |
+| __параметры функции__ | Уникальное имя переменной в виде строки |
+| __пример вызова__ | получить переменную с именем _mass_ `variablesCtrl.getVariableByUniqueName('mass')` |
 
 </details>
 
@@ -1870,40 +1870,40 @@ __Основные свойства__
 <details>
 <summary>uniqueName</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Уникальное имя переменной |
-| **пример вызова** | `variablesCtrl.availableVariables()[0].uniqueName` |
+| __описание__ | Уникальное имя переменной |
+| __пример вызова__ | `variablesCtrl.availableVariables()[0].uniqueName` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название переменной |
-| **пример вызова** | `variablesCtrl.availableVariables()[0].title` |
+| __описание__ | Название переменной |
+| __пример вызова__ | `variablesCtrl.availableVariables()[0].title` |
 
 </details>
 
 <details>
 <summary>measurement</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Размерность переменой |
-| **пример вызова** | `variablesCtrl.availableVariables()[0].measurement` |
+| __описание__ | Размерность переменой |
+| __пример вызова__ | `variablesCtrl.availableVariables()[0].measurement` |
 
 </details>
 
 <details>
 <summary>inputValue</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Свойство для указания значения в переменную |
-| **пример вызова** | присвоение переменной значения 150 `variablesCtrl.availableVariables()[0].inputValue(150)` |
+| __описание__ | Свойство для указания значения в переменную |
+| __пример вызова__ | присвоение переменной значения 150 `variablesCtrl.availableVariables()[0].inputValue(150)` |
 
 > Указывая данные самостоятельно не забудьте после этого провалидировать их методом `validateInputData`, иначе `selectedValue` не обновится!
 
@@ -1912,20 +1912,20 @@ __Основные свойства__
 <details>
 <summary>selectedValue</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Выбранное значение в переменной |
-| **пример вызова** | `variablesCtrl.availableVariables()[0].selectedValue()` |
+| __описание__ | Выбранное значение в переменной |
+| __пример вызова__ | `variablesCtrl.availableVariables()[0].selectedValue()` |
 
 </details>
 
 <details>
 <summary>isVisible</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает отображается переменная или нет |
-| **пример вызова** | `variablesCtrl.availableVariables()[0].isVisible()` |
+| __описание__ | Возвращает отображается переменная или нет |
+| __пример вызова__ | `variablesCtrl.availableVariables()[0].isVisible()` |
 
 </details>
 
@@ -1934,10 +1934,10 @@ __Основные свойства__
 <details>
 <summary>validateInputData</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Обновление и валидирование данных из `inputValue` |
-| **пример вызова** | `variablesCtrl.availableVariables()[0].validateInputData()` |
+| __описание__ | Обновление и валидирование данных из `inputValue` |
+| __пример вызова__ | `variablesCtrl.availableVariables()[0].validateInputData()` |
 
 </details>
 
@@ -1953,18 +1953,18 @@ __Поля__
 <details>
 <summary>UniqueName</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Уникальное имя переменной |
+| __описание__ | Уникальное имя переменной |
 
 </details>
 
 <details>
 <summary>Value</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Выбранное значение в переменной |
+| __описание__ | Выбранное значение в переменной |
 
 </details>
 
@@ -1990,110 +1990,110 @@ __Основные свойства__
 <details>
 <summary>options</summary>
 
-| **Тип переменной** | массив `CirculationOption` |
+| __Тип переменной__ | массив `CirculationOption` |
 |---|---|
-| **описание** | Массив моделей тиражности |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.options()` |
+| __описание__ | Массив моделей тиражности |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.options()` |
 
 </details>
 
 <details>
 <summary>option</summary>
 
-| **Тип переменной** | `CirculationOption` или `null` |
+| __Тип переменной__ | `CirculationOption` или `null` |
 |---|---|
-| **описание** | Выбранная модель тиражности |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.option()` |
+| __описание__ | Выбранная модель тиражности |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.option()` |
 
 </details>
 
 <details>
 <summary>isFixedOption</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает являются ли текущие модели тиражности с выбором количества через предварительно заданные тиражи |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.isFixedOption()` |
+| __описание__ | Возвращает являются ли текущие модели тиражности с выбором количества через предварительно заданные тиражи |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.isFixedOption()` |
 
 </details>
 
 <details>
 <summary>isFloatOption</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает являются ли текущие модели тиражности с выбором количества через ввод тиража вручную |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.isFloatOption()` |
+| __описание__ | Возвращает являются ли текущие модели тиражности с выбором количества через ввод тиража вручную |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.isFloatOption()` |
 
 </details>
 
 <details>
 <summary>floatQuantity</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Текущее выбранное количество товара |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.floatQuantity()` |
+| __описание__ | Текущее выбранное количество товара |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.floatQuantity()` |
 
 </details>
 
 <details>
 <summary>complexOption</summary>
 
-| **Тип переменной** | `CirculationComplex` или `null` |
+| __Тип переменной__ | `CirculationComplex` или `null` |
 |---|---|
-| **описание** | Модуль для выбора количества страниц |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption()` |
+| __описание__ | Модуль для выбора количества страниц |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.complexOption()` |
 
 </details>
 
 <details>
 <summary>isComplexProduct</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает есть ли возможность выбора количества страниц |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.isComplexProduct()` |
+| __описание__ | Возвращает есть ли возможность выбора количества страниц |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.isComplexProduct()` |
 
 </details>
 
 <details>
 <summary>surfacesSettings</summary>
 
-| **Тип переменной** | `CirculationSurfacesSettings` или `null` |
+| __Тип переменной__ | `CirculationSurfacesSettings` или `null` |
 |---|---|
-| **описание** | Блок работы с поверхностями товара |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings()` |
+| __описание__ | Блок работы с поверхностями товара |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings()` |
 
 </details>
 
 <details>
 <summary>isSurfacesSettingsAvailable</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** |Возвращает есть ли возможность работы с поверхностями товара  |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.isSurfacesSettingsAvailable()` |
+| __описание__ |Возвращает есть ли возможность работы с поверхностями товара  |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.isSurfacesSettingsAvailable()` |
 
 </details>
 
 <details>
 <summary>photosSettings</summary>
 
-| **Тип переменной** | `CirculationPhotosSettings` или `null` |
+| __Тип переменной__ | `CirculationPhotosSettings` или `null` |
 |---|---|
-| **описание** | Блок работы с учетом фотографий |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings()` |
+| __описание__ | Блок работы с учетом фотографий |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.photosSettings()` |
 
 </details>
 
 <details>
 <summary>isPhotosSettingsAvailable</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает есть ли возможность работы с учетом фотографий |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.isPhotosSettingsAvailable()` |
+| __описание__ | Возвращает есть ли возможность работы с учетом фотографий |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.isPhotosSettingsAvailable()` |
 
 </details>
 
@@ -2106,20 +2106,20 @@ __Основные свойства__
 <details>
 <summary>quantity</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Предзаданное количество |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.option().quantity()` |
+| __описание__ | Предзаданное количество |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.option().quantity()` |
 
 </details>
 
 <details>
 <summary>isSelected</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает выбран тираж или нет |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.option().isSelected()` |
+| __описание__ | Возвращает выбран тираж или нет |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.option().isSelected()` |
 
 </details>
 
@@ -2128,10 +2128,10 @@ __Основные свойства__
 <details>
 <summary>select</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Метод выбора тиража |
-| **пример вызова** | выбор 4-го тиража из массива тиражей `pxpCalculators[0].circulationSelector.options()[3].select()` |
+| __описание__ | Метод выбора тиража |
+| __пример вызова__ | выбор 4-го тиража из массива тиражей `pxpCalculators[0].circulationSelector.options()[3].select()` |
 
 </details>
 
@@ -2142,40 +2142,40 @@ __Основные свойства__
 <details>
 <summary>min</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Минимальное возможное количество |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.option().min` |
+| __описание__ | Минимальное возможное количество |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.option().min` |
 
 </details>
 
 <details>
 <summary>max</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Максимальное возможное количество |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.option().max` |
+| __описание__ | Максимальное возможное количество |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.option().max` |
 
 </details>
 
 <details>
 <summary>quantity</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Выбранное количество |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.option().quantity()` |
+| __описание__ | Выбранное количество |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.option().quantity()` |
 
 </details>
 
 <details>
 <summary>isSelected</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает выбран тираж или нет |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.option().isSelected()` |
+| __описание__ | Возвращает выбран тираж или нет |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.option().isSelected()` |
 
 </details>
 
@@ -2197,40 +2197,40 @@ __Основные свойства__
 <details>
 <summary>partsQuantity</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Итоговое количество страниц |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().partsQuantity()` |
+| __описание__ | Итоговое количество страниц |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.complexOption().partsQuantity()` |
 
 </details>
 
 <details>
 <summary>itemPartsMinimum</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Минимальное количество страниц |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().itemPartsMinimum` |
+| __описание__ | Минимальное количество страниц |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.complexOption().itemPartsMinimum` |
 
 </details>
 
 <details>
 <summary>itemPartsMaximum</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Максимально количество страниц |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().itemPartsMaximum` |
+| __описание__ | Максимально количество страниц |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.complexOption().itemPartsMaximum` |
 
 </details>
 
 <details>
 <summary>itemPartsGrowStep</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Шаг страниц |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.complexOption().itemPartsGrowStep` |
+| __описание__ | Шаг страниц |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.complexOption().itemPartsGrowStep` |
 
 </details>
 
@@ -2239,11 +2239,11 @@ __Основные свойства__
 <details>
 <summary>setDisplayPartsQuantity</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Ввод количества страниц. Если указанное число не будет удолетворять ограничениям, то оно будет заменено на валидное |
-| **параметры функции** | Число |
-| **пример вызова** | устанавливаем количество страниц 15 `pxpCalculators[0].circulationSelector.complexOption().displayPartsQuantity(15)` |
+| __описание__ | Ввод количества страниц. Если указанное число не будет удолетворять ограничениям, то оно будет заменено на валидное |
+| __параметры функции__ | Число |
+| __пример вызова__ | устанавливаем количество страниц 15 `pxpCalculators[0].circulationSelector.complexOption().displayPartsQuantity(15)` |
 
 </details>
 
@@ -2256,20 +2256,20 @@ __Основные свойства__
 <details>
 <summary>surfaces</summary>
 
-| **Тип переменной** | массив `CirculationSurfacesSettingsSurface` |
+| __Тип переменной__ | массив `CirculationSurfacesSettingsSurface` |
 |---|---|
-| **описание** | Все поверхности товара |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()` |
+| __описание__ | Все поверхности товара |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()` |
 
 </details>
 
 <details>
 <summary>selectedSurfacesZonesPrices</summary>
 
-| **Тип переменной** | массив `number` или `null` |
+| __Тип переменной__ | массив `number` или `null` |
 |---|---|
-| **описание** | Итоговые цены выбранных зон поверхностей |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().selectedSurfacesZonesPrices()` |
+| __описание__ | Итоговые цены выбранных зон поверхностей |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().selectedSurfacesZonesPrices()` |
 
 </details>
 
@@ -2280,40 +2280,40 @@ __Основные свойства__
 <details>
 <summary>index</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Индекс поверхности (в порядке как в настройках товара) |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].index` |
+| __описание__ | Индекс поверхности (в порядке как в настройках товара) |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].index` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название поверхности |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].title` |
+| __описание__ | Название поверхности |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].title` |
 
 </details>
 
 <details>
 <summary>zones</summary>
 
-| **Тип переменной** | массив `CirculationSurfacesSettingsSurfaceZone` |
+| __Тип переменной__ | массив `CirculationSurfacesSettingsSurfaceZone` |
 |---|---|
-| **описание** | Зоны поверхности товара |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].zones()` |
+| __описание__ | Зоны поверхности товара |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].zones()` |
 
 </details>
 
 <details>
 <summary>selectedZone</summary>
 
-| **Тип переменной** | `CirculationSurfacesSettingsSurfaceZone` или `null` |
+| __Тип переменной__ | `CirculationSurfacesSettingsSurfaceZone` или `null` |
 |---|---|
-| **описание** | Выбранная зона поверхности товара |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone()` |
+| __описание__ | Выбранная зона поверхности товара |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone()` |
 
 </details>
 
@@ -2324,50 +2324,50 @@ __Основные свойства__
 <details>
 <summary>index</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Индекс зоны поверхности (в порядке как в настройках товара) |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().index` |
+| __описание__ | Индекс зоны поверхности (в порядке как в настройках товара) |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().index` |
 
 </details>
 
 <details>
 <summary>title</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Название зоны поверхности |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().title` |
+| __описание__ | Название зоны поверхности |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().title` |
 
 </details>
 
 <details>
 <summary>price</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Стоимость зоны поверхности |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().price` |
+| __описание__ | Стоимость зоны поверхности |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().price` |
 
 </details>
 
 <details>
 <summary>surface</summary>
 
-| **Тип переменной** | `CirculationSurfacesSettingsSurface` |
+| __Тип переменной__ | `CirculationSurfacesSettingsSurface` |
 |---|---|
-| **описание** | Поверхность, к которой относится зона |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().surface` |
+| __описание__ | Поверхность, к которой относится зона |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().surface` |
 
 </details>
 
 <details>
 <summary>isSelected</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает выбрана ли эта зона поверхности |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().isSelected()` |
+| __описание__ | Возвращает выбрана ли эта зона поверхности |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].selectedZone().isSelected()` |
 
 </details>
 
@@ -2376,10 +2376,10 @@ __Основные свойства__
 <details>
 <summary>select</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Задание этой зоны поверхности как выбранной |
-| **пример вызова** | выбираем третью зону из массива зон поверхности `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].zones()[2].select()` |
+| __описание__ | Задание этой зоны поверхности как выбранной |
+| __пример вызова__ | выбираем третью зону из массива зон поверхности `pxpCalculators[0].circulationSelector.surfacesSettings().surfaces()[0].zones()[2].select()` |
 
 </details>
 
@@ -2392,50 +2392,50 @@ __Основные свойства__
 <details>
 <summary>minimumPhotosCount</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Минимальное число фотографий |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().minimumPhotosCount` |
+| __описание__ | Минимальное число фотографий |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.photosSettings().minimumPhotosCount` |
 
 </details>
 
 <details>
 <summary>additionalPhotosCountToMinimum</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Добавочное количество фотографий за каждую дополнительную страницу |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().additionalPhotosCountToMinimum` |
+| __описание__ | Добавочное количество фотографий за каждую дополнительную страницу |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.photosSettings().additionalPhotosCountToMinimum` |
 
 </details>
 
 <details>
 <summary>pricePerPhoto</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Цена за фотографию |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().pricePerPhoto` |
+| __описание__ | Цена за фотографию |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.photosSettings().pricePerPhoto` |
 
 </details>
 
 <details>
 <summary>totalMinimumPhotosCount</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Общее число минимального количества фотографий |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().totalMinimumPhotosCount()` |
+| __описание__ | Общее число минимального количества фотографий |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.photosSettings().totalMinimumPhotosCount()` |
 
 </details>
 
 <details>
 <summary>photosQuantity</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Текущее количество фотографий |
-| **пример вызова** | `pxpCalculators[0].circulationSelector.photosSettings().photosQuantity()` |
+| __описание__ | Текущее количество фотографий |
+| __пример вызова__ | `pxpCalculators[0].circulationSelector.photosSettings().photosQuantity()` |
 
 </details>
 
@@ -2453,91 +2453,91 @@ __Основные свойства__
 <details>
 <summary>totalPrice</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Итоговая цена |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalPrice()` |
+| __описание__ | Итоговая цена |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.totalPrice()` |
 
 </details>
 
 <details>
 <summary>totalPriceWithoutDiscounts</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Итоговая цена без скидки |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalPriceWithoutDiscounts()` |
+| __описание__ | Итоговая цена без скидки |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.totalPriceWithoutDiscounts()` |
 
 </details>
 
 <details>
 <summary>totalProductPriceWithoutCustomWorks</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Итоговая цена товара без скидки и опций |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalProductPriceWithoutCustomWorks()` |
+| __описание__ | Итоговая цена товара без скидки и опций |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.totalProductPriceWithoutCustomWorks()` |
 
 </details>
 
 <details>
 <summary>totalProductCustomWorksPrice</summary>
 
-| **Тип переменной** | `number` |
+| __Тип переменной__ | `number` |
 |---|---|
-| **описание** | Итоговая стоимость опций без скидки |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalProductCustomWorksPrice()` |
+| __описание__ | Итоговая стоимость опций без скидки |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.totalProductCustomWorksPrice()` |
 
 </details>
 
 <details>
 <summary>totalPriceFormatted</summary>
 
-| **Тип переменной** | `string` |
+| __Тип переменной__ | `string` |
 |---|---|
-| **описание** | Текстовый вид итоговой цены (отдается в HTML) |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.totalPriceFormatted()` |
-| **пример результата** | `Итого: <span class="price-total" id="">10,00 <span class="postfix currency rub"><span>руб.</span></span></span>` |
+| __описание__ | Текстовый вид итоговой цены (отдается в HTML) |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.totalPriceFormatted()` |
+| __пример результата__ | `Итого: <span class="price-total" id="">10,00 <span class="postfix currency rub"><span>руб.</span></span></span>` |
 
 </details>
 
 <details>
 <summary>visible</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает отображается ценовая панель или нет |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.visible()` |
+| __описание__ | Возвращает отображается ценовая панель или нет |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.visible()` |
 
 </details>
 
 <details>
 <summary>isTotalPriceLoading</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает цена обновляется или нет |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.isTotalPriceLoading()` |
+| __описание__ | Возвращает цена обновляется или нет |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.isTotalPriceLoading()` |
 
 </details>
 
 <details>
 <summary>continueOrderClickIsEnabled</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает кнопка "Продолжить заказ" доступна или нет |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.continueOrderClickIsEnabled()` |
+| __описание__ | Возвращает кнопка "Продолжить заказ" доступна или нет |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.continueOrderClickIsEnabled()` |
 
 </details>
 
 <details>
 <summary>addToCartEnabled</summary>
 
-| **Тип переменной** | `boolean` |
+| __Тип переменной__ | `boolean` |
 |---|---|
-| **описание** | Возвращает кнопка "Добавить в корзину" доступна или нет |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.addToCartEnabled()` |
+| __описание__ | Возвращает кнопка "Добавить в корзину" доступна или нет |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.addToCartEnabled()` |
 
 </details>
 
@@ -2546,50 +2546,50 @@ __Основные свойства__
 <details>
 <summary>show</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Показать модуль ценовой панели |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.show()` |
+| __описание__ | Показать модуль ценовой панели |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.show()` |
 
 </details>
 
 <details>
 <summary>hide</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Скрыть модуль ценовой панели |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.hide()` |
+| __описание__ | Скрыть модуль ценовой панели |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.hide()` |
 
 </details>
 
 <details>
 <summary>refreshPrice</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Метод для обновления цены |
-| **условие выполнения** | Обновление калькулятора в данный момент не происходит, и не было ошибок с загрузкой состояния |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.refreshPrice()` |
+| __описание__ | Метод для обновления цены |
+| __условие выполнения__ | Обновление калькулятора в данный момент не происходит, и не было ошибок с загрузкой состояния |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.refreshPrice()` |
 
 </details>
 
 <details>
 <summary>continueOrderClick</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Метод для активации события "Продолжение заказа" |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.continueOrderClick()` |
+| __описание__ | Метод для активации события "Продолжение заказа" |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.continueOrderClick()` |
 
 </details>
 
 <details>
 <summary>addToCartClick</summary>
 
-| **Тип переменной** | `void` |
+| __Тип переменной__ | `void` |
 |---|---|
-| **описание** | Метод для активации события "Добавить в корзину" |
-| **пример вызова** | `pxpCalculators[0].totalPriceCalculator.addToCartClick()` |
+| __описание__ | Метод для активации события "Добавить в корзину" |
+| __пример вызова__ | `pxpCalculators[0].totalPriceCalculator.addToCartClick()` |
 
 </details>

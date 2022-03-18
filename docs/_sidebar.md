@@ -51,6 +51,7 @@
 	- [Калькуляция](/print/calculations.md)
 	- [Оборудование](/print/devices.md)
 	- [Шаблоны](/print/templates.md)
+	- [Список шаблонов](/print/templates-list.md)
 	- [Клипарты](/print/cliparts.md)
 	- [Теги дизайнов](/print/tags.md)
 	- [Страницы шаблонов](/print/tpages.md)
