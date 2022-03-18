@@ -53,6 +53,7 @@
 	- [Шаблоны](/print/templates.md)
 	- [Список шаблонов](/print/templates-list.md)
 	- [Клипарты](/print/cliparts.md)
+	- [Список клипартов](/print/cliparts-list.md)
 	- [Теги дизайнов](/print/tags.md)
 	- [Страницы шаблонов](/print/tpages.md)
 	- [Страница раздела](/print/page.md)
