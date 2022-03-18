@@ -50,6 +50,8 @@
 	- [Продукты](/print/products.md)
 	- [Калькуляция](/print/calculations.md)
 	- [Оборудование](/print/devices.md)
+	- [Список оборудования](/print/devices-list.md)
+	- [Словари](/print/vocabulary.md)
 	- [Шаблоны](/print/templates.md)
 	- [Список шаблонов](/print/templates-list.md)
 	- [Клипарты](/print/cliparts.md)
