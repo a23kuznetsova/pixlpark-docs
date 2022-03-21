@@ -56,7 +56,7 @@
 * Затем, в подразделе "__OAuth 2 / Generated access token__"  раздела "__Setting__" создать токен, нажав кнопку "__Generate__".
 ![](../_media/integration/dropbox01.png ':size=70%')
 * После этого сервис отобразит созданный токен. 
-![](../_media/integration/dropbox02.png ':size=70%')
+![](../_media/integration/dropbox02.png ':size=60%')
 * Параллельно необходимо открыть в панели управления Pixlpark раздел "__Заказы / Настройка / Выгрузка заказов__" и в подразделе "__Облачные хранилища__" включить "__Dropbox__".
 * Затем нужно скопировать поле из Dropbox в Pixlpark:
     + "__Generated access token__" в "__App Access Token__";
