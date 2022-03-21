@@ -15,11 +15,11 @@
 	- [Карточка организации](/customers/b2b.md)
 	- [Список частных лиц](/customers/b2c-list.md)
 	- [Список организаций](/customers/b2b-list.md)
-	- [Импорт](/customers/import.md)
+	- [Импорт частных лиц](/customers/import.md)
 	- [Настройка](/customers/settings.md)
 
 - Маркетинг
-	- [Скидки](/marketing/discounts.md)
+	- [Карточка скидки](/marketing/discounts.md)
 	- [Список скидок](/marketing/discounts-list.md)
 	- [Настройка системы скидок](/marketing/settings.md)
 	- [Подарочные сертификаты](/marketing/certificates.md)
@@ -39,7 +39,7 @@
 - Настройка
 	- [Региональные настройки](/site/region.md)
 	- [Доменные имена](/site/domains.md)
-	- [Настройка доступа](/site/access.md)
+	- [Настройки доступа](/site/access.md)
 	- [Карточка доставки](/site/shippings.md)
 	- [Способы доставки](/site/ship-list.md)
 	- [Карточка оплаты](/site/payments.md)
@@ -49,12 +49,12 @@
 - Печать
 	- [Продукты](/print/products.md)
 	- [Калькуляция](/print/calculations.md)
-	- [Оборудование](/print/devices.md)
+	- [Карточка оборудования](/print/devices.md)
 	- [Список оборудования](/print/devices-list.md)
 	- [Словари](/print/vocabulary.md)
-	- [Шаблоны](/print/templates.md)
+	- [Шаблоны и дизайн](/print/templates.md)
 	- [Список шаблонов](/print/templates-list.md)
-	- [Клипарты](/print/cliparts.md)
+	- [Карточка клипартов](/print/cliparts.md)
 	- [Список клипартов](/print/cliparts-list.md)
 	- [Теги дизайнов](/print/tags.md)
 	- [Страницы шаблонов](/print/tpages.md)
@@ -73,7 +73,7 @@
 - Магазин
 	- [Карточка продукта](/shop/products.md)
 	- [Карточка категории](/shop/category.md)
-	- [Список категорий](/shop/list.md)
+	- [Список категорий и продуктов](/shop/list.md)
 	- [Свойства](/shop/properties.md)
 	- [Параметры](/shop/parameters.md)
 	- [Производители](/shop/vendors.md)
@@ -94,7 +94,7 @@
 	- [Настройка](/faq/settings.md)
 
 - Новости
-	- [Карточка новостей](/news/news.md)
+	- [Карточка новости](/news/news.md)
 	- [Список новостей](/news/list.md)
 	- [Страница раздела](/news/page.md)
 	- [Настройка](/news/settings.md)
@@ -134,7 +134,7 @@
 	- [Создание уникального дизайна](/dev/design.md)
 	- [Установка калькулятора на сайт](/dev/calc.md)
 	- [Внедрение редактора в магазин](/dev/editor.md)
-	- [Работа c API и Вебхуками](/dev/api.md)
+	- [Обмен данными через API и Вебхуками](/dev/api.md)
 	- [Язык разметки Scriban](/dev/scriban.md)
 	
 - Дизайнерам
@@ -152,4 +152,4 @@
 	- [Этапы запуска сайта](/misc/launch-site.md)
 	- [Этапы запуска приложения](/misc/launch-app.md)
 	- [Техническая поддержка](/misc/support.md)
-	- [Плановые обновления](/misc/update.md)
+	- [Регламент выпуска обновлений](/misc/update.md)
