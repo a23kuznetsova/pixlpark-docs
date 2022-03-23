@@ -47,7 +47,9 @@
 	- [Настройка интеграций](/site/socials.md)
 
 - Печать
-	- [Продукты](/print/products.md)
+	- [Карточка категории продуктов](/print/category.md)
+	- [Карточка продукта](/print/products.md)
+	- [Список категорий продуктов](/print/products-list.md)
 	- [Калькуляция](/print/calculations.md)
 	- [Карточка оборудования](/print/devices.md)
 	- [Список оборудования](/print/devices-list.md)
@@ -57,6 +59,7 @@
 	- [Карточка клипартов](/print/cliparts.md)
 	- [Список клипартов](/print/cliparts-list.md)
 	- [Теги дизайнов](/print/tags.md)
+	- [Мерч](/print/merch.md)
 	- [Страницы шаблонов](/print/tpages.md)
 	- [Страница раздела](/print/page.md)
 	- [Настройка](/print/settings.md)
