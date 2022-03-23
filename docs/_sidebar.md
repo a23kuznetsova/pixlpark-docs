@@ -47,14 +47,14 @@
 	- [Настройка интеграций](/site/socials.md)
 
 - Печать
-	- [Карточка категории продуктов](/print/category.md)
+	- [Карточка категории](/print/category.md)
 	- [Карточка продукта](/print/products.md)
-	- [Список категорий продуктов](/print/products-list.md)
+	- [Список категорий](/print/products-list.md)
 	- [Калькуляция](/print/calculations.md)
 	- [Карточка оборудования](/print/devices.md)
 	- [Список оборудования](/print/devices-list.md)
 	- [Словари](/print/vocabulary.md)
-	- [Шаблоны и дизайн](/print/templates.md)
+	- [Карточка шаблонов](/print/templates.md)
 	- [Список шаблонов](/print/templates-list.md)
 	- [Карточка клипартов](/print/cliparts.md)
 	- [Список клипартов](/print/cliparts-list.md)
