@@ -126,12 +126,9 @@
 	
 - Интеграции
 	- [Социальные сети](/integration/socials.md)
-	- [Платежные системы](/integration/payments.md)
-	- [Транспортные компании](/integration/shippings.md)
 	- [Маркетинговые инструменты](/integration/marketing.md)
 	- [Облачные хранилища](/integration/drives.md)
 	- [ERP и CRM системы](/integration/crm.md)
-	- [Поставщики сувениров](/integration/gifts.md)
 	
 - Разработчикам
 	- [Создание уникального дизайна](/dev/design.md)
