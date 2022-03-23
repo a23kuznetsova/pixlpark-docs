@@ -45,7 +45,7 @@
 * По завершению будет создано приложение в тестовом режиме без публичного доступа. Для перевода приложения в боевой режим необходимо в разделе "__APIs & Services__ &rarr; __OAuth consent screen__" изменить статус приложения "__Publishing status__" на "__PUBLISH APP__".
 ![](../_media/integration/google05.jpg ':size=70%')
 * После этого для создания ключей доступа к приложению нужно перейти в раздел "__APIs & Services__ &rarr; __Credentials__", нажать кнопку "__+ CREATE CREDENTIALS__" и выбрать подпункт "__OAuth client ID__".
-![](../_media/integration/google06.jpg ':size=40%')
+![](../_media/integration/google06.png ':size=40%')
 * На открывшейся странице нужно заполнить поля:
     + __Application type__ - тип приложения (выбрать "__Web application__");
     + __Name__ - название сайта;
@@ -53,7 +53,7 @@
 * Затем нажать кнопку "__CREATE__" и создать "__OAuth client ID__", после чего будет отображено окно с ключами доступа.
 ![](../_media/integration/google07.jpg ':size=50%')
 * Параллельно необходимо открыть в панели управления Pixlpark раздел "__Настройка / Сервисы__" и включить "__Google__".
-![](../_media/integration/google08.jpg ':size=70%')
+![](../_media/integration/google08.png ':size=70%')
 * Затем нужно скопировать поля из Google в Pixlpark:
     + "__Your Client ID__" в "__App ID__";
     + "__Your Client Secret__" в "__App Secret__".
@@ -77,13 +77,13 @@
 * Завершить создание приложения нажав кнопку "__Создать приложение__" в нижней части экрана.
 ![](../_media/integration/ya04.jpg ':size=70%')
 * После этого сервис отобразит страницу с ключами созданного приложения.
-![](../_media/integration/ya05.jpg ':size=50%')
+![](../_media/integration/ya05.png ':size=50%')
 * Параллельно открыть в панели управления Pixlpark раздел "__Настройка / Сервисы__" и включить "__Яндекс__".
 * Затем скопировать поля из Яндекс в Pixlpark:
     + "__ID__" в "__App ID__";
     + "__Пароль__" в "__App Secret__".
 
-![](../_media/integration/ya06.jpg ':size=70%')
+![](../_media/integration/ya06.png ':size=70%')
 * Далее нажать кнопку "__Сохранить__" и сбросить кэш сайта.
 
 ## Одноклассники
