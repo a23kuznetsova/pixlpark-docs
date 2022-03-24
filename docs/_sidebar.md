@@ -129,7 +129,8 @@
 	- [Маркетинговые инструменты](/integration/marketing.md)
 	- [Облачные хранилища](/integration/drives.md)
 	- [ERP и CRM системы](/integration/crm.md)
-	
+	- [Поставщики сувениров](/integration/gifts.md)
+		
 - Разработчикам
 	- [Создание уникального дизайна](/dev/design.md)
 	- [Программная модель калькулятора](/dev/calc.md)
