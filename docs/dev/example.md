@@ -16,7 +16,7 @@ https://pixlpark.ru/faq/prices/custom-size
 ### Расчет стоимости по произвольным размерам в онлайн-редакторе
 https://demo.pixlpark.ru/printing/banners/banner-evropa-440/editor
 
-### Расчет стоимости по многостраничному PDF-документу со страницами произвольных размеров
+### Расчет стоимости по PDF-документу со страницами произвольных размеров
 https://pixlpark.ru/faq/misc/preflight-customsize
 
 ## Нанесение на бизнес-сувениры
