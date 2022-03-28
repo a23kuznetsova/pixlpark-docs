@@ -6,6 +6,7 @@
     + [Одноклассники](/integration/socials?id=Одноклассники)
     + [Google](/integration/socials?id=google)
     + [Яндекс](/integration/socials?id=Яндекс)
+    + [Авторизация OAuth 2.0](https://oauth.net/)
 
 ![](../_media/site/site61.png ':size=70%')
 ![](../_media/site/site62.png ':size=70%')
