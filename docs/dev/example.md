@@ -18,7 +18,7 @@ https://pixlpark.ru/faq/prices/custom-size
 https://demo.pixlpark.ru/printing/banners/banner-evropa-440/editor
 https://demo.pixlpark.ru/signs/banners
 
-### Расчет стоимости по PDF-документу со страницами произвольных размеров
+### Расчет стоимости по страницам загруженного PDF-документа
 https://pixlpark.ru/faq/misc/preflight-customsize
 https://demo.pixlpark.ru/signs/banners
 
